@@ -1,0 +1,39 @@
+# Core
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+python-multipart==0.0.12
+
+# LangGraph + LLMs
+langgraph==0.2.55
+groq==0.12.0
+cerebras-cloud-sdk==1.19.0
+
+# Research
+tavily-python==0.5.0
+pytrends==4.9.2
+
+# Audio
+edge-tts==6.1.12
+
+# Video
+moviepy==1.0.3
+Pillow==10.4.0
+numpy==1.26.4
+imageio==2.34.2
+imageio-ffmpeg==0.5.1
+
+# YouTube + Google APIs
+google-api-python-client==2.154.0
+google-auth==2.36.0
+google-auth-oauthlib==1.2.1
+google-auth-httplib2==0.2.0
+
+# Google Sheets
+gspread==6.1.4
+
+# Scheduler
+APScheduler==3.10.4
+
+# HTTP
+httpx==0.27.2
+requests==2.32.3
