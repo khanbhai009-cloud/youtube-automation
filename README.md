@@ -1,3 +1,13 @@
+---
+title: Youtube Factory
+emoji: 🎥
+colorFrom: red
+colorTo: red
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # 🎬 USA YouTube AI Factory
 
 Autonomous multi-agent system that generates and uploads 3-4 minute psychology/facts/list videos to YouTube — fully hands-free.
