@@ -104,16 +104,25 @@ def generate_kokoro_tts(script_text: str, output_path: str, voice: str = "am_ech
 
 
 def _edge_tts_fallback(script_text: str, output_path: str):
-    """Edge-TTS fallback if Kokoro fails."""
-    import edge_tts
+    """gTTS fallback — works on HF cloud servers unlike edge-tts."""
+    from gtts import gTTS
+    import os
 
-    async def _run():
-        communicate = edge_tts.Communicate(script_text, "en-US-EricNeural", rate="+8%", pitch="-2Hz")
-        await communicate.save(output_path)
-
-    asyncio.run(_run())
-    print(f"[TTS] Edge-TTS fallback saved: {output_path}")
-
+    print("[TTS] Using gTTS fallback...")
+    tts = gTTS(text=script_text, lang='en', slow=False)
+    
+    # gTTS saves mp3, convert to wav for pedalboard
+    mp3_path = output_path.replace(".wav", ".mp3")
+    tts.save(mp3_path)
+    
+    # Convert mp3 → wav using librosa
+    import librosa
+    audio, sr = librosa.load(mp3_path, sr=24000)
+    import soundfile as sf
+    sf.write(output_path, audio, sr)
+    os.remove(mp3_path)
+    
+    print(f"[TTS] gTTS fallback saved: {output_path}")
 
 # ─────────────────────────────────────────────
 #  PEDALBOARD VOICE PROCESSOR
