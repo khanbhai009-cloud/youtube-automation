@@ -2,8 +2,9 @@ import os
 import json
 from datetime import datetime
 import gspread
-from google.oauth2.service_account import Credentials
+from google.oauth2.credentials import Credentials
 
+# Scopes wahi rahenge jo token mein hain
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 SPREADSHEET_ID = os.getenv("SPREADSHEET_ID", "")
 
@@ -12,12 +13,21 @@ _client = None
 def _get_sheet():
     global _client
     if _client is None:
-        creds_json = os.getenv("GOOGLE_SHEETS_CREDENTIALS", "")
-        if not creds_json:
-            raise ValueError("GOOGLE_SHEETS_CREDENTIALS env var not set")
-        creds_dict = json.loads(creds_json)
-        creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
-        _client = gspread.authorize(creds)
+        # Ab hum 'YOUTUBE_TOKEN_JSON' secret se data uthayenge
+        token_json = os.getenv("YOUTUBE_TOKEN_JSON", "")
+        if not token_json:
+            raise ValueError("❌ YOUTUBE_TOKEN_JSON env var not set in Secrets!")
+        
+        try:
+            creds_dict = json.loads(token_json)
+            # YAHAN CHANGE HAI: Service account ki jagah User OAuth use kar rahe hain
+            creds = Credentials.from_authorized_user_info(creds_dict, scopes=SCOPES)
+            _client = gspread.authorize(creds)
+            print("✅ [SHEETS] Authorized successfully using User OAuth Token!")
+        except Exception as e:
+            print(f"❌ [SHEETS] Auth failed: {e}")
+            raise
+
     return _client.open_by_key(SPREADSHEET_ID).sheet1
 
 def ensure_headers():
@@ -27,26 +37,24 @@ def ensure_headers():
         headers = ["Topic", "Script_Text", "Audio_Path", "Thumbnail_URL",
                    "Status", "Upload_Time", "YouTube_URL", "Tags"]
         if first_row != headers:
+            # Agar sheet khali hai ya headers alag hain, toh naya insert karo
             sheet.insert_row(headers, 1)
+            print("✅ [SHEETS] Headers ensured.")
     except Exception as e:
         print(f"[SHEETS] Header check failed: {e}")
 
 def log_video(data: dict):
-    """
-    data keys: topic, script, audio_path, thumbnail_url,
-                status, youtube_url, tags
-    """
     try:
         sheet = _get_sheet()
         row = [
             data.get("topic", ""),
-            data.get("script", "")[:500] + "...",  # truncate for sheet
+            data.get("script", "")[:500] + "...",  # Chhota kar diya sheet ke liye
             data.get("audio_path", ""),
             data.get("thumbnail_url", ""),
             data.get("status", "Draft"),
             datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
             data.get("youtube_url", ""),
-            ", ".join(data.get("tags", [])),
+            ", ".join(data.get("tags", [])) if isinstance(data.get("tags"), list) else data.get("tags", ""),
         ]
         sheet.append_row(row)
         print(f"[SHEETS] Logged: {data.get('topic')}")
@@ -57,8 +65,10 @@ def update_status(topic: str, status: str, youtube_url: str = ""):
     try:
         sheet = _get_sheet()
         records = sheet.get_all_records()
+        # Row 2 se start kyunki 1 mein headers hain
         for i, row in enumerate(records, start=2):
             if row.get("Topic") == topic:
+                # Column 5 'Status' hai aur Column 7 'YouTube_URL'
                 sheet.update_cell(i, 5, status)
                 if youtube_url:
                     sheet.update_cell(i, 7, youtube_url)
