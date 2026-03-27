@@ -61,6 +61,7 @@ def director_node(state: VideoState) -> dict:
             ],
         }
     except Exception as e:
+        traceback.print_exc()
         return {
             "error": f"Director failed: {e}",
             "strategy_brief": {}, "analytics_raw": {}, "trends_raw": {},
@@ -72,8 +73,8 @@ def director_node(state: VideoState) -> dict:
 def research_node(state: VideoState) -> dict:
     print("\n═══ PHASE 1: RESEARCH ═══")
     try:
-        brief  = state.get("strategy_brief", {})
-        niche  = state.get("niche", "psychology")
+        brief   = state.get("strategy_brief", {})
+        niche   = state.get("niche", "psychology")
         d_topic = brief.get("topic", "")
 
         trends_raw = state.get("trends_raw", {})
@@ -95,6 +96,7 @@ def research_node(state: VideoState) -> dict:
             "logs": [f"✅ Research: {data['topic']} | {len(data['keywords'])} keywords"],
         }
     except Exception as e:
+        traceback.print_exc()
         return {"error": f"Research failed: {e}", "logs": [f"❌ Research error: {e}"]}
 
 
@@ -143,6 +145,7 @@ def script_node(state: VideoState) -> dict:
             ],
         }
     except Exception as e:
+        traceback.print_exc()
         return {"error": f"Script failed: {e}", "logs": [f"❌ Script error: {e}"]}
 
 
@@ -150,18 +153,29 @@ def production_node(state: VideoState) -> dict:
     print("\n═══ PHASE 3: PRODUCTION ═══")
     try:
         brief = state.get("strategy_brief", {})
-        audio_path = generate_audio(state["script_text"], state["topic"])
+        niche = state.get("niche", "default").lower().strip()  # ✅ FIX: niche extracted
+
+        audio_path = generate_audio(
+            state["script_text"],
+            state["topic"],
+            niche=niche,        # ✅ FIX: voice profile auto-selected by niche
+        )
         video_path = render_video(
-            audio_path, state["timeline"], state["script_data"], state["topic"],
+            audio_path,
+            state["timeline"],
+            state["script_data"],
+            state["topic"],
             thumbnail_style=brief.get("thumbnail_style", "plain_icon"),
             thumbnail_colors=brief.get("thumbnail_color_scheme", "white_bold"),
+            niche=niche,        # ✅ FIX: passed to render too
         )
         update_status(state["topic"], "Rendered")
         return {
             "audio_path": audio_path, "video_path": video_path, "error": None,
-            "logs": [f"✅ Rendered | 🎨 {brief.get('thumbnail_style')} / {brief.get('thumbnail_color_scheme')}"],
+            "logs": [f"✅ Rendered | 🎨 {brief.get('thumbnail_style')} / {brief.get('thumbnail_color_scheme')} | 🎙️ Voice: {niche}"],
         }
     except Exception as e:
+        traceback.print_exc()   # ✅ FIX: full stacktrace visible in HF logs
         return {"error": f"Production failed: {e}", "logs": [f"❌ Production error: {e}"]}
 
 
@@ -185,20 +199,35 @@ def upload_node(state: VideoState) -> dict:
             "logs": [f"✅ Uploaded → {result['url']} | ⏰ UTC {upload_hour:02d}:00"],
         }
     except Exception as e:
+        traceback.print_exc()
         return {"error": f"Upload failed: {e}", "upload_status": "failed", "logs": [f"❌ Upload error: {e}"]}
 
 
 def error_handler_node(state: VideoState) -> dict:
-    retry = state.get("retry_count", 0)
+    retry     = state.get("retry_count", 0)
+    error_msg = state.get("error", "Unknown error")  # ✅ FIX: capture actual error
+
     print(f"\n[ERROR HANDLER] Retry #{retry + 1}")
-    return {"retry_count": retry + 1, "error": None, "logs": [f"⚠️ Retry #{retry + 1}"]}
+    print(f"[ERROR HANDLER] Reason: {error_msg}")    # ✅ FIX: visible in logs
+    print(f"[ERROR HANDLER] Restarting from Director...")
+
+    return {
+        "retry_count": retry + 1,
+        "error": None,
+        "logs": [f"⚠️ Retry #{retry + 1} | Reason: {error_msg}"],
+    }
 
 
 # ── Routing ───────────────────────────────────────────────────────────────────
 
 def _route(state: VideoState, next_node: str) -> str:
     if state.get("error"):
-        return "retry" if state.get("retry_count", 0) < 2 else "give_up"
+        if state.get("retry_count", 0) < 2:
+            return "retry"
+        else:
+            # ✅ FIX: give_up reason clearly logged
+            print(f"\n[PIPELINE] ❌ GIVE UP after 2 retries | Last error: {state.get('error')}")
+            return "give_up"
     return next_node
 
 EDGE_MAP = {"research": "research", "script": "script", "production": "production",
@@ -218,7 +247,7 @@ def build_workflow():
     g.add_conditional_edges("script",     lambda s: _route(s, "production"), EDGE_MAP)
     g.add_conditional_edges("production", lambda s: _route(s, "upload"),     EDGE_MAP)
     g.add_edge("upload",        END)
-    g.add_edge("error_handler", "director")   # full restart from Director on retry
+    g.add_edge("error_handler", "director")
     return g.compile()
 
 
