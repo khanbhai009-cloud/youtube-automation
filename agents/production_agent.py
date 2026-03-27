@@ -7,10 +7,10 @@ from datetime import datetime
 import numpy as np
 import soundfile as sf
 from moviepy.editor import (
-    VideoClip, AudioFileClip, ImageClip, TextClip,
+    VideoClip, AudioFileClip, ImageClip,
     CompositeVideoClip, ColorClip
 )
-from moviepy.video.fx.all import resize, fadein, fadeout
+from PIL import Image, ImageDraw, ImageFont
 from PIL import Image
 
 from utils.asset_manager import fetch_icon
@@ -104,25 +104,16 @@ def generate_kokoro_tts(script_text: str, output_path: str, voice: str = "am_ech
 
 
 def _edge_tts_fallback(script_text: str, output_path: str):
-    """gTTS fallback — works on HF cloud servers unlike edge-tts."""
-    from gtts import gTTS
-    import os
+    """Edge-TTS fallback if Kokoro fails."""
+    import edge_tts
 
-    print("[TTS] Using gTTS fallback...")
-    tts = gTTS(text=script_text, lang='en', slow=False)
-    
-    # gTTS saves mp3, convert to wav for pedalboard
-    mp3_path = output_path.replace(".wav", ".mp3")
-    tts.save(mp3_path)
-    
-    # Convert mp3 → wav using librosa
-    import librosa
-    audio, sr = librosa.load(mp3_path, sr=24000)
-    import soundfile as sf
-    sf.write(output_path, audio, sr)
-    os.remove(mp3_path)
-    
-    print(f"[TTS] gTTS fallback saved: {output_path}")
+    async def _run():
+        communicate = edge_tts.Communicate(script_text, "en-US-EricNeural", rate="+8%", pitch="-2Hz")
+        await communicate.save(output_path)
+
+    asyncio.run(_run())
+    print(f"[TTS] Edge-TTS fallback saved: {output_path}")
+
 
 # ─────────────────────────────────────────────
 #  PEDALBOARD VOICE PROCESSOR
@@ -287,7 +278,81 @@ def render_video(
         except Exception as e:
             print(f"[VIDEO] Icon render failed for {kw}: {e}")
 
-    # Subtitle clips
+    # ── Pillow text helper ────────────────────────────────────────────────────
+    def _get_font(size: int):
+        """Try to load a real font, fallback to PIL default."""
+        candidates = [
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+            "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+            "/usr/share/fonts/truetype/freefont/FreeSansBold.ttf",
+        ]
+        for path in candidates:
+            if os.path.exists(path):
+                return ImageFont.truetype(path, size)
+        return ImageFont.load_default()
+
+    def _make_text_frame(text: str, font_size: int, text_color: tuple,
+                         bg_color: tuple, canvas_size: tuple,
+                         y_position: int, alpha: float = 1.0):
+        """Render text onto a transparent RGBA canvas using Pillow."""
+        W, H = canvas_size
+        img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(img)
+        font = _get_font(font_size)
+
+        # Word-wrap manually
+        max_w = W - 200
+        words = text.split()
+        lines, line = [], ""
+        for word in words:
+            test = (line + " " + word).strip()
+            bbox = draw.textbbox((0, 0), test, font=font)
+            if bbox[2] - bbox[0] <= max_w:
+                line = test
+            else:
+                if line:
+                    lines.append(line)
+                line = word
+        if line:
+            lines.append(line)
+
+        # Draw each line centered
+        line_h = font_size + 8
+        total_h = len(lines) * line_h
+        y = y_position - total_h // 2
+
+        for ln in lines:
+            bbox = draw.textbbox((0, 0), ln, font=font)
+            x = (W - (bbox[2] - bbox[0])) // 2
+            # Shadow
+            draw.text((x + 2, y + 2), ln, font=font, fill=(0, 0, 0, int(120 * alpha)))
+            # Text
+            r, g, b = text_color
+            draw.text((x, y), ln, font=font, fill=(r, g, b, int(255 * alpha)))
+            y += line_h
+
+        return np.array(img)
+
+    def _make_subtitle_clip(text: str, start: float, clip_dur: float, y_pos: int, font_size: int = 52):
+        """Create an ImageClip for subtitle text using Pillow (no ImageMagick)."""
+        def make_frame(t):
+            # Fade in/out alpha
+            alpha = min(1.0, t / 0.25) if t < 0.25 else (
+                max(0.0, (clip_dur - t) / 0.25) if t > clip_dur - 0.25 else 1.0
+            )
+            return _make_text_frame(
+                text=text,
+                font_size=font_size,
+                text_color=(20, 20, 20),
+                bg_color=(0, 0, 0, 0),
+                canvas_size=VIDEO_SIZE,
+                y_position=y_pos,
+                alpha=alpha,
+            )
+        clip = VideoClip(make_frame, duration=clip_dur, ismask=False)
+        return clip.set_start(start)
+
+    # Subtitle clips — Pillow based, no ImageMagick
     subtitle_clips = []
     for entry in timeline:
         text = entry.get("text", "")
@@ -305,40 +370,27 @@ def render_video(
 
         for ci, chunk in enumerate(chunks):
             try:
-                tc = (TextClip(
-                    chunk,
-                    fontsize=48,
-                    color="black",
-                    font="DejaVu-Sans-Bold",
-                    method="caption",
-                    size=(VIDEO_SIZE[0] - 200, None),
-                    align="center",
+                sc = _make_subtitle_clip(
+                    text=chunk,
+                    start=start + ci * chunk_dur,
+                    clip_dur=chunk_dur,
+                    y_pos=VIDEO_SIZE[1] - 180,
+                    font_size=52,
                 )
-                .set_start(start + ci * chunk_dur)
-                .set_duration(chunk_dur)
-                .set_position(("center", VIDEO_SIZE[1] - 220))
-                .fadein(0.3)
-                .fadeout(0.3))
-                subtitle_clips.append(tc)
+                subtitle_clips.append(sc)
             except Exception as e:
                 print(f"[VIDEO] Subtitle clip failed: {e}")
 
-    # Title overlay (first 3s)
+    # Title overlay (first 3s) — Pillow based
     title = script_data.get("title", topic)
     try:
-        title_clip = (TextClip(
-            title[:50],
-            fontsize=64,
-            color="black",
-            font="DejaVu-Sans-Bold",
-            method="caption",
-            size=(VIDEO_SIZE[0] - 100, None),
-            align="center",
+        title_clip = _make_subtitle_clip(
+            text=title[:60],
+            start=0,
+            clip_dur=3.0,
+            y_pos=VIDEO_SIZE[1] // 2,
+            font_size=68,
         )
-        .set_duration(3)
-        .set_position("center")
-        .fadein(0.5)
-        .fadeout(0.5))
         layers.append(title_clip)
     except Exception as e:
         print(f"[VIDEO] Title clip failed: {e}")
