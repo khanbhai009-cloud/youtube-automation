@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
 # Step 2: ImageMagick ki policy fix karo (MoviePy ki purani versions ke liye zaruri hai)
 # Ye command "PDF" aur "URL" security restrictions ko hatati hai taaki text-to-video chal sake
 RUN sed -i 's/domain="coder" rights="none" pattern="PDF"/domain="coder" rights="read|write" pattern="PDF"/' /etc/ImageMagick-6/policy.xml || true
-
+RUN pip install playwright && playwright install chromium --with-deps
 WORKDIR /app
 
 # Step 3: Requirements copy aur install karo
