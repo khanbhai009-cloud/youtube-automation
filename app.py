@@ -4,7 +4,7 @@ import threading
 from datetime import datetime
 from pathlib import Path
 from typing import Optional
-
+import subprocess
 from fastapi import FastAPI, BackgroundTasks, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import HTMLResponse, FileResponse
@@ -117,7 +117,22 @@ async def trigger_pipeline(req: TriggerRequest, bg: BackgroundTasks):
     bg.add_task(_run_pipeline_background, req.niche, req.schedule_upload)
     return {"message": f"Pipeline started for niche: {req.niche}", "scheduled_upload": req.schedule_upload}
 
-
+@app.post("/run-xml")
+async def run_xml_analyzer():
+    try:
+        # Ye command aapki xml_analyzer.py file ko run karegi
+        process = subprocess.run(
+            ["python", "xml_analyzer.py"], 
+            capture_output=True, 
+            text=True, 
+            check=True
+        )
+        return {"message": "XML Analyzer successfully run ho gaya!", "output": process.stdout}
+    except subprocess.CalledProcessError as e:
+        raise HTTPException(status_code=500, detail=f"Analyzer fail ho gaya: {e.stderr}")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+        
 @app.get("/status")
 async def get_status():
     return {
