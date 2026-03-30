@@ -1,0 +1,685 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-11-24 02:23 AM
+5.0.275 (1002592)
+a34a6c0 (Oct 7, 2024 15:47:29)
+-->
+<scene title="iPhone 17 Animation" width="1440" height="1080" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="10582" fps="60" modifiedTime="1763931219949" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.275" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <media uri="content://media/external/images/media/89211" filename="iPhone-17-PNG.png" title="iPhone-17-PNG.png" type="image/png" size="546898" orientation="0" infoUpdated="1763930046498" width="600" height="1224" />
+  <media uri="content://media/external/images/media/89210" type="image/png" duration="0" orientation="0" infoUpdated="1763930046498" width="0" height="0" />
+  <media uri="content://media/external/images/media/89209" type="image/png" duration="0" orientation="0" infoUpdated="1763930046498" width="0" height="0" />
+  <media uri="content://media/external/video/media/89205" filename="I phone 17 pro Animation ✨ [AM] _._._.__iphone17pro__iphone17proanimation _appleuianimation _applestyleanimation _alightmotion _tutorials _creativity _tip(.mp4" title="I phone 17 pro Animation ✨ [AM] _._._.__iphone17pro__iphone17proanimation _appleuianimation _applestyleanimation _alightmotion _tutorials _creativity _tip(.mp4" type="video/mp4" duration="10564000" size="836982" fps="0.25" orientation="0" infoUpdated="1763930046498" width="720" height="1280" />
+  <bookmark t="10575" />
+  <bookmark t="8" />
+  <bookmark t="1041" />
+  <bookmark t="1175" />
+  <bookmark t="1308" />
+  <bookmark t="2308" />
+  <bookmark t="3008" />
+  <bookmark t="1875" />
+  <bookmark t="991" />
+  <bookmark t="1208" />
+  <bookmark t="2208" />
+  <bookmark t="3125" />
+  <bookmark t="3958" />
+  <bookmark t="4608" />
+  <bookmark t="1325" />
+  <bookmark t="2041" />
+  <bookmark t="1425" />
+  <bookmark t="2141" />
+  <bookmark t="4675" />
+  <bookmark t="5175" />
+  <bookmark t="2241" />
+  <bookmark t="1525" />
+  <bookmark t="2358" />
+  <bookmark t="2975" />
+  <bookmark t="3658" />
+  <bookmark t="4825" />
+  <bookmark t="5041" />
+  <bookmark t="5775" />
+  <bookmark t="6308" />
+  <bookmark t="6675" />
+  <bookmark t="6741" />
+  <bookmark t="7291" />
+  <bookmark t="9275" />
+  <bookmark t="9075" />
+  <bookmark t="8875" />
+  <bookmark t="8258" />
+  <bookmark t="8108" />
+  <bookmark t="7375" />
+  <bookmark t="7175" />
+  <bookmark t="5841" />
+  <bookmark t="5808" />
+  <bookmark t="6758" />
+  <bookmark t="7358" />
+  <bookmark t="8291" />
+  <bookmark t="9058" />
+  <bookmark t="5975" />
+  <bookmark t="5241" />
+  <bookmark t="5025" />
+  <bookmark t="4958" />
+  <bookmark t="5908" />
+  <bookmark t="9091" />
+  <bookmark t="9491" />
+  <bookmark t="9825" />
+  <bookmark t="10258" />
+  <shape id="102342921" label="Rectangle 1" startTime="0" endTime="10015" fillType="color" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="720.000000,540.000000,0.000000" />
+      <scale value="7.200000,5.400000" />
+    </transform>
+    <fillColor>
+      <kf t="0.230454" v="#ffffffff" />
+      <kf t="0.292062" v="#ff000000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+      <kf t="0.466800" v="#ff000000" />
+      <kf t="0.516725" v="#ffffffff" e="cubicBezier 0.3 0.0 0.02 1.0" />
+      <kf t="0.907738" v="#ffffffff" />
+      <kf t="0.981028" v="#ff000000" e="cubicBezier 0.5 0.0 0.0 1.0" />
+    </fillColor>
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <embedScene id="102342930" label="Group 2" startTime="0" endTime="3015" fillType="intrinsic" outTime="3015" mediaFillMode="fill" parent="102342926">
+    <transform>
+      <location value="-8.152174,223.656494,-19.580017" />
+      <scale>
+        <kf t="0.345275" v="0.637500,0.637500" />
+        <kf t="0.389716" v="0.475694,0.475694" />
+        <kf t="0.433830" v="0.504167,0.504167" />
+      </scale>
+      <opacity>
+        <kf t="0.765505" v="1.000000" />
+        <kf t="0.997677" v="0.000000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1440" height="1080" exportWidth="1440" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="11282" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.275" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="102342935" label="Rounded Rectangle 1" startTime="0" endTime="11282" fillType="color" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="722.697083,571.655945,-924.500000" />
+          <scale value="0.457424,0.457424" />
+          <opacity>
+            <kf t="0.003634" v="1.000000" />
+            <kf t="0.000709" v="0.000000" />
+          </opacity>
+        </transform>
+        <fillColor>
+          <kf t="0.092271" v="#ff3577ff" />
+          <kf t="0.107073" v="#ff000085" />
+        </fillColor>
+        <property name="size" type="vec2">
+          <kf t="0.045027" v="340.000000,92.000000" e="cubicBezier 0.33555555 0.0 0.15777774 1.0" />
+          <kf t="0.002216" v="0.000000,92.000000" />
+        </property>
+        <property name="cornerRadius" type="float" value="125.000000" />
+      </shape>
+      <text id="102342936" startTime="0" endTime="11032" clippingMask="true" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Roboto&amp;weight=700" wrapWidth="512" align="center">
+        <transform>
+          <location>
+            <kf t="0.070250" v="727.500000,571.656006,-924.500000" e="cubicBezier 0.38 0.0 0.28 1.0" />
+            <kf t="0.000725" v="727.500000,579.660889,-924.500000" />
+          </location>
+          <scale value="0.818359,0.818359" />
+        </transform>
+        <fillColor>
+          <kf t="0.070250" v="#ffffffff" e="cubicBezier 0.38 0.0 0.28 1.0" />
+          <kf t="0.000725" v="#ff000000" />
+        </fillColor>
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+          <property name="letterspacing" type="float" value="0.020000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <content>Learn more..</content>
+      </text>
+      <embedScene id="102342929" label="Group 1" startTime="0" endTime="3049" fillType="intrinsic" inTime="-1033" mediaFillMode="fill">
+        <transform>
+          <location value="720.000000,540.000000,0.000000" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1440" height="1080" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="0" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.275" amplatform="android" retime="off" retimeAdaptFPS="false" />
+      </embedScene>
+    </scene>
+  </embedScene>
+  <text id="102342925" startTime="0" endTime="3015" fillType="color" mediaFillMode="fill" parent="102342926" size="18.000000" font="imported?name=LuckiestGuy-Regular.ttf" wrapWidth="512" align="left">
+    <transform>
+      <location value="78.000000,128.628418,0.000000" />
+      <scale value="1.250000,1.250000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.texttransform" locallyApplied="true">
+      <property name="start" type="float">
+        <kf t="0.002653" v="0.000000" />
+        <kf t="0.621892" v="1.000000" />
+      </property>
+      <property name="end" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="component" type="int" value="1" />
+      <property name="anchor" type="int" value="0" />
+      <property name="offset" type="vec2" value="0.000000,-80.000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="scale" type="float" value="0.000000" />
+      <property name="stretch" type="float" value="0.000000" />
+      <property name="alpha" type="float" value="-1.000000" />
+      <property name="useFillColor" type="bool" value="false" />
+      <property name="fillColor" type="color" value="#ff00ff00" />
+      <property name="easeIn" type="float" value="1.000000" />
+      <property name="easeOut" type="float" value="-1.000000" />
+      <property name="overlap" type="float" value="10.000000" />
+      <property name="shape" type="int" value="0" />
+      <property name="randomOrder" type="bool" value="false" />
+      <property name="seed" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="0.800000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <content>I phone 17 pro</content>
+  </text>
+  <nullobj id="102342926" label="Null 1" startTime="0" endTime="5182" mediaFillMode="fill" parent="102342954" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.191240" v="7.500000,-229.371582,0.000000" e="cubicBezier 0.3788889 0.0 0.27888888 1.0" />
+        <kf t="0.001544" v="7.500000,-231.371582,-924.500000" />
+        <kf t="0.233114" v="7.500000,-229.371582,0.000000" />
+        <kf t="0.426090" v="-543.239990,-70.172974,0.000000" e="cubicBezier 0.25777778 0.0 0.0 1.0" />
+        <kf t="0.445387" v="-543.239990,-70.172974,0.000000" />
+        <kf t="0.580470" v="-404.559937,30.912659,0.000000" e="cubicBezier 0.47777778 0.0 0.23333332 1.0" />
+        <kf t="0.603049" v="-404.559937,30.912659,0.000000" />
+        <kf t="0.705905" v="-853.899902,30.912659,0.000000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+        <kf t="0.763797" v="-853.899902,30.912659,0.000000" />
+        <kf t="0.889232" v="-1322.399902,30.912659,0.000000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+      </location>
+      <scale>
+        <kf t="0.233114" v="0.920000,0.920000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+        <kf t="0.426090" v="0.320000,0.320000" e="cubicBezier 0.26 0.0 0.0 1.0" />
+        <kf t="0.445387" v="0.320000,0.320000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+        <kf t="0.580470" v="0.420000,0.420000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="102342937" label="iPhone-17-PNG.png" startTime="1316" endTime="5182" fillType="media" fillImage="content://media/external/images/media/89211" mediaFillMode="fill" parent="102342926" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.187532" v="954.665588,223.691376,-40.000000" e="elastic 0.5 1.0 0.12676471 0.17970586" />
+        <kf t="0.002330" v="954.665588,3063.040527,-40.000000" />
+        <kf t="0.256596" v="954.665588,223.691376,-40.000000" />
+        <kf t="0.437662" v="948.665588,-9.956909,-40.000000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+        <kf t="0.467926" v="948.665588,-9.956909,-40.000000" />
+        <kf t="0.605794" v="948.665588,223.690002,-40.000000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+      </location>
+      <scale value="2.077547,2.077547" />
+    </transform>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.300000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <property name="size" type="vec2" value="264.500000,540.000000" />
+  </shape>
+  <shape id="102342938" label="iPhone-17-PNG.png Copy" startTime="1416" endTime="5182" fillType="media" fillImage="content://media/external/images/media/89210" mediaFillMode="fill" parent="102342926" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.192510" v="2097.578857,223.691376,-40.000000" e="elastic 0.5 1.0 0.12676471 0.17970586" />
+        <kf t="0.002390" v="2097.593994,3063.040527,-40.000000" e="cubicBezier 0.3 0.0 0.13 1.0" />
+        <kf t="0.453797" v="2097.578857,223.691376,-40.000000" e="cubicBezier 0.3 0.0 0.13 1.0" />
+        <kf t="0.595328" v="2097.091797,22.191376,-40.000000" e="cubicBezier 0.3 0.0 0.13 1.0" />
+        <kf t="0.674986" v="2097.091797,22.191376,-40.000000" e="cubicBezier 0.3 0.0 0.13 1.0" />
+        <kf t="0.847585" v="2097.091797,223.690002,-40.000000" e="cubicBezier 0.3 0.0 0.13 1.0" />
+        <kf t="0.865374" v="2097.091797,223.690002,-40.000000" e="cubicBezier 0.3 0.0 0.13 1.0" />
+        <kf t="0.998142" v="449.278809,216.791351,-40.000000" e="cubicBezier 0.3 0.0 0.13 1.0" />
+      </location>
+      <scale value="2.077547,2.077547" />
+    </transform>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.300000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <property name="size" type="vec2" value="264.500000,540.000000" />
+  </shape>
+  <shape id="102342939" label="iPhone-17-PNG.png Copy 2" startTime="1516" endTime="9832" fillType="media" fillImage="content://media/external/images/media/89209" mediaFillMode="fill" parent="102342926" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.087181" v="3218.426514,219.290543,-40.000000" e="elastic 0.5 1.0 0.12676471 0.17970586" />
+        <kf t="0.001083" v="3218.426514,3063.040527,-40.000000" />
+        <kf t="0.293651" v="3218.426514,219.290543,-40.000000" />
+        <kf t="0.371813" v="3203.265137,19.700150,-40.000000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+        <kf t="0.379870" v="3203.265137,19.700150,-40.000000" />
+        <kf t="0.439995" v="3574.923096,-89.870941,-40.000000" e="cubicBezier 0.3 0.0 0.12772922 1.0" />
+      </location>
+      <scale>
+        <kf t="0.379870" v="2.077547,2.077547" />
+        <kf t="0.439995" v="1.353704,1.353704" e="cubicBezier 0.3 0.0 0.02 1.0" />
+      </scale>
+    </transform>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.300000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <property name="size" type="vec2" value="264.500000,540.000000" />
+  </shape>
+  <text id="102342940" startTime="2350" endTime="5182" fillType="color" mediaFillMode="fill" parent="102342937" size="18.000000" font="googlefonts?name=Roboto&amp;weight=700" wrapWidth="512" align="left">
+    <transform>
+      <location value="122.828300,-595.144592,40.000000" />
+      <scale value="1.093948,1.093948" />
+      <opacity>
+        <kf t="0.220693" v="1.000000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+        <kf t="0.002823" v="0.000000" />
+        <kf t="0.273659" v="1.000000" />
+        <kf t="0.461865" v="0.000000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff26364d" />
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="0.900000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <content>Deep Blue</content>
+  </text>
+  <text id="102342941" startTime="3116" endTime="5182" fillType="color" mediaFillMode="fill" parent="102342938" size="18.000000" font="googlefonts?name=Roboto&amp;weight=700" wrapWidth="512" align="left">
+    <transform>
+      <location value="202.361694,-600.964539,40.000000" />
+      <scale value="1.093948,1.093948" />
+      <opacity>
+        <kf t="0.262345" v="1.000000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+        <kf t="0.004359" v="0.000000" />
+        <kf t="0.407551" v="1.000000" />
+        <kf t="0.722169" v="0.000000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+      </opacity>
+    </transform>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="0.900000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <content>Silver</content>
+  </text>
+  <text id="102342942" label="Deep Blue Copy 2" startTime="3950" endTime="5182" fillType="color" mediaFillMode="fill" parent="102342939" size="18.000000" font="googlefonts?name=Roboto&amp;weight=700" wrapWidth="512" align="left">
+    <transform>
+      <location value="76.089844,-595.269836,40.000000" />
+      <scale value="1.093948,1.093948" />
+      <opacity>
+        <kf t="0.534091" v="1.000000" e="cubicBezier 0.48 0.0 0.23 1.0" />
+        <kf t="0.006495" v="0.000000" />
+        <kf t="0.588474" v="1.000000" />
+        <kf t="0.994319" v="0.000000" e="cubicBezier 0.3 0.0 0.13 1.0" />
+      </opacity>
+    </transform>
+    <fillColor value="#ffe68839" />
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="0.900000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <content>Cosmic Orange</content>
+  </text>
+  <embedScene id="102342950" label="Group 1" startTime="4816" endTime="9832" fillType="intrinsic" outTime="5016" mediaFillMode="fill" parent="102342954">
+    <transform>
+      <location>
+        <kf t="0.191188" v="-2.106873,9.539673,0.000000" e="elastic 0.30333334 1.0 0.27186272 0.25813723" />
+        <kf t="0.001595" v="-2.106873,167.275024,0.000000" e="cubicBezier 0.0 0.0 0.58 1.0" />
+        <kf t="0.297448" v="-2.106873,9.539673,0.000000" e="cubicBezier 0.0 0.0 0.58 1.0" />
+        <kf t="0.383772" v="16.893127,6.539673,0.000000" e="cubicBezier 0.0 0.0 0.58 1.0" />
+        <kf t="0.493421" v="-1.106873,6.530518,0.000000" e="cubicBezier 0.0 0.0 0.58 1.0" />
+        <kf t="0.370614" v="16.908386,6.733887,0.000000" e="cubicBezier 0.0 0.0 0.58 1.0" />
+      </location>
+      <pivot value="-21.750000,-202.587341" />
+      <scale>
+        <kf t="0.297448" v="0.979310,0.979310" />
+        <kf t="0.370614" v="1.077299,1.077299" e="cubicBezier 0.0 0.0 0.58 1.0" />
+        <kf t="0.383772" v="1.077299,1.077299" />
+        <kf t="0.493421" v="0.979658,0.979658" e="cubicBezier 0.0 0.0 0.58 1.0" />
+      </scale>
+      <opacity>
+        <kf t="0.044857" v="1.000000" />
+        <kf t="0.001794" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <scene title="" width="1440" height="1080" exportWidth="1440" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="10016" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.275" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="102342943" label="Rounded Rectangle 1" startTime="0" endTime="10016" fillType="none" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="516.000000,337.412659,0.000000" />
+        </transform>
+        <fillColor value="#ff3ca1f0" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffd67942" />
+          <size value="5.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="125.000000,60.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+      </shape>
+      <text id="102342944" startTime="0" endTime="10016" fillType="color" mediaFillMode="fill" size="18.000000" font="imported?name=Coolvetica Rg.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="720.000000,337.412659,0.000000" />
+          <scale value="1.115234,1.115234" />
+        </transform>
+        <fillColor value="#ffd67942" />
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+          <property name="letterspacing" type="float" value="0.010000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <content>256GB</content>
+      </text>
+    </scene>
+  </embedScene>
+  <embedScene id="102342951" label="Group 1 Copy" startTime="4883" endTime="9832" fillType="intrinsic" outTime="4949" mediaFillMode="fill" parent="102342954">
+    <transform>
+      <location>
+        <kf t="0.193777" v="-1.617249,136.611084,0.000000" e="elastic 0.30333334 1.0 0.27186272 0.25813723" />
+        <kf t="0.001617" v="-1.617249,295.600647,0.000000" />
+        <kf t="0.375429" v="-1.617249,136.611084,0.000000" />
+        <kf t="0.486563" v="16.882751,136.584656,0.000000" e="cubicBezier 0.0 0.0 0.58 1.0" />
+        <kf t="0.503536" v="16.882751,136.584656,0.000000" />
+        <kf t="0.681956" v="-1.617249,132.584656,0.000000" e="cubicBezier 0.0 0.0 0.47 1.0" />
+      </location>
+      <pivot value="-21.750000,-202.587341" />
+      <scale>
+        <kf t="0.375429" v="0.979310,0.979310" />
+        <kf t="0.486563" v="1.077299,1.077299" e="cubicBezier 0.0 0.0 0.58 1.0" />
+        <kf t="0.503536" v="1.077299,1.077299" />
+        <kf t="0.681956" v="0.979658,0.979658" e="cubicBezier 0.0 0.0 0.47 1.0" />
+      </scale>
+      <opacity>
+        <kf t="0.045464" v="1.000000" />
+        <kf t="0.001818" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <scene title="" width="1440" height="1080" exportWidth="1440" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="10016" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.275" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="102342943" label="Rounded Rectangle 1" startTime="0" endTime="10016" fillType="none" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="516.000000,337.412659,0.000000" />
+        </transform>
+        <fillColor value="#ff3ca1f0" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffd67942" />
+          <size value="5.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="125.000000,60.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+      </shape>
+      <text id="102342944" startTime="0" endTime="10016" fillType="color" mediaFillMode="fill" size="18.000000" font="imported?name=Coolvetica Rg.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="720.000000,337.412659,0.000000" />
+          <scale value="1.115234,1.115234" />
+        </transform>
+        <fillColor value="#ffd67942" />
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+          <property name="letterspacing" type="float" value="0.010000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <content>512GB</content>
+      </text>
+    </scene>
+  </embedScene>
+  <embedScene id="102342952" label="Group 1 Copy 2" startTime="4950" endTime="9832" fillType="intrinsic" outTime="4882" mediaFillMode="fill" parent="102342954">
+    <transform>
+      <location>
+        <kf t="0.196436" v="-1.617249,264.153564,0.000000" e="elastic 0.30333334 1.0 0.27186272 0.25813723" />
+        <kf t="0.001639" v="-1.616638,421.653564,0.000000" />
+        <kf t="0.496723" v="-1.617249,264.153564,0.000000" />
+        <kf t="0.677592" v="16.099669,262.000000,0.000000" e="cubicBezier 0.0 0.0 0.47 1.0" />
+        <kf t="0.684350" v="16.099669,262.000000,0.000000" />
+        <kf t="0.841458" v="-1.900331,258.000000,0.000000" e="cubicBezier 0.0 0.0 0.41 1.0" />
+      </location>
+      <pivot value="-21.750000,-202.587341" />
+      <scale>
+        <kf t="0.496723" v="0.979310,0.979310" />
+        <kf t="0.677592" v="1.070552,1.070552" e="cubicBezier 0.0 0.0 0.47 1.0" />
+        <kf t="0.684350" v="1.070552,1.070552" />
+        <kf t="0.841458" v="0.980061,0.980061" e="cubicBezier 0.0 0.0 0.41 1.0" />
+      </scale>
+      <opacity>
+        <kf t="0.046088" v="1.000000" />
+        <kf t="0.001843" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <scene title="" width="1440" height="1080" exportWidth="1440" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4433" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.275" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="102342943" label="Rounded Rectangle 1" startTime="0" endTime="4433" fillType="none" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="516.000000,337.412659,0.000000" />
+        </transform>
+        <fillColor value="#ff3ca1f0" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffd67942" />
+          <size value="5.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="125.000000,60.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+      </shape>
+      <text id="102342944" startTime="0" endTime="4433" fillType="color" mediaFillMode="fill" size="18.000000" font="imported?name=Coolvetica Rg.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="757.500000,337.412659,0.000000" />
+          <scale value="1.115234,1.115234" />
+        </transform>
+        <fillColor value="#ffd67942" />
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+          <property name="letterspacing" type="float" value="0.010000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <content>1TB</content>
+      </text>
+    </scene>
+  </embedScene>
+  <embedScene id="102342953" label="Group 1 Copy 3" startTime="5016" endTime="9832" fillType="intrinsic" outTime="4816" mediaFillMode="fill" parent="102342954">
+    <transform>
+      <location>
+        <kf t="0.199128" v="-1.617249,391.960327,0.000000" e="elastic 0.30333334 1.0 0.27186272 0.25813723" />
+        <kf t="0.001662" v="-1.617249,548.460327,0.000000" />
+        <kf t="0.680025" v="-1.617249,391.960327,0.000000" />
+        <kf t="0.839286" v="12.882751,389.960327,0.000000" e="cubicBezier 0.0 0.0 0.41 1.0" />
+      </location>
+      <pivot value="-21.750000,-202.587341" />
+      <scale>
+        <kf t="0.680025" v="0.979310,0.979310" />
+        <kf t="0.839286" v="1.070552,1.070552" e="cubicBezier 0.0 0.0 0.41 1.0" />
+      </scale>
+      <opacity>
+        <kf t="0.046720" v="1.000000" />
+        <kf t="0.001868" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <scene title="" width="1440" height="1080" exportWidth="1440" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5049" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.275" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="102342943" label="Rounded Rectangle 1" startTime="0" endTime="5049" fillType="color" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="516.000000,337.412659,0.000000" />
+        </transform>
+        <fillColor>
+          <kf t="0.780551" v="#ffffffff" />
+          <kf t="0.820162" v="#ff444444" />
+        </fillColor>
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffd67942" />
+          <size value="5.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="125.000000,60.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+      </shape>
+      <text id="102342944" startTime="0" endTime="5049" fillType="color" mediaFillMode="fill" size="18.000000" font="imported?name=Coolvetica Rg.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="757.500000,337.412659,0.000000" />
+          <scale value="1.115234,1.115234" />
+        </transform>
+        <fillColor value="#ffd67942" />
+        <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+          <property name="letterspacing" type="float" value="0.010000" />
+          <property name="linespacing" type="float" value="1.000000" />
+        </effect>
+        <content>2TB</content>
+      </text>
+    </scene>
+  </embedScene>
+  <nullobj id="102342954" label="Null 2" startTime="5800" endTime="9832" mediaFillMode="fill" parent="102342958" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.001985" v="0.000000,0.000000,0.000000" />
+        <kf t="0.237600" v="8.528809,224.284546,0.000000" e="cubicBezier 0.43 0.0 0.12 1.0" />
+        <kf t="0.386410" v="8.528809,224.284546,0.000000" />
+        <kf t="0.609623" v="8.528809,-195.792908,0.000000" e="cubicBezier 0.0 0.0 0.47 1.0" />
+        <kf t="0.617808" v="8.528809,-195.792908,0.000000" />
+        <kf t="0.808036" v="17.340393,-437.292908,0.000000" e="cubicBezier 0.0 0.0 0.41000003 1.0" />
+      </location>
+      <scale>
+        <kf t="0.001985" v="1.000000,1.000000" />
+        <kf t="0.237600" v="1.840000,1.840000" e="cubicBezier 0.42666668 0.0 0.1233412 1.0" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="102342955" label="Triangle 1" startTime="5833" endTime="9832" fillType="gradient" mediaFillMode="fill" parent="102342958" s=".triangle">
+    <transform>
+      <location>
+        <kf t="0.210554" v="-439.554291,-30.528748,0.000000" e="cubicBezier 0.0 0.0 0.25 1.0" />
+        <kf t="0.002002" v="-860.097046,-30.528748,0.000000" />
+        <kf t="0.227058" v="-439.554291,-30.528748,0.000000" />
+        <kf t="0.364591" v="-439.554291,218.698486,0.000000" e="cubicBezier 0.0 0.0 0.58 1.0" />
+        <kf t="0.385596" v="-439.554291,218.698486,0.000000" />
+        <kf t="0.606402" v="-200.444519,-8.370300,0.000000" e="cubicBezier 0.0 0.0 0.4677778 1.0" />
+        <kf t="0.860715" v="-200.444519,-8.370300,0.000000" e="cubicBezier 0.42 0.0 1.0 1.0" />
+        <kf t="0.760691" v="-200.444519,-8.370300,0.000000" />
+        <kf t="0.810702" v="-271.944489,-30.528748,0.000000" e="cubicBezier 0.0 0.0 0.58 1.0" />
+      </location>
+      <scale>
+        <kf t="0.760691" v="0.875000,0.875000" />
+        <kf t="0.860715" v="0.875000,0.875000" e="cubicBezier 0.42 0.0 1.0 1.0" />
+        <kf t="0.810702" v="0.630000,0.630000" e="cubicBezier 0.0 0.0 0.58 1.0" />
+      </scale>
+      <rotation>
+        <kf t="0.002002" v="-136.097565" />
+        <kf t="0.210554" v="28.536585" e="cubicBezier 0.0 0.0 0.24888888 1.0" />
+        <kf t="0.335583" v="28.536585" />
+        <kf t="0.568893" v="-40.609741" e="cubicBezier 0.44444445 0.0 0.32440782 1.0" />
+      </rotation>
+    </transform>
+    <fillColor value="#ff6f9fbb" />
+    <gradient type="linear" startColor="#ff000000" endColor="#b0ffffff" start="1.011478,1.428250" end="1.070052,0.037363" />
+    <effect id="com.alightcreative.effects.smoothedges" locallyApplied="true">
+      <property name="strength" type="float" value="0.070000" />
+      <property name="maskToLayer" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="0.800000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <property name="p1" type="vec2" value="-100.000000,100.000000" />
+    <property name="p2" type="vec2" value="0.000000,-100.000000" />
+    <property name="p3" type="vec2" value="100.000000,100.000000" />
+    <property name="closed" type="bool" value="true" />
+  </shape>
+  <nullobj id="102342958" label="Null 3" startTime="9083" endTime="10582" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.005339" v="720.000000,540.000000,0.000000" />
+        <kf t="0.494994" v="717.601257,2446.500000,0.000000" e="cubicBezier 0.50222224 0.0 0.0 1.0" />
+      </location>
+    </transform>
+  </nullobj>
+  <shape id="102342959" label="iPhone-17-Pro-Max-Artwork-PNG.png" startTime="9483" endTime="10582" fillType="media" fillImage="content://media/external/images/media/89209" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.007282" v="717.910767,1779.022583,0.000000" />
+        <kf t="0.705185" v="717.601257,907.254883,0.000000" e="cubicBezier 0.0 0.0 0.19111109 1.0" />
+      </location>
+      <scale value="1.285185,1.285185" />
+    </transform>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.700000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <property name="size" type="vec2" value="264.500000,540.000000" />
+  </shape>
+  <text id="102342960" startTime="9483" endTime="10582" fillType="color" mediaFillMode="fill" size="18.000000" font="imported?name=LuckiestGuy-Regular.ttf" wrapWidth="512" align="left">
+    <transform>
+      <location value="749.260010,442.466553,-924.500000" />
+      <scale value="0.390625,0.390625" />
+    </transform>
+    <effect id="com.alightcreative.effects.texttransform" locallyApplied="true">
+      <property name="start" type="float">
+        <kf t="0.007279" v="0.000000" />
+        <kf t="1.706100" v="1.000000" />
+      </property>
+      <property name="end" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="component" type="int" value="1" />
+      <property name="anchor" type="int" value="0" />
+      <property name="offset" type="vec2" value="0.000000,-80.000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="scale" type="float" value="0.000000" />
+      <property name="stretch" type="float" value="0.000000" />
+      <property name="alpha" type="float" value="-1.000000" />
+      <property name="useFillColor" type="bool" value="false" />
+      <property name="fillColor" type="color" value="#ff00ff00" />
+      <property name="easeIn" type="float" value="1.000000" />
+      <property name="easeOut" type="float" value="-1.000000" />
+      <property name="overlap" type="float" value="10.000000" />
+      <property name="shape" type="int" value="0" />
+      <property name="randomOrder" type="bool" value="false" />
+      <property name="seed" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="0.900000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <content>I phone 17 pro</content>
+  </text>
+  <shape id="102342920" label="I phone 17 pro Animation ✨ [AM] _._._.__iphone17pro__iphone17proanimation _appleuianimation _applestyleanimation _alightmotion _tutorials _creativity _tip(.mp4" hidden="true" startTime="0" endTime="10579" fillType="media" fillVideo="content://media/external/video/media/89205" outTime="10564" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="718.500000,1117.500000,0.000000" />
+      <scale value="1.603125,1.603125" />
+    </transform>
+    <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+      <property name="start" type="float" value="0.130000" />
+      <property name="end" type="float" value="0.486000" />
+      <property name="angle" type="float" value="90.000000" />
+      <property name="feather" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+      <property name="start" type="float" value="0.074000" />
+      <property name="end" type="float" value="0.920000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="feather" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,960.000000" />
+  </shape>
+</scene>

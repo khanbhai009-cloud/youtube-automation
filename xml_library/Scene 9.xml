@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-05-29 11:58 AM
+5.0.270.1002578 (1002351)
+6dff462 (Apr 11, 2024 6:17:55 PM)
+-->
+<scene title="New Project" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="7199" fps="30" modifiedTime="1748500117850" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <bookmark t="1016" />
+  <bookmark t="1583" />
+  <bookmark t="2383" />
+  <bookmark t="3050" />
+  <bookmark t="3783" />
+  <bookmark t="4283" />
+  <bookmark t="4916" />
+  <bookmark t="5350" />
+  <bookmark t="6016" />
+  <shape id="10156860" label="Rectangle 1" startTime="0" endTime="7199" fillType="color" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <scale value="9.600000,5.400000" />
+    </transform>
+    <fillColor value="#ff191515" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <shape id="10156861" label="Rounded Rectangle 1" startTime="0" endTime="7199" fillType="color" mediaFillMode="fill" s=".roundrect">
+    <transform>
+      <location value="991.500000,398.500000,0.000000" />
+    </transform>
+    <property name="size" type="vec2" value="103.000000,5.000000" />
+    <property name="cornerRadius" type="float" value="25.000000" />
+  </shape>
+  <shape id="10156862" label="Rounded Rectangle 1 Copy" startTime="0" endTime="7199" fillType="color" mediaFillMode="fill" s=".roundrect">
+    <transform>
+      <location value="991.500000,601.483398,0.000000" />
+    </transform>
+    <property name="size" type="vec2" value="103.000000,5.000000" />
+    <property name="cornerRadius" type="float" value="25.000000" />
+  </shape>
+  <embedScene id="10156869" label="Group 1" startTime="0" endTime="7199" fillType="intrinsic" outTime="7199" mediaFillMode="fill">
+    <transform>
+      <location>
+        <kf t="0.002226" v="960.000000,652.500000,0.000000" />
+        <kf t="0.141128" v="954.500000,957.500000,0.000000" e="elastic 0.14389211 1.0 0.5335116 1.0" />
+        <kf t="0.219889" v="954.500000,957.500000,0.000000" />
+        <kf t="0.331014" v="954.500000,743.000000,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.423668" v="954.500000,743.000000,0.000000" />
+        <kf t="0.525486" v="959.000000,535.500000,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.594941" v="959.000000,535.500000,0.000000" />
+        <kf t="0.682875" v="959.000000,303.000000,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.743158" v="959.000000,303.000000,0.000000" />
+        <kf t="0.835670" v="959.000000,89.500000,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+      </location>
+      <pivot value="31.500000,-16.750000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="60032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10156863" label="premiere-pro.png" startTime="0" endTime="60032" fillType="media" fillImage="content://media/external/images/media/1000071541" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="991.500000,286.000000,0.000000" />
+          <scale value="0.165741,0.165741" />
+        </transform>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+      <shape id="10156865" label="after-effects.png" startTime="0" endTime="60032" fillType="media" fillImage="content://media/external/images/media/1000071542" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="991.500000,500.500000,0.000000" />
+          <scale value="0.165741,0.165741" />
+        </transform>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+      <shape id="10156866" label="image_search_1746935487497.png" startTime="0" endTime="60032" fillType="media" fillImage="content://media/external/images/media/1000071539" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="991.500000,729.306641,0.000000" />
+          <scale value="0.190741,0.190741" />
+        </transform>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+      <shape id="10156867" label="image_search_1746935267325.png" startTime="0" endTime="60032" fillType="media" fillImage="content://media/external/images/media/1000071534" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="991.500000,949.000000,0.000000" />
+          <scale value="0.172222,0.172222" />
+        </transform>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+      <shape id="10156868" label="image_search_1746935308489.jpg" startTime="0" endTime="60032" fillType="media" fillImage="content://media/external/images/media/1000071535" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="991.500000,87.500000,0.000000" />
+          <scale value="0.153704,0.153704" />
+        </transform>
+        <effect id="com.alightcreative.effects.smoothedges" locallyApplied="true">
+          <property name="strength" type="float" value="0.160000" />
+          <property name="maskToLayer" type="bool" value="false" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <shape id="10156871" label="Arc 1 Copy" startTime="0" endTime="7199" fillType="none" mediaFillMode="fill" s=".arc">
+    <transform>
+      <location value="1559.000000,535.500000,0.000000" />
+      <scale value="1.928885,1.928885" />
+    </transform>
+    <fillColor value="#ffb9eede" />
+    <path-stroke direction="centered" end-size="1.500000">
+      <color value="#ffffffff" />
+      <size value="74.500000" />
+    </path-stroke>
+    <property name="startAngle" type="float" value="91.000000" />
+    <property name="endAngle" type="float" value="90.000000" />
+    <property name="radius" type="float" value="142.000000" />
+    <property name="closed" type="bool" value="false" />
+  </shape>
+  <shape id="10156870" label="Arc 1" startTime="0" endTime="7199" fillType="none" mediaFillMode="fill" s=".arc">
+    <transform>
+      <location value="1559.000000,535.500000,0.000000" />
+      <scale value="1.928885,1.928885" />
+    </transform>
+    <fillColor value="#ffb9eede" />
+    <path-stroke direction="centered" end-size="1.500000">
+      <color value="#ff00ffff" />
+      <size value="70.500000" />
+    </path-stroke>
+    <property name="startAngle" type="float">
+      <kf t="0.002226" v="450.000000" />
+      <kf t="0.141128" v="109.000000" e="cubicBezier 1.0 0.0 0.0 1.0" />
+      <kf t="0.219889" v="109.000000" />
+      <kf t="0.331014" v="305.000000" />
+      <kf t="0.423668" v="305.000000" />
+      <kf t="0.525486" v="336.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+      <kf t="0.594941" v="336.000000" />
+      <kf t="0.682875" v="371.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+      <kf t="0.743158" v="371.000000" />
+      <kf t="0.835670" v="110.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+    </property>
+    <property name="endAngle" type="float" value="90.000000" />
+    <property name="radius" type="float" value="142.000000" />
+    <property name="closed" type="bool" value="false" />
+  </shape>
+  <text id="10156872" startTime="0" endTime="6032" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Montserrat&amp;weight=800" wrapWidth="512" align="left">
+    <transform>
+      <location value="2253.000000,541.732422,0.000000" />
+      <scale value="3.447266,3.447266" />
+    </transform>
+    <effect id="com.alightcreative.effects.counter" locallyApplied="true">
+      <property name="offset" type="float">
+        <kf t="0.002653" v="0.000000" />
+        <kf t="0.168435" v="98.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.262434" v="98.000000" />
+        <kf t="0.395060" v="45.000000" />
+        <kf t="0.505637" v="45.000000" />
+        <kf t="0.627155" v="30.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.710046" v="30.000000" />
+        <kf t="0.814987" v="20.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.886936" v="20.000000" />
+        <kf t="0.997347" v="100.000000" />
+      </property>
+      <property name="scale" type="float" value="1.000000" />
+    </effect>
+    <content>0%</content>
+  </text>
+  <text id="10156873" startTime="6000" endTime="7199" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Montserrat&amp;weight=800" wrapWidth="512" align="left">
+    <transform>
+      <location value="2253.000000,541.732422,0.000000" />
+      <scale value="3.447266,3.447266" />
+    </transform>
+    <effect id="com.alightcreative.effects.counter" locallyApplied="true">
+      <property name="offset" type="float">
+        <kf t="-4.990817" v="0.000000" />
+        <kf t="-4.156814" v="98.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="-3.683910" v="98.000000" />
+        <kf t="-3.016689" v="45.000000" />
+        <kf t="-2.460371" v="45.000000" />
+        <kf t="-1.849030" v="30.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="-1.432006" v="30.000000" />
+        <kf t="-0.904078" v="20.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="-0.542123" v="20.000000" />
+        <kf t="0.013339" v="98.000000" />
+      </property>
+      <property name="scale" type="float" value="1.000000" />
+    </effect>
+    <content>0%</content>
+  </text>
+  <text id="10156874" startTime="0" endTime="7199" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Roboto&amp;weight=900" wrapWidth="512" align="left">
+    <transform>
+      <location value="1110.500000,529.325195,0.000000" />
+      <scale value="3.447265,3.447265" />
+    </transform>
+    <content>Skills</content>
+  </text>
+  <shape id="10156875" label="Circle 1" startTime="0" endTime="7199" fillType="color" mediaFillMode="fill" s=".circle">
+    <transform>
+      <location value="174.000000,535.500000,0.000000" />
+      <scale value="0.170000,0.170000" />
+    </transform>
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+</scene>

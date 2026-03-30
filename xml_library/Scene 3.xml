@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-05-28 04:21 PM
+5.0.270.1002578 (1002351)
+6dff462 (Apr 11, 2024 6:17:55 PM)
+-->
+<scene title="New Project 45" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="7032" fps="30" modifiedTime="1748429512059" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <embedScene id="5097" label="Group 2" startTime="0" endTime="7032" fillType="intrinsic" outTime="5274" speed="0.750000" mediaFillMode="fill">
+    <transform>
+      <location value="978.471313,540.249878,953.531250" />
+      <pivot value="0.000000,-29.991211" />
+      <scale value="1.822211,1.822211" />
+      <rotation value="-28.536591" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.internal.smoothbevel" locallyApplied="true">
+      <property name="radius" type="float" value="20.000000" />
+      <property name="angle_d" type="float" value="45.000000" />
+      <property name="angle_s" type="float" value="45.000000" />
+      <property name="color_d" type="color" value="#ffffffff" />
+      <property name="color_s" type="color" value="#ffffffff" />
+      <property name="intensity_d" type="float" value="0.500000" />
+      <property name="intensity_s" type="float" value="1.000000" />
+      <property name="elevation_d" type="float" value="0.000000" />
+      <property name="elevation_s" type="float" value="2.200000" />
+      <property name="spec" type="float" value="35.000000" />
+    </effect>
+    <border direction="inside" id="1">
+      <size value="8.000000" />
+    </border>
+    <shadow direction="outside" enabled="false">
+      <color value="#ffffffff" />
+    </shadow>
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="5084" label="Rectangle 1" startTime="0" endTime="5032" fillType="color" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="960.000000,516.015625,0.000000" />
+        </transform>
+        <fillColor value="#fffae965" />
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.150000" />
+          <property name="oalpha" type="float" value="0.750000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <property name="size" type="vec2" value="959.000000,8.000000" />
+      </shape>
+      <shape id="5092" label="Rectangle 1 Copy" startTime="0" endTime="5032" fillType="color" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="960.000000,516.015625,0.000000" />
+        </transform>
+        <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float">
+            <kf t="0.000000" v="-0.003000" />
+            <kf t="1.000000" v="1.000000" />
+          </property>
+          <property name="angle" type="float" value="0.000000" />
+          <property name="feather" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.150000" />
+          <property name="oalpha" type="float" value="0.750000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <property name="size" type="vec2" value="959.000000,8.000000" />
+      </shape>
+      <embedScene id="5088" label="Group 1" startTime="0" endTime="5032" fillType="intrinsic" outTime="5032" mediaFillMode="fill">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+          <pivot value="-685.692871,-29.991211" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="5085" label="Rounded Rectangle 1" startTime="0" endTime="5032" fillType="color" mediaFillMode="fill" s=".roundrect">
+            <transform>
+              <location value="274.307129,516.015625,0.000000" />
+            </transform>
+            <fillColor value="#fff4b446" />
+            <gradient type="linear" startColor="#ff444444" endColor="#ffffffff" start="0.000000,0.000000" end="1.000000,1.000000" />
+            <property name="size" type="vec2" value="92.000000,62.000000" />
+            <property name="cornerRadius" type="float" value="25.000000" />
+          </shape>
+          <text id="5087" startTime="0" endTime="799" fillType="color" mediaFillMode="fill" size="36.000000" font="googlefonts?name=Roboto&amp;weight=900" wrapWidth="91" align="left">
+            <transform>
+              <location value="284.976410,510.008789,0.000000" />
+            </transform>
+            <content>1</content>
+          </text>
+          <text id="5093" startTime="766" endTime="5032" fillType="color" mediaFillMode="fill" size="36.000000" font="googlefonts?name=Roboto&amp;weight=900" wrapWidth="91" align="left">
+            <transform>
+              <location value="284.976410,510.008789,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+              <property name="bmode" type="int" value="2" />
+              <property name="overd" type="bool" value="false" />
+              <property name="strength" type="float" value="0.150000" />
+              <property name="oalpha" type="float" value="0.750000" />
+              <property name="lowThreshold" type="float" value="0.100000" />
+              <property name="highThreshold" type="float" value="1.000000" />
+              <property name="feather" type="float" value="0.300000" />
+              <property name="satvib" type="vec2" value="0.000000,1.000000" />
+              <property name="hue" type="float" value="360.000000" />
+              <property name="calpha" type="float" value="1.000000" />
+              <property name="GCE" type="bool" value="false" />
+              <property name="CHROM" type="bool" value="false" />
+              <property name="strengthhh" type="float" value="0.150000" />
+              <property name="angleee" type="float" value="0.000000" />
+              <property name="centerChannel" type="int" value="1" />
+              <property name="cblend" type="bool" value="false" />
+              <property name="cmode" type="int" value="0" />
+              <property name="colblend" type="color" value="#ffffa800" />
+              <property name="alpb" type="float" value="0.500000" />
+              <property name="iter" type="float" value="1.000000" />
+            </effect>
+            <content>1</content>
+          </text>
+        </scene>
+      </embedScene>
+      <embedScene id="5089" label="Group 1 Copy" startTime="0" endTime="5032" fillType="intrinsic" outTime="5032" mediaFillMode="fill">
+        <transform>
+          <location value="1391.066040,540.000000,0.000000" />
+          <pivot value="-685.692871,-29.991211" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="5085" label="Rounded Rectangle 1" startTime="0" endTime="5032" fillType="color" mediaFillMode="fill" s=".roundrect">
+            <transform>
+              <location value="274.307129,516.015625,0.000000" />
+            </transform>
+            <fillColor value="#fff4b446" />
+            <gradient type="linear" startColor="#ff444444" endColor="#ffffffff" start="0.000000,0.000000" end="1.000000,1.000000" />
+            <property name="size" type="vec2" value="92.000000,62.000000" />
+            <property name="cornerRadius" type="float" value="25.000000" />
+          </shape>
+          <text id="5087" startTime="0" endTime="1865" fillType="color" mediaFillMode="fill" size="36.000000" font="googlefonts?name=Roboto&amp;weight=900" wrapWidth="91" align="left">
+            <transform>
+              <location value="284.976410,510.008789,0.000000" />
+            </transform>
+            <content>2</content>
+          </text>
+          <text id="5094" startTime="1833" endTime="5032" fillType="color" mediaFillMode="fill" size="36.000000" font="googlefonts?name=Roboto&amp;weight=900" wrapWidth="91" align="left">
+            <transform>
+              <location value="284.976410,510.008789,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+              <property name="bmode" type="int" value="2" />
+              <property name="overd" type="bool" value="false" />
+              <property name="strength" type="float" value="0.150000" />
+              <property name="oalpha" type="float" value="0.750000" />
+              <property name="lowThreshold" type="float" value="0.100000" />
+              <property name="highThreshold" type="float" value="1.000000" />
+              <property name="feather" type="float" value="0.300000" />
+              <property name="satvib" type="vec2" value="0.000000,1.000000" />
+              <property name="hue" type="float" value="360.000000" />
+              <property name="calpha" type="float" value="1.000000" />
+              <property name="GCE" type="bool" value="false" />
+              <property name="CHROM" type="bool" value="false" />
+              <property name="strengthhh" type="float" value="0.150000" />
+              <property name="angleee" type="float" value="0.000000" />
+              <property name="centerChannel" type="int" value="1" />
+              <property name="cblend" type="bool" value="false" />
+              <property name="cmode" type="int" value="0" />
+              <property name="colblend" type="color" value="#ffffa800" />
+              <property name="alpb" type="float" value="0.500000" />
+              <property name="iter" type="float" value="1.000000" />
+            </effect>
+            <content>2</content>
+          </text>
+        </scene>
+      </embedScene>
+      <embedScene id="5090" label="Group 1 Copy 2" startTime="0" endTime="5032" fillType="intrinsic" outTime="5032" mediaFillMode="fill">
+        <transform>
+          <location value="1837.987915,540.000000,0.000000" />
+          <pivot value="-685.692871,-29.991211" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="5085" label="Rounded Rectangle 1" startTime="0" endTime="5032" fillType="color" mediaFillMode="fill" s=".roundrect">
+            <transform>
+              <location value="274.307129,516.015625,0.000000" />
+            </transform>
+            <fillColor value="#fff4b446" />
+            <gradient type="linear" startColor="#ff444444" endColor="#ffffffff" start="0.000000,0.000000" end="1.000000,1.000000" />
+            <property name="size" type="vec2" value="92.000000,62.000000" />
+            <property name="cornerRadius" type="float" value="25.000000" />
+          </shape>
+          <text id="5087" startTime="0" endTime="2932" fillType="color" mediaFillMode="fill" size="36.000000" font="googlefonts?name=Roboto&amp;weight=900" wrapWidth="91" align="left">
+            <transform>
+              <location value="284.976410,510.008789,0.000000" />
+            </transform>
+            <content>3</content>
+          </text>
+          <text id="5095" startTime="2900" endTime="5032" fillType="color" mediaFillMode="fill" size="36.000000" font="googlefonts?name=Roboto&amp;weight=900" wrapWidth="91" align="left">
+            <transform>
+              <location value="284.976410,510.008789,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+              <property name="bmode" type="int" value="2" />
+              <property name="overd" type="bool" value="false" />
+              <property name="strength" type="float" value="0.150000" />
+              <property name="oalpha" type="float" value="0.750000" />
+              <property name="lowThreshold" type="float" value="0.100000" />
+              <property name="highThreshold" type="float" value="1.000000" />
+              <property name="feather" type="float" value="0.300000" />
+              <property name="satvib" type="vec2" value="0.000000,1.000000" />
+              <property name="hue" type="float" value="360.000000" />
+              <property name="calpha" type="float" value="1.000000" />
+              <property name="GCE" type="bool" value="false" />
+              <property name="CHROM" type="bool" value="false" />
+              <property name="strengthhh" type="float" value="0.150000" />
+              <property name="angleee" type="float" value="0.000000" />
+              <property name="centerChannel" type="int" value="1" />
+              <property name="cblend" type="bool" value="false" />
+              <property name="cmode" type="int" value="0" />
+              <property name="colblend" type="color" value="#ffffa800" />
+              <property name="alpb" type="float" value="0.500000" />
+              <property name="iter" type="float" value="1.000000" />
+            </effect>
+            <content>3</content>
+          </text>
+        </scene>
+      </embedScene>
+      <embedScene id="5091" label="Group 1 Copy 3" startTime="0" endTime="5032" fillType="intrinsic" outTime="5032" mediaFillMode="fill">
+        <transform>
+          <location value="2286.231689,540.000000,0.000000" />
+          <pivot value="-685.692871,-29.991211" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="5085" label="Rounded Rectangle 1" startTime="0" endTime="5032" fillType="color" mediaFillMode="fill" s=".roundrect">
+            <transform>
+              <location value="274.307129,516.015625,0.000000" />
+            </transform>
+            <fillColor value="#fff4b446" />
+            <gradient type="linear" startColor="#ff444444" endColor="#ffffffff" start="0.000000,0.000000" end="1.000000,1.000000" />
+            <property name="size" type="vec2" value="92.000000,62.000000" />
+            <property name="cornerRadius" type="float" value="25.000000" />
+          </shape>
+          <text id="5087" startTime="0" endTime="4099" fillType="color" mediaFillMode="fill" size="36.000000" font="googlefonts?name=Roboto&amp;weight=900" wrapWidth="91" align="left">
+            <transform>
+              <location value="284.976410,510.008789,0.000000" />
+            </transform>
+            <content>4</content>
+          </text>
+          <text id="5096" startTime="4066" endTime="5032" fillType="color" mediaFillMode="fill" size="36.000000" font="googlefonts?name=Roboto&amp;weight=900" wrapWidth="91" align="left">
+            <transform>
+              <location value="284.976410,510.008789,0.000000" />
+            </transform>
+            <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+              <property name="bmode" type="int" value="2" />
+              <property name="overd" type="bool" value="false" />
+              <property name="strength" type="float" value="0.150000" />
+              <property name="oalpha" type="float" value="0.750000" />
+              <property name="lowThreshold" type="float" value="0.100000" />
+              <property name="highThreshold" type="float" value="1.000000" />
+              <property name="feather" type="float" value="0.300000" />
+              <property name="satvib" type="vec2" value="0.000000,1.000000" />
+              <property name="hue" type="float" value="360.000000" />
+              <property name="calpha" type="float" value="1.000000" />
+              <property name="GCE" type="bool" value="false" />
+              <property name="CHROM" type="bool" value="false" />
+              <property name="strengthhh" type="float" value="0.150000" />
+              <property name="angleee" type="float" value="0.000000" />
+              <property name="centerChannel" type="int" value="1" />
+              <property name="cblend" type="bool" value="false" />
+              <property name="cmode" type="int" value="0" />
+              <property name="colblend" type="color" value="#ffffa800" />
+              <property name="alpb" type="float" value="0.500000" />
+              <property name="iter" type="float" value="1.000000" />
+            </effect>
+            <content>4</content>
+          </text>
+        </scene>
+      </embedScene>
+    </scene>
+  </embedScene>
+  <camera id="5098" label="Camera 1" startTime="0" endTime="7032" mediaFillMode="fill" parent="5099" type="perspective">
+    <transform>
+      <location value="0.000000,0.000000,-1662.768799" />
+    </transform>
+    <fov value="60.000000" />
+    <focus-blur enabled="false">
+      <strength value="0.500000" />
+      <depth-of-field value="166.276886" />
+      <distance value="1662.768799" />
+    </focus-blur>
+    <fog enabled="false">
+      <near-z value="1662.768799" />
+      <far-z value="3325.537598" />
+    </fog>
+  </camera>
+  <nullobj id="5099" label="Null 1" startTime="0" endTime="7032" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.002275" v="-87.495453,1088.939941,2001.257568" />
+        <kf t="0.928896" v="2031.068115,-54.519409,1826.328613" e="cubicBezier 0.42 0.0 0.58 1.0" />
+      </location>
+      <rotation>
+        <kf t="0.357793" v="0.000000" />
+      </rotation>
+    </transform>
+  </nullobj>
+</scene>

@@ -1,0 +1,1377 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-03-18 10:00 AM
+5.0.272.1028368 (1002592)
+a34a6c0 (Oct 7, 2024 3:47:29 PM)
+-->
+<scene title="Cooking " width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#ffffffff" totalTime="15032" fps="30" modifiedTime="1742272248718" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <media uri="content://media/external/images/media/1000128677" filename="Photoroom-20250316_213640 (1).png" title="Photoroom-20250316_213640 (1).png" type="image/png" size="74661" orientation="0" infoUpdated="1742272233127" width="466" height="466" />
+  <media uri="content://media/external/images/media/1000128816" filename="Photoroom-20250317_103553.png" title="Photoroom-20250317_103553.png" type="image/png" size="164086" orientation="0" infoUpdated="1742272233127" width="728" height="862" />
+  <media uri="content://media/external/images/media/1000129076" filename="Photoroom-20250317_213226.png" title="Photoroom-20250317_213226.png" type="image/png" size="90840" orientation="0" infoUpdated="1742272233127" width="626" height="443" />
+  <media uri="content://media/external/images/media/1000129166" filename="Photoroom-20250317_235142.png" title="Photoroom-20250317_235142.png" type="image/png" size="237175" orientation="0" infoUpdated="1742272233127" width="626" height="626" />
+  <media uri="content://media/external/video/media/1000129071" filename="Multitasking.mp4" title="Multitasking.mp4" type="video/mp4" duration="15442000" size="22792242" fps="0.30" orientation="0" infoUpdated="1742272233127" width="1080" height="1920" />
+  <media uri="content://media/external/images/media/1000129204" filename="Photoroom-20250318_084627.png" title="Photoroom-20250318_084627.png" type="image/png" size="133311" orientation="0" infoUpdated="1742272233127" width="736" height="736" />
+  <media uri="content://media/external/images/media/1000126721" filename="image-from-rawpixel-id-2890363-png.png" title="image-from-rawpixel-id-2890363-png.png" type="image/png" size="1502456" orientation="0" infoUpdated="1742272233127" width="1500" height="1000" />
+  <media uri="content://media/external/images/media/1000128866" filename="Photoroom-20250317_125448.png" title="Photoroom-20250317_125448.png" type="image/png" size="838735" orientation="0" infoUpdated="1742272233127" width="736" height="736" />
+  <media uri="content://media/external/images/media/1000122882" filename="Photoroom-20250131_202136.png" title="Photoroom-20250131_202136.png" type="image/png" size="744077" orientation="0" infoUpdated="1742272233127" width="1080" height="1350" />
+  <bookmark t="1016" />
+  <bookmark t="2016" />
+  <bookmark t="516" />
+  <bookmark t="16" />
+  <bookmark t="683" />
+  <bookmark t="1516" />
+  <bookmark t="2516" />
+  <bookmark t="4016" />
+  <bookmark t="3016" />
+  <bookmark t="3350" />
+  <bookmark t="3183" />
+  <bookmark t="5016" />
+  <bookmark t="5516" />
+  <bookmark t="6016" />
+  <bookmark t="4683" />
+  <bookmark t="7016" />
+  <bookmark t="6516" />
+  <bookmark t="8416" />
+  <bookmark t="8016" />
+  <bookmark t="10016" />
+  <bookmark t="10516" />
+  <bookmark t="11016" />
+  <bookmark t="12016" />
+  <bookmark t="11250" />
+  <bookmark t="12516" />
+  <bookmark t="13516" />
+  <bookmark t="13016" />
+  <bookmark t="14516" />
+  <text id="10157468" startTime="0" endTime="2032" fillType="color" mediaFillMode="fill" parent="10157467" size="72.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1110" align="center">
+    <transform>
+      <location value="0.000000,0.000000,5.000000" />
+      <skew value="-0.137881,-0.097738" />
+      <rotation value="50.487804" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <content>cooking </content>
+  </text>
+  <shape id="10157471" label="Photoroom-20250316_213640 (1).png Copy 2" startTime="0" endTime="2032" fillType="media" fillImage="content://media/external/images/media/1000128677" mediaFillMode="fill" parent="10157467" s=".rect">
+    <transform>
+      <location value="720.396851,-101.673515,300.000000" />
+      <scale value="0.368519,0.368519" />
+      <rotation value="29.634148" />
+    </transform>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+      <property name="brightness" type="float" value="-0.190000" />
+      <property name="contrast" type="float" value="0.430000" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.700000" />
+      <property name="outTime" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="10157470" label="Photoroom-20250316_213640 (1).png Copy" startTime="0" endTime="2032" fillType="media" fillImage="content://media/external/images/media/1000128677" mediaFillMode="fill" parent="10157467" s=".rect">
+    <transform>
+      <location value="445.404480,-933.173889,100.000000" />
+      <scale value="-0.752778,0.752778" />
+      <rotation value="61.463417" />
+    </transform>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+      <property name="brightness" type="float" value="-0.190000" />
+      <property name="contrast" type="float" value="0.430000" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.700000" />
+      <property name="outTime" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <shadow direction="outside" enabled="false">
+      <size value="57.000000" />
+    </shadow>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="10157469" label="Photoroom-20250316_213640 (1).png" startTime="0" endTime="2032" fillType="media" fillImage="content://media/external/images/media/1000128677" mediaFillMode="fill" parent="10157467" s=".rect">
+    <transform>
+      <location value="-140.211853,-435.362671,200.000000" />
+      <scale value="-0.391667,0.391667" />
+      <rotation value="50.487804" />
+    </transform>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+      <property name="brightness" type="float" value="-0.190000" />
+      <property name="contrast" type="float" value="0.430000" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.700000" />
+      <property name="outTime" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="10157472" label="Photoroom-20250316_213640 (1).png Copy 3" startTime="0" endTime="2032" fillType="media" fillImage="content://media/external/images/media/1000128677" mediaFillMode="fill" parent="10157467" s=".rect">
+    <transform>
+      <location value="69.021484,274.569977,5.000000" />
+      <scale value="0.603704,0.603704" />
+      <rotation value="27.439026" />
+    </transform>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+      <property name="brightness" type="float" value="-0.190000" />
+      <property name="contrast" type="float" value="0.430000" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.700000" />
+      <property name="outTime" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="10157473" label="Photoroom-20250316_213640 (1).png Copy 4" startTime="0" endTime="2032" fillType="media" fillImage="content://media/external/images/media/1000128677" mediaFillMode="fill" parent="10157467" s=".rect">
+    <transform>
+      <location value="-900.420471,-5.009201,100.000000" />
+      <scale value="-1.015741,1.015741" />
+      <rotation value="62.560974" />
+    </transform>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+      <property name="brightness" type="float" value="-0.190000" />
+      <property name="contrast" type="float" value="0.430000" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.700000" />
+      <property name="outTime" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="10157464" label="Mask" startTime="0" endTime="1032" fillType="color" mediaFillMode="fill" parent="10157467" s=".rect">
+    <transform lockAspectRatio="false">
+      <scale>
+        <kf t="0.015504" v="5.400000,9.600000" />
+        <kf t="0.984496" v="0.000002,9.600000" e="cubicBezier 0.42 0.0 0.25 0.99" />
+      </scale>
+    </transform>
+    <fillColor value="#ff000000" />
+    <property name="size" type="vec2" value="100.000000,200.000000" />
+  </shape>
+  <text id="10157465" startTime="0" endTime="1032" clippingMask="true" fillType="color" mediaFillMode="fill" parent="10157467" size="72.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1110" align="center">
+    <transform>
+      <location value="9.348083,17.092224,0.000000" />
+      <scale value="0.747401,0.747401" />
+    </transform>
+    <effect id="com.alightcreative.effects.rgbsep" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>Editing </content>
+  </text>
+  <text id="10157466" startTime="0" endTime="1032" clippingMask="true" fillType="color" mediaFillMode="fill" parent="10157467" size="72.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1110" align="center">
+    <transform>
+      <location value="-26.846802,-69.210815,0.000000" />
+      <scale value="0.747401,0.747401" />
+      <rotation value="-180.000000" />
+    </transform>
+    <effect id="com.alightcreative.effects.rgbsep" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>is</content>
+  </text>
+  <text id="10157476" startTime="1000" endTime="5032" fillType="color" mediaFillMode="fill" parent="10157467" size="96.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1328" align="center">
+    <transform>
+      <location value="801.922607,933.267334,39.970886" />
+      <scale value="0.917353,0.917353" />
+      <rotation value="50.487804" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>time</content>
+  </text>
+  <text id="10157477" startTime="1000" endTime="5032" fillType="color" mediaFillMode="fill" parent="10157467" size="56.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1328" align="center">
+    <transform>
+      <location value="895.823730,870.582397,0.000000" />
+      <scale value="1.016664,1.016664" />
+      <rotation value="49.390244" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>1st</content>
+  </text>
+  <embedScene id="10157481" label="Clock " startTime="1000" endTime="5015" fillType="intrinsic" outTime="4015" mediaFillMode="fill" parent="10157467">
+    <transform>
+      <location value="977.284058,1569.779785,200.000000" />
+      <pivot value="187.827148,-546.244080" />
+      <scale value="0.620730,0.620730" />
+      <rotation value="50.487793" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.extrude" locallyApplied="true">
+      <property name="rotate" type="vec3" value="-44.000000,-26.000000,0.000000" />
+      <property name="widthRatio" type="float" value="1.000000" />
+      <property name="heightRatio" type="float" value="1.000000" />
+      <property name="depth" type="float" value="0.040000" />
+      <property name="strength" type="float" value="0.100000" />
+      <property name="position" type="vec3" value="0.000000,100.000000,500.000000" />
+      <property name="scale" type="float" value="1.000000" />
+      <property name="interiorColor" type="color" value="#ff3366aa" />
+      <property name="interiorBlend" type="float" value="0.000000" />
+      <property name="fadeColor" type="color" value="#ffaa3366" />
+      <property name="fadeBlend" type="float" value="0.000000" />
+      <property name="shadingType" type="int" value="0" />
+      <property name="lightIntensity" type="float" value="1.000000" />
+      <property name="shine" type="float" value="1.000000" />
+      <property name="spec" type="float" value="30.000000" />
+      <property name="ambient" type="float" value="0.100000" />
+      <property name="lightColor" type="color" value="#ffffffff" />
+      <property name="lightDir" type="vec2" value="75.000000,-75.000000" />
+      <property name="lightDepth" type="float" value="100.000000" />
+      <property name="MAX_ITER" type="float" value="200.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <shadow direction="outside" enabled="false">
+      <size value="64.000000" />
+      <offset value="48.000000,3.000000" />
+    </shadow>
+    <scene title="" width="1080" height="1941" exportWidth="1080" exportHeight="1941" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7015" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10154030" label="Photoroom-20250131_202136.png" startTime="0" endTime="7015" fillType="media" fillImage="content://media/external/images/media/1000122882" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="727.827148,424.500092,0.000000" />
+          <scale value="0.628889,0.628889" />
+          <rotation>
+            <kf t="0.001140" v="0.000000" />
+            <kf t="0.999002" v="180.000000" />
+          </rotation>
+        </transform>
+        <effect id="com.alightcreative.internal.smoothbevel" locallyApplied="true">
+          <property name="radius" type="float" value="6.000000" />
+          <property name="angle_d" type="float" value="188.000000" />
+          <property name="angle_s" type="float" value="45.000000" />
+          <property name="color_d" type="color" value="#ffffffff" />
+          <property name="color_s" type="color" value="#ffffffff" />
+          <property name="intensity_d" type="float" value="0.500000" />
+          <property name="intensity_s" type="float" value="1.000000" />
+          <property name="elevation_d" type="float" value="0.000000" />
+          <property name="elevation_s" type="float" value="2.200000" />
+          <property name="spec" type="float" value="35.000000" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,675.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <embedScene id="10157482" label="Clock 2" startTime="1000" endTime="5015" fillType="intrinsic" outTime="4015" mediaFillMode="fill" parent="10157467">
+    <transform>
+      <location value="859.733154,951.038574,100.000000" />
+      <pivot value="187.827148,-546.244080" />
+      <scale value="0.864546,0.864546" />
+      <rotation value="50.487793" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.extrude" locallyApplied="true">
+      <property name="rotate" type="vec3" value="-44.000000,20.000000,0.000000" />
+      <property name="widthRatio" type="float" value="1.000000" />
+      <property name="heightRatio" type="float" value="1.000000" />
+      <property name="depth" type="float" value="0.040000" />
+      <property name="strength" type="float" value="0.100000" />
+      <property name="position" type="vec3" value="0.000000,100.000000,500.000000" />
+      <property name="scale" type="float" value="1.000000" />
+      <property name="interiorColor" type="color" value="#ff3366aa" />
+      <property name="interiorBlend" type="float" value="0.000000" />
+      <property name="fadeColor" type="color" value="#ffaa3366" />
+      <property name="fadeBlend" type="float" value="0.000000" />
+      <property name="shadingType" type="int" value="0" />
+      <property name="lightIntensity" type="float" value="1.000000" />
+      <property name="shine" type="float" value="1.000000" />
+      <property name="spec" type="float" value="30.000000" />
+      <property name="ambient" type="float" value="0.100000" />
+      <property name="lightColor" type="color" value="#ffffffff" />
+      <property name="lightDir" type="vec2" value="75.000000,-75.000000" />
+      <property name="lightDepth" type="float" value="100.000000" />
+      <property name="MAX_ITER" type="float" value="200.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <shadow direction="outside" enabled="false">
+      <size value="64.000000" />
+      <offset value="48.000000,3.000000" />
+    </shadow>
+    <scene title="" width="1080" height="1941" exportWidth="1080" exportHeight="1941" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7015" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10154030" label="Photoroom-20250131_202136.png" startTime="0" endTime="7015" fillType="media" fillImage="content://media/external/images/media/1000122882" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="727.827148,424.500092,0.000000" />
+          <scale value="0.628889,0.628889" />
+          <rotation>
+            <kf t="0.001140" v="0.000000" />
+            <kf t="0.999002" v="180.000000" />
+          </rotation>
+        </transform>
+        <effect id="com.alightcreative.internal.smoothbevel" locallyApplied="true">
+          <property name="radius" type="float" value="6.000000" />
+          <property name="angle_d" type="float" value="188.000000" />
+          <property name="angle_s" type="float" value="45.000000" />
+          <property name="color_d" type="color" value="#ffffffff" />
+          <property name="color_s" type="color" value="#ffffffff" />
+          <property name="intensity_d" type="float" value="0.500000" />
+          <property name="intensity_s" type="float" value="1.000000" />
+          <property name="elevation_d" type="float" value="0.000000" />
+          <property name="elevation_s" type="float" value="2.200000" />
+          <property name="spec" type="float" value="35.000000" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,675.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <embedScene id="10157483" label="Clock 3" startTime="1000" endTime="5015" fillType="intrinsic" outTime="4015" mediaFillMode="fill" parent="10157467">
+    <transform>
+      <location value="200.588287,1761.895996,0.000000" />
+      <pivot value="187.827148,-546.244080" />
+      <scale value="1.003533,1.003533" />
+      <rotation value="50.487793" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.extrude" locallyApplied="true">
+      <property name="rotate" type="vec3" value="-56.000000,-14.000000,0.000000" />
+      <property name="widthRatio" type="float" value="1.000000" />
+      <property name="heightRatio" type="float" value="1.000000" />
+      <property name="depth" type="float" value="0.040000" />
+      <property name="strength" type="float" value="0.100000" />
+      <property name="position" type="vec3" value="0.000000,100.000000,500.000000" />
+      <property name="scale" type="float" value="1.000000" />
+      <property name="interiorColor" type="color" value="#ff3366aa" />
+      <property name="interiorBlend" type="float" value="0.000000" />
+      <property name="fadeColor" type="color" value="#ffaa3366" />
+      <property name="fadeBlend" type="float" value="0.000000" />
+      <property name="shadingType" type="int" value="0" />
+      <property name="lightIntensity" type="float" value="1.000000" />
+      <property name="shine" type="float" value="1.000000" />
+      <property name="spec" type="float" value="30.000000" />
+      <property name="ambient" type="float" value="0.100000" />
+      <property name="lightColor" type="color" value="#ffffffff" />
+      <property name="lightDir" type="vec2" value="75.000000,-75.000000" />
+      <property name="lightDepth" type="float" value="100.000000" />
+      <property name="MAX_ITER" type="float" value="200.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <shadow direction="outside" enabled="false">
+      <size value="64.000000" />
+      <offset value="48.000000,3.000000" />
+    </shadow>
+    <scene title="" width="1080" height="1941" exportWidth="1080" exportHeight="1941" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7015" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10154030" label="Photoroom-20250131_202136.png" startTime="0" endTime="7015" fillType="media" fillImage="content://media/external/images/media/1000122882" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="727.827148,424.500092,0.000000" />
+          <scale value="0.628889,0.628889" />
+          <rotation>
+            <kf t="0.001140" v="0.000000" />
+            <kf t="0.999002" v="180.000000" />
+          </rotation>
+        </transform>
+        <effect id="com.alightcreative.internal.smoothbevel" locallyApplied="true">
+          <property name="radius" type="float" value="6.000000" />
+          <property name="angle_d" type="float" value="188.000000" />
+          <property name="angle_s" type="float" value="45.000000" />
+          <property name="color_d" type="color" value="#ffffffff" />
+          <property name="color_s" type="color" value="#ffffffff" />
+          <property name="intensity_d" type="float" value="0.500000" />
+          <property name="intensity_s" type="float" value="1.000000" />
+          <property name="elevation_d" type="float" value="0.000000" />
+          <property name="elevation_s" type="float" value="2.200000" />
+          <property name="spec" type="float" value="35.000000" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,675.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <embedScene id="10157484" label="Clock 4" startTime="1000" endTime="5015" fillType="intrinsic" outTime="4015" mediaFillMode="fill" parent="10157467">
+    <transform>
+      <location value="414.994171,1353.303467,0.000000" />
+      <pivot value="187.827148,-546.244080" />
+      <scale value="0.329800,0.329800" />
+      <rotation value="50.487793" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.extrude" locallyApplied="true">
+      <property name="rotate" type="vec3" value="-56.000000,8.000000,0.000000" />
+      <property name="widthRatio" type="float" value="1.000000" />
+      <property name="heightRatio" type="float" value="1.000000" />
+      <property name="depth" type="float" value="0.040000" />
+      <property name="strength" type="float" value="0.100000" />
+      <property name="position" type="vec3" value="0.000000,100.000000,500.000000" />
+      <property name="scale" type="float" value="1.000000" />
+      <property name="interiorColor" type="color" value="#ff3366aa" />
+      <property name="interiorBlend" type="float" value="0.000000" />
+      <property name="fadeColor" type="color" value="#ffaa3366" />
+      <property name="fadeBlend" type="float" value="0.000000" />
+      <property name="shadingType" type="int" value="0" />
+      <property name="lightIntensity" type="float" value="1.000000" />
+      <property name="shine" type="float" value="1.000000" />
+      <property name="spec" type="float" value="30.000000" />
+      <property name="ambient" type="float" value="0.100000" />
+      <property name="lightColor" type="color" value="#ffffffff" />
+      <property name="lightDir" type="vec2" value="75.000000,-75.000000" />
+      <property name="lightDepth" type="float" value="100.000000" />
+      <property name="MAX_ITER" type="float" value="200.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <shadow direction="outside" enabled="false">
+      <size value="64.000000" />
+      <offset value="48.000000,3.000000" />
+    </shadow>
+    <scene title="" width="1080" height="1941" exportWidth="1080" exportHeight="1941" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7015" fps="60" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10154030" label="Photoroom-20250131_202136.png" startTime="0" endTime="7015" fillType="media" fillImage="content://media/external/images/media/1000122882" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="727.827148,424.500092,0.000000" />
+          <scale value="0.628889,0.628889" />
+          <rotation>
+            <kf t="0.001140" v="0.000000" />
+            <kf t="0.999002" v="180.000000" />
+          </rotation>
+        </transform>
+        <effect id="com.alightcreative.internal.smoothbevel" locallyApplied="true">
+          <property name="radius" type="float" value="6.000000" />
+          <property name="angle_d" type="float" value="188.000000" />
+          <property name="angle_s" type="float" value="45.000000" />
+          <property name="color_d" type="color" value="#ffffffff" />
+          <property name="color_s" type="color" value="#ffffffff" />
+          <property name="intensity_d" type="float" value="0.500000" />
+          <property name="intensity_s" type="float" value="1.000000" />
+          <property name="elevation_d" type="float" value="0.000000" />
+          <property name="elevation_s" type="float" value="2.200000" />
+          <property name="spec" type="float" value="35.000000" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,675.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <shape id="10157488" label="Circle 1" startTime="2500" endTime="5032" fillType="color" mediaFillMode="fill" parent="10157467" s=".circle">
+    <transform>
+      <location value="783.528809,966.999390,0.000000" />
+      <scale>
+        <kf t="0.006319" v="0.025000,0.025000" />
+        <kf t="0.401264" v="10.885000,10.885000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </scale>
+      <rotation value="50.487793" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <text id="10157489" startTime="2500" endTime="5032" clippingMask="true" fillType="color" mediaFillMode="fill" parent="10157467" size="64.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="817.401367,957.013489,0.000000" />
+      <scale value="0.913765,0.913765" />
+      <rotation value="50.487804" />
+    </transform>
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>doesn't </content>
+  </text>
+  <text id="10157490" startTime="2500" endTime="5032" clippingMask="true" fillType="color" mediaFillMode="fill" parent="10157467" size="40.000000" font="googlefonts?name=Roboto&amp;weight=900" wrapWidth="1328" align="center">
+    <transform>
+      <location value="781.231140,789.706543,0.000000" />
+      <scale value="1.012688,1.012688" />
+      <rotation value="49.390244" />
+    </transform>
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>it</content>
+  </text>
+  <text id="10157491" startTime="2500" endTime="5032" clippingMask="true" fillType="color" mediaFillMode="fill" parent="10157467" size="40.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1328" align="center">
+    <transform>
+      <location value="704.586914,994.985413,0.000000" />
+      <scale value="1.012688,1.012688" />
+      <rotation value="49.390244" />
+    </transform>
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>turn</content>
+  </text>
+  <text id="10157492" startTime="2500" endTime="5032" clippingMask="true" fillType="color" mediaFillMode="fill" parent="10157467" size="40.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1328" align="center">
+    <transform>
+      <location value="850.162170,1152.491333,0.000000" />
+      <scale value="1.012688,1.012688" />
+      <rotation value="49.390244" />
+    </transform>
+    <fillColor value="#ffff0000" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>out</content>
+  </text>
+  <shape id="10157493" label="Rectangle 1" startTime="3333" endTime="7032" fillType="color" mediaFillMode="fill" parent="10157467" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.184645" v="793.445435,973.410645,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.004596" v="1159.229126,-588.307983,0.000000" />
+      </location>
+      <scale value="4.029016,7.162694" />
+      <rotation value="95.487793" />
+      <opacity>
+        <kf t="0.725331" v="1.000000" />
+        <kf t="0.995674" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff2f856d" />
+    <property name="size" type="vec2" value="250.000000,200.000000" />
+  </shape>
+  <text id="10157494" startTime="3333" endTime="7032" clippingMask="true" fillType="color" mediaFillMode="fill" parent="10157467" size="64.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="828.128174,977.184875,0.000000" />
+      <scale value="0.927338,0.927338" />
+      <rotation value="50.487793" />
+      <opacity>
+        <kf t="0.364963" v="1.000000" />
+        <kf t="0.454988" v="0.000000" />
+      </opacity>
+    </transform>
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>Perfect </content>
+  </text>
+  <nullobj id="10157467" label="Null 1" startTime="0" endTime="5032" mediaFillMode="fill" parent="10157485" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.301272" v="0.000000,0.000000,0.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+        <kf t="0.003180" v="0.000000,0.000000,-1000.000000" />
+      </location>
+      <rotation>
+        <kf t="0.003180" v="0.000000" />
+        <kf t="0.301272" v="-50.487793" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </rotation>
+    </transform>
+  </nullobj>
+  <nullobj id="10157485" label="Null 2" startTime="1000" endTime="5032" mediaFillMode="fill" parent="10157487" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.003968" v="0.000000,0.000000,0.000000" />
+        <kf t="0.375992" v="-1258.390991,-10.591858,0.000000" e="cubicBezier 0.42 0.0 0.12733075 1.0" />
+      </location>
+    </transform>
+  </nullobj>
+  <nullobj id="10157487" label="Null 3" startTime="2000" endTime="5032" mediaFillMode="fill" parent="10157499" type="perspective">
+    <transform>
+      <scale>
+        <kf t="0.000000" v="1.000000,1.000000" />
+        <kf t="0.664908" v="1.400000,1.400000" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="10157498" label="Mask" startTime="4000" endTime="6032" fillType="color" mediaFillMode="fill" parent="10157499" s=".rect">
+    <transform lockAspectRatio="false">
+      <scale>
+        <kf t="0.000000" v="0.000002,9.600000" e="cubicBezier 0.42 0.0 0.25 0.99" />
+        <kf t="0.500000" v="3.820001,9.600000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </scale>
+      <rotation value="-45.000000" />
+    </transform>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <property name="size" type="vec2" value="100.000000,200.000000" />
+  </shape>
+  <text id="10157496" startTime="4000" endTime="6032" clippingMask="true" fillType="color" mediaFillMode="fill" parent="10157499" size="56.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="28.183472,-34.943970,0.000000" />
+      <scale value="1.298273,1.298273" />
+      <rotation value="-45.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>always </content>
+  </text>
+  <text id="10157497" startTime="4000" endTime="6032" clippingMask="true" fillType="color" mediaFillMode="fill" parent="10157499" size="28.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="-40.541878,-80.399338,0.000000" />
+      <scale value="1.298273,1.298273" />
+      <rotation value="-45.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>there's </content>
+  </text>
+  <nullobj id="10157499" label="Null 4" startTime="4000" endTime="6032" mediaFillMode="fill" parent="10157502" type="perspective">
+    <transform>
+      <rotation>
+        <kf t="0.007874" v="-0.003487" />
+        <kf t="0.746063" v="44.996510" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </rotation>
+    </transform>
+  </nullobj>
+  <text id="10157500" startTime="4666" endTime="7032" fillType="color" mediaFillMode="fill" parent="10157502" size="40.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="-1152.317017,21.517675,0.000000" />
+      <scale value="1.298273,1.298273" />
+      <rotation value="-9.878052" />
+    </transform>
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>something </content>
+  </text>
+  <text id="10157501" startTime="4666" endTime="7032" fillType="color" mediaFillMode="fill" parent="10157502" size="56.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="-1118.903442,129.260986,0.000000" />
+      <scale value="1.319929,1.319929" />
+      <rotation value="-9.878052" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <content>missing </content>
+  </text>
+  <shape id="10157503" label="Photoroom-20250317_103553.png" startTime="4666" endTime="7032" fillType="media" fillImage="content://media/external/images/media/1000128816" mediaFillMode="fill" parent="10157502" s=".rect">
+    <transform>
+      <location value="-1182.558105,-236.570053,0.000000" />
+      <scale value="0.342723,0.342723" />
+      <rotation value="-16.463409" />
+    </transform>
+    <effect id="com.alightcreative.effects.halftonelines" locallyApplied="true">
+      <property name="amount" type="float" value="146.500000" />
+      <property name="strength" type="float" value="0.000000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="color1" type="color" value="#ff113355" />
+      <property name="color2" type="color" value="#ffffeedd" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,639.000000" />
+  </shape>
+  <shape id="10157505" label="Photoroom-20250317_103553.png Copy" startTime="4666" endTime="7032" fillType="media" fillImage="content://media/external/images/media/1000128816" mediaFillMode="fill" parent="10157502" s=".rect">
+    <transform>
+      <location value="-828.317932,333.465942,0.000000" />
+      <scale value="0.413146,0.413146" />
+      <rotation value="29.634148" />
+    </transform>
+    <effect id="com.alightcreative.effects.halftonelines" locallyApplied="true">
+      <property name="amount" type="float" value="146.500000" />
+      <property name="strength" type="float" value="0.000000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="color1" type="color" value="#ff113355" />
+      <property name="color2" type="color" value="#ffffeedd" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,639.000000" />
+  </shape>
+  <shape id="10157506" label="Photoroom-20250317_103553.png Copy 2" startTime="4666" endTime="7032" fillType="media" fillImage="content://media/external/images/media/1000128816" mediaFillMode="fill" parent="10157502" s=".rect">
+    <transform>
+      <location value="-1443.192383,791.590210,0.000000" />
+      <scale value="0.835681,0.835681" />
+      <rotation value="19.756098" />
+    </transform>
+    <effect id="com.alightcreative.effects.halftonelines" locallyApplied="true">
+      <property name="amount" type="float" value="146.500000" />
+      <property name="strength" type="float" value="0.000000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="color1" type="color" value="#ff113355" />
+      <property name="color2" type="color" value="#ffffeedd" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,639.000000" />
+  </shape>
+  <nullobj id="10157502" label="Null 5" startTime="4666" endTime="7032" mediaFillMode="fill" parent="10157513" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.007185" v="0.000000,0.000000,0.000000" />
+        <kf t="0.781910" v="1145.509766,13.624084,0.000000" e="cubicBezier 0.5061589 0.0 0.0 1.0" />
+      </location>
+      <rotation>
+        <kf t="0.007185" v="0.000000" />
+        <kf t="0.781910" v="9.878049" e="cubicBezier 0.51 0.0 0.0 1.0" />
+      </rotation>
+    </transform>
+  </nullobj>
+  <text id="10157509" startTime="6000" endTime="8065" fillType="color" mediaFillMode="fill" parent="10157513" size="40.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="50.846313,1820.141357,0.000000" />
+      <scale value="1.298273,1.298273" />
+      <rotation value="-0.353818" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>but if </content>
+  </text>
+  <text id="10157511" startTime="6000" endTime="8065" fillType="color" mediaFillMode="fill" parent="10157513" size="40.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="75.554199,1906.125732,0.000000" />
+      <scale value="1.298273,1.298273" />
+      <rotation value="-0.353818" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>you</content>
+  </text>
+  <text id="10157512" startTime="6000" endTime="8065" fillType="color" mediaFillMode="fill" parent="10157513" size="56.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="6.584347,2013.634521,0.000000" />
+      <scale value="1.319929,1.319929" />
+      <rotation value="-0.353818" />
+    </transform>
+    <fillColor value="#ff2f856d" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>keep</content>
+  </text>
+  <text id="10157510" startTime="6000" endTime="8065" fillType="color" mediaFillMode="fill" parent="10157513" size="56.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="41.628906,2183.493652,0.000000" />
+      <scale value="1.319929,1.319929" />
+      <rotation value="-0.353818" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>MAKING </content>
+  </text>
+  <shape id="10157514" label="Rectangle 2" startTime="6000" endTime="8065" fillType="color" blending="diff" mediaFillMode="fill" parent="10157513" s=".rect">
+    <transform>
+      <location value="8.783569,2187.450684,-5.000000" />
+    </transform>
+    <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+      <property name="start" type="float" value="0.000000" />
+      <property name="end" type="float">
+        <kf t="0.001477" v="-0.003000" />
+        <kf t="0.984019" v="1.000000" e="cubicBezier 0.5712605 0.0 0.47635856 1.0" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+      <property name="feather" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <property name="size" type="vec2" value="383.000000,87.000000" />
+  </shape>
+  <nullobj id="10157513" label="Null 6" startTime="6000" endTime="8065" mediaFillMode="fill" parent="10157521" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.007748" v="0.000000,0.000000,0.000000" />
+        <kf t="0.492010" v="-53.410645,-2000.992065,0.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </location>
+    </transform>
+  </nullobj>
+  <embedScene id="10157522" label="Text" startTime="7000" endTime="9366" fillType="intrinsic" outTime="2366" mediaFillMode="fill" parent="10157521">
+    <transform>
+      <location value="-11.781738,0.000000,-3000.000000" />
+      <pivot value="0.000000,74.514282" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1478" height="1920" exportWidth="1478" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2366" fps="30" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <text id="10157515" startTime="0" endTime="2366" fillType="color" mediaFillMode="fill" size="36.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="834" align="center">
+        <transform>
+          <location value="739.166809,974.785034,0.000000" />
+          <scale value="1.319929,1.319929" />
+          <rotation value="-0.353818" />
+        </transform>
+        <fillColor value="#ff2f856d" />
+        <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+          <property name="strength" type="float" value="0.020000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="mode" type="int" value="2" />
+        </effect>
+        <content>same dish </content>
+      </text>
+      <text id="10157516" startTime="0" endTime="2366" fillType="color" mediaFillMode="fill" size="48.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+        <transform>
+          <location value="739.166809,1066.024048,0.000000" />
+          <scale value="1.319929,1.319929" />
+          <rotation value="-0.353818" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+          <property name="strength" type="float" value="0.020000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="mode" type="int" value="2" />
+        </effect>
+        <content>everyday</content>
+      </text>
+    </scene>
+  </embedScene>
+  <embedScene id="10157523" label="Food" startTime="7000" endTime="10032" fillType="intrinsic" outTime="-2147482649" mediaFillMode="fill" parent="10157521">
+    <transform>
+      <location value="-11.347534,0.000000,-3005.000000" />
+      <pivot value="-63.949738,-3.306152" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1102" height="1920" exportWidth="1102" exportHeight="1920" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2032" fps="30" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.272.1028368" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10157517" label="Photoroom-20250317_125448.png" startTime="0" endTime="2032" fillType="media" fillImage="content://media/external/images/media/1000128866" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="771.295715,815.718750,0.000000" />
+          <scale value="0.371296,0.371296" />
+        </transform>
+        <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+          <property name="brightness" type="float" value="-0.060000" />
+          <property name="contrast" type="float" value="0.090000" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+      <shape id="10157518" label="Photoroom-20250317_125448.png Copy" startTime="0" endTime="2032" fillType="media" fillImage="content://media/external/images/media/1000128866" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="310.500000,1547.322266,0.000000" />
+          <scale value="0.575000,0.575000" />
+        </transform>
+        <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+          <property name="brightness" type="float" value="-0.060000" />
+          <property name="contrast" type="float" value="0.090000" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+      <shape id="10157519" label="Photoroom-20250317_125448.png Copy 2" startTime="0" endTime="2032" fillType="media" fillImage="content://media/external/images/media/1000128866" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="384.723450,321.065430,0.000000" />
+          <scale value="0.491667,0.491667" />
+        </transform>
+        <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+          <property name="brightness" type="float" value="-0.060000" />
+          <property name="contrast" type="float" value="0.090000" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+      <shape id="10157520" label="Photoroom-20250317_125448.png Copy 3" startTime="0" endTime="2032" fillType="media" fillImage="content://media/external/images/media/1000128866" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="772.795715,1420.693359,0.000000" />
+          <scale value="0.374074,0.374074" />
+        </transform>
+        <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+          <property name="brightness" type="float" value="-0.060000" />
+          <property name="contrast" type="float" value="0.090000" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <nullobj id="10157521" label="Null 7" startTime="7000" endTime="11032" mediaFillMode="fill" parent="10157527" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.003968" v="0.000000,0.000000,0.000000" />
+        <kf t="0.351190" v="0.000000,0.000000,3000.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </location>
+    </transform>
+  </nullobj>
+  <text id="10157524" startTime="8016" endTime="11032" fillType="color" mediaFillMode="fill" parent="10157527" size="40.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="131.608673,1580.512695,278.265015" />
+      <scale value="1.203753,1.203753" />
+      <rotation value="-45.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>one day</content>
+  </text>
+  <text id="10157525" startTime="8016" endTime="11032" fillType="color" mediaFillMode="fill" parent="10157527" size="80.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="287.345337,1614.354248,278.265015" />
+      <scale value="1.298273,1.298273" />
+      <rotation value="-45.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>you'll</content>
+  </text>
+  <text id="10157526" startTime="8016" endTime="11032" fillType="color" mediaFillMode="fill" parent="10157527" size="40.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="502.289124,1622.213135,278.265015" />
+      <scale value="1.319929,1.319929" />
+      <rotation value="-45.000000" />
+    </transform>
+    <fillColor value="#ff2f856d" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>master it</content>
+  </text>
+  <shape id="10157530" label="Circle 2" startTime="8000" endTime="11032" fillType="gradient" mediaFillMode="fill" parent="10157527" s=".circle">
+    <transform>
+      <location value="960.499084,2343.071289,0.000000" />
+      <rotation value="-44.158936" />
+      <opacity value="0.501953" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <gradient type="linear" startColor="#ff000000" endColor="#ffffffff" start="0.516801,0.118283" end="1.000000,1.000000" />
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float" value="0.205000" />
+    </effect>
+    <property name="size" type="vec2" value="320.000000,96.000000" />
+  </shape>
+  <shape id="10157528" label="Photoroom-20250317_213226.png" startTime="8000" endTime="11032" fillType="media" fillImage="content://media/external/images/media/1000129076" mediaFillMode="fill" parent="10157527" s=".rect">
+    <transform>
+      <location value="764.074097,2167.880371,0.000000" />
+      <scale value="1.673148,1.673148" />
+      <rotation value="-45.000000" />
+    </transform>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+      <property name="brightness" type="float" value="-0.090000" />
+      <property name="contrast" type="float" value="0.200000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,382.000000" />
+  </shape>
+  <shape id="10157531" label="Rectangle 3" startTime="8000" endTime="11032" fillType="color" mediaFillMode="fill" parent="10157532" s=".rect">
+    <transform>
+      <location value="-3.250294,90.444008,2000.000000" />
+      <scale value="5.331589,9.478383" />
+      <opacity>
+        <kf t="0.664908" v="1.000000" />
+        <kf t="0.005277" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff5ffdad" />
+    <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+      <property name="start" type="float" value="0.000000" />
+      <property name="end" type="float" value="0.758000" />
+      <property name="angle" type="float" value="90.000000" />
+      <property name="feather" type="float" value="17.300001" />
+    </effect>
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <nullobj id="10157527" label="Null 8" startTime="8000" endTime="13032" mediaFillMode="fill" parent="10157532" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.003180" v="-0.075806,0.135986,0.000000" />
+        <kf t="0.500000" v="990.980347,-1777.693726,0.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </location>
+      <rotation>
+        <kf t="0.003180" v="-0.003441" />
+        <kf t="0.500000" v="44.996555" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </rotation>
+    </transform>
+  </nullobj>
+  <shape id="10157533" label="Circle 3" startTime="10000" endTime="13032" fillType="color" mediaFillMode="fill" parent="10157532" s=".circle">
+    <transform>
+      <location value="1.589905,0.529297,0.000000" />
+      <scale>
+        <kf t="0.005277" v="0.025000,0.025000" />
+        <kf t="0.664908" v="7.450000,7.450000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </scale>
+      <opacity>
+        <kf t="0.664908" v="1.000000" />
+        <kf t="0.994723" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <text id="10157534" startTime="10000" endTime="13032" clippingMask="true" fillType="color" mediaFillMode="fill" parent="10157532" size="40.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="-20.187927,-72.003418,0.000000" />
+      <scale value="0.491602,0.491602" />
+      <rotation value="-0.807476" />
+    </transform>
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>this isn't just</content>
+  </text>
+  <text id="10157535" startTime="10000" endTime="13032" clippingMask="true" fillType="color" mediaFillMode="fill" parent="10157532" size="40.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="-101.313660,-30.174805,0.000000" />
+      <scale value="0.491602,0.491602" />
+      <rotation value="-0.807476" />
+    </transform>
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>about </content>
+  </text>
+  <shape id="10157537" label="Photoroom-20250317_235142.png" startTime="10000" endTime="13032" clippingMask="true" fillType="media" fillImage="content://media/external/images/media/1000129166" mediaFillMode="fill" parent="10157532" s=".rect">
+    <transform>
+      <location value="138.589584,16.878630,0.000000" />
+      <scale value="0.166667,0.166667" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="10157538" label="Photoroom-20250317_235142.png Copy" startTime="10000" endTime="13032" clippingMask="true" fillType="media" fillImage="content://media/external/images/media/1000129166" mediaFillMode="fill" parent="10157532" s=".rect">
+    <transform>
+      <location value="-125.242889,-285.557251,0.000000" />
+      <scale value="0.219444,0.219444" />
+      <rotation value="-27.439026" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="10157539" label="Photoroom-20250317_235142.png Copy 2" startTime="10000" endTime="13032" clippingMask="true" fillType="media" fillImage="content://media/external/images/media/1000129166" mediaFillMode="fill" parent="10157532" s=".rect">
+    <transform>
+      <location value="-27.796356,245.610474,0.000000" />
+      <scale value="0.319444,0.319444" />
+      <rotation value="-18.658539" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <text id="10157536" startTime="10000" endTime="13032" clippingMask="true" fillType="color" mediaFillMode="fill" parent="10157532" size="48.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="5.495972,52.283386,0.000000" />
+      <scale value="0.491602,0.491602" />
+      <rotation value="-0.807476" />
+    </transform>
+    <fillColor value="#ff00cc5b" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+      <property name="letterspacing" type="float" value="0.150000" />
+      <property name="linespacing" type="float" value="1.000000" />
+    </effect>
+    <content>COOKING </content>
+  </text>
+  <nullobj id="10157532" label="Null 9" startTime="10000" endTime="14532" mediaFillMode="fill" parent="10157540" type="perspective">
+    <transform>
+      <scale>
+        <kf t="0.003530" v="1.000000,1.000000" />
+        <kf t="0.555163" v="2.360000,2.360000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </scale>
+    </transform>
+  </nullobj>
+  <shape id="10157545" label="Circle 4" startTime="12000" endTime="14532" fillType="gradient" mediaFillMode="fill" parent="10157543" s=".circle">
+    <transform>
+      <location value="31.294594,637.248779,0.000000" />
+      <scale value="0.901832,0.901832" />
+      <opacity value="0.498047" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <gradient type="linear" startColor="#ff000000" endColor="#ffffffff" start="0.454807,0.240164" end="0.500186,0.945198" />
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float" value="0.215000" />
+    </effect>
+    <property name="size" type="vec2" value="275.000000,100.000000" />
+  </shape>
+  <shape id="10157543" label="Multitasking.mp4" startTime="12016" endTime="14532" fillType="media" fillVideo="content://media/external/video/media/1000129071" outTime="4032" speed="2.000000" mediaFillMode="fill" parent="10157540" s=".rect">
+    <transform>
+      <location value="-1137.309326,148.817261,0.000000" />
+      <scale value="1.108854,1.108854" />
+    </transform>
+    <effect id="com.alightcreative.effects.chromakey" locallyApplied="true">
+      <property name="keyColor" type="color" value="#ffff0000" />
+      <property name="threshold" type="float" value="0.323600" />
+      <property name="feather" type="float" value="0.050000" />
+      <property name="defringe" type="bool" value="false" />
+      <property name="invert" type="bool" value="false" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,960.000000" />
+  </shape>
+  <text id="10157541" startTime="12016" endTime="14532" fillType="color" blending="diff" mediaFillMode="fill" parent="10157540" size="40.000000" font="imported?name=Coolvetica Rg.otf" wrapWidth="1119" align="center">
+    <transform>
+      <location value="-1195.222412,-549.569824,0.000000" />
+      <scale value="1.099934,1.099934" />
+      <rotation value="-0.807476" />
+    </transform>
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>it applies </content>
+  </text>
+  <text id="10157542" startTime="12016" endTime="14532" fillType="color" mediaFillMode="fill" parent="10157540" size="40.000000" font="googlefonts?name=Roboto&amp;weight=900" wrapWidth="1119" align="center">
+    <transform>
+      <location value="-1047.478760,-443.981445,0.000000" />
+      <scale value="1.099934,1.099934" />
+      <rotation value="-0.807476" />
+    </transform>
+    <fillColor value="#ff00cc5b" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>EVERYTHING </content>
+  </text>
+  <nullobj id="10157540" label="Null 10" startTime="12033" endTime="14532" mediaFillMode="fill" parent="10157548" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.006403" v="0.000000,0.000000,0.000000" />
+        <kf t="0.606643" v="1096.148438,-33.743164,0.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </location>
+    </transform>
+  </nullobj>
+  <shape id="10157546" label="Photoroom-20250318_084627.png" startTime="13000" endTime="15032" fillType="media" fillImage="content://media/external/images/media/1000129204" mediaFillMode="fill" parent="10157548" s=".rect">
+    <transform>
+      <location value="-1422.627197,245.440674,0.000000" />
+      <scale value="1.400926,1.400926" />
+      <rotation value="45.000000" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <text id="10157547" startTime="13000" endTime="15032" fillType="color" mediaFillMode="fill" parent="10157548" size="56.000000" font="googlefonts?name=Montserrat&amp;weight=900" wrapWidth="1119" align="center">
+    <transform>
+      <location value="-1121.756592,-48.985909,0.000000" />
+      <scale value="1.099934,1.099934" />
+      <rotation value="45.000000" />
+    </transform>
+    <fillColor value="#ff00cc5b" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>EDITING </content>
+  </text>
+  <text id="10157550" startTime="13000" endTime="15032" fillType="color" mediaFillMode="fill" parent="10157548" size="14.000000" font="googlefonts?name=Merienda&amp;weight=700" wrapWidth="1119" align="center">
+    <transform>
+      <location value="-1385.749756,-195.794266,0.000000" />
+      <scale value="1.099934,1.099934" />
+      <rotation value="45.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.rgbsep" hidden="true" locallyApplied="true">
+      <property name="strength" type="float" value="0.020000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="mode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.fade" hidden="true" locallyApplied="true">
+      <property name="inTime" type="float" value="0.000000" />
+      <property name="outTime" type="float" value="1.500000" />
+    </effect>
+    <content>@editsarc.in</content>
+  </text>
+  <nullobj id="10157548" label="Null 11" startTime="13000" endTime="15032" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.007874" v="540.000000,960.000000,0.000000" />
+        <kf t="0.746063" v="1357.580811,-357.224121,0.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </location>
+      <rotation>
+        <kf t="0.007874" v="0.000000" />
+        <kf t="0.746063" v="-45.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </rotation>
+    </transform>
+  </nullobj>
+  <shape id="10157551" label="Rectangle 3" startTime="13500" endTime="15032" fillType="color" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="192.787750,1145.853516,2000.000000" />
+      <scale value="5.331589,9.478383" />
+      <opacity>
+        <kf t="1.315928" v="1.000000" />
+        <kf t="0.010444" v="0.000000" />
+        <kf t="0.989556" v="1.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ffff4800" />
+    <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+      <property name="start" type="float" value="0.000000" />
+      <property name="end" type="float" value="0.758000" />
+      <property name="angle" type="float" value="90.000000" />
+      <property name="feather" type="float" value="17.300001" />
+    </effect>
+    <property name="size" type="vec2" value="100.000000,117.000000" />
+  </shape>
+  <shape id="10157552" label="image-from-rawpixel-id-2890363-png.png" startTime="0" endTime="3365" fillType="media" fillImage="content://media/external/images/media/1000126721" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,960.000000,1903.028320" />
+      <scale value="3.875000,3.875000" />
+      <rotation value="90.000000" />
+      <opacity value="0.498047" />
+    </transform>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float" value="0.195000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,360.000000" />
+  </shape>
+  <shape id="10157554" label="image-from-rawpixel-id-2890363-png.png" startTime="13000" endTime="15032" fillType="media" fillImage="content://media/external/images/media/1000126721" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,960.000000,1903.028320" />
+      <scale value="3.875000,3.875000" />
+      <rotation value="90.000000" />
+      <opacity>
+        <kf t="0.746063" v="0.498047" />
+        <kf t="0.007874" v="0.000000" />
+      </opacity>
+    </transform>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float" value="0.195000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,360.000000" />
+  </shape>
+  <shape id="10157553" label="Rectangle 4" startTime="0" endTime="15032" fillType="gradient" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="540.000000,960.000000,0.000000" />
+      <scale value="5.400000,9.600000" />
+    </transform>
+    <fillColor value="#ffe46e68" />
+    <gradient type="radial" startColor="#00ffffff" endColor="#ff000000" start="0.473360,0.510629" end="1.268302,1.235182" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+</scene>

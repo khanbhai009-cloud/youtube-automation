@@ -1,0 +1,1743 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2026-02-05 09:36 AM
+5.0.270.1002578 (1002351)
+6dff462 (Apr 11, 2024 18:17:55)
+-->
+<scene title="EDIT&#128293;(Made By CutsGrow)" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="10015" fps="60" modifiedTime="1770264395612" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <media uri="content://media/external/video/media/194613" filename="InShot_20260203_222427888.mp4" title="InShot_20260203_222427888.mp4" type="video/mp4" duration="18134000" size="21941046" fps="0.50" orientation="0" infoUpdated="1770264385203" width="1920" height="1080" />
+  <media uri="content://media/external/video/media/193203" filename="videoplayback (2).mp4" title="videoplayback (2).mp4" type="video/mp4" duration="968133000" size="72074075" fps="0.30" orientation="0" infoUpdated="1770264385203" width="640" height="360" />
+  <media uri="content://media/external/images/media/194615" filename="IMG_20260203_223327.jpg" title="IMG_20260203_223327.jpg" type="image/jpeg" size="211503" orientation="0" infoUpdated="1770264385203" width="656" height="656" />
+  <media uri="content://media/external/images/media/194617" filename="InShot_20260203_225939792.png" title="InShot_20260203_225939792.png" type="image/png" size="1128418" orientation="0" infoUpdated="1770264385203" width="1920" height="1920" />
+  <media uri="content://media/external/images/media/194628" filename="IMG_20260203_235016.jpg" title="IMG_20260203_235016.jpg" type="image/jpeg" size="67340" orientation="0" infoUpdated="1770264385203" width="720" height="719" />
+  <media uri="content://media/external/images/media/195298" filename="InShot_20260204_090525829.png" title="InShot_20260204_090525829.png" type="image/png" size="888418" orientation="0" infoUpdated="1770264385203" width="919" height="2048" />
+  <media uri="content://media/external/video/media/195300" filename="InShot_20260204_094209045.mp4" title="InShot_20260204_094209045.mp4" type="video/mp4" duration="6107000" size="12477646" fps="0.60" orientation="0" infoUpdated="1770264385203" width="1080" height="1920" />
+  <media uri="content://media/external/images/media/195307" filename="InShot_20260204_101123246.png" title="InShot_20260204_101123246.png" type="image/png" size="1418358" orientation="0" infoUpdated="1770264385203" width="1920" height="1920" />
+  <media uri="content://media/external/video/media/163296" filename="VID_20260110_225221_139.mp4" title="VID_20260110_225221_139.mp4" type="video/mp4" duration="8682666" size="2836178" fps="0.30" orientation="0" infoUpdated="1770264385203" width="1280" height="720" />
+  <media uri="content://media/external/video/media/164022" filename="Copy of ---- Bright Blue Light Spinning Spiral Vortex VJ Loop Background Video for Edits(1080P_HD).mp4" title="Copy of ---- Bright Blue Light Spinning Spiral Vortex VJ Loop Background Video for Edits(1080P_HD).mp4" type="video/mp4" duration="119908000" size="64628335" fps="0.30" orientation="0" infoUpdated="1770264385203" width="1920" height="1080" />
+  <media uri="content://media/external/images/media/195314" filename="New Project 66 [800AACC].png" title="New Project 66 [800AACC].png" type="image/png" size="254303" orientation="0" infoUpdated="1770264385203" width="1920" height="1080" />
+  <media uri="content://media/external/images/media/195310" filename="Picsart_26-02-04_11-41-35-521.png" title="Picsart_26-02-04_11-41-35-521.png" type="image/png" size="226679" orientation="0" infoUpdated="1770264385203" width="2828" height="2828" />
+  <bookmark t="1508" />
+  <bookmark t="3008" />
+  <bookmark t="2558" />
+  <bookmark t="7108" />
+  <bookmark t="7841" />
+  <shape id="102391766" label="InShot_20260203_222427888.mp4" startTime="0" endTime="10015" fillType="media" fillVideo="content://media/external/video/media/194613" inTime="-8" outTime="10007" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="2835.950928,1379.850098,5000.000000" />
+      <scale value="26.714548,26.714548" />
+      <rotation>
+        <kf t="0.000799" v="0.000000" />
+        <kf t="0.300349" v="-155.853653" />
+      </rotation>
+      <opacity value="0.177734" />
+    </transform>
+    <effect id="com.alightcreative.effects.hueshift" locallyApplied="true">
+      <property name="hue" type="float" value="693.500000" />
+    </effect>
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="4.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <property name="size" type="vec2" value="960.000000,540.000000" />
+  </shape>
+  <audio id="102391768" label="videoplayback (2).mp4" startTime="8" endTime="10015" src="content://media/external/video/media/193203" outTime="10007" mediaFillMode="fill" />
+  <shape id="102391769" label="IMG_20260203_223327.jpg" startTime="0" endTime="1215" fillType="media" fillImage="content://media/external/images/media/194615" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="-1276.487793,603.000000,500.000000" />
+      <scale value="3.550926,3.550926" />
+      <rotation>
+        <kf t="0.006586" v="0.000000" />
+        <kf t="1.666667" v="-180.000000" />
+      </rotation>
+      <opacity value="0.468750" />
+    </transform>
+    <effect id="com.alightcreative.effects.chromakey" locallyApplied="true">
+      <property name="keyColor" type="color" value="#ff00fe02" />
+      <property name="threshold" type="float" value="0.256400" />
+      <property name="feather" type="float" value="0.603000" />
+      <property name="defringe" type="bool" value="true" />
+      <property name="invert" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.solidcolor" locallyApplied="true">
+      <property name="color" type="color" value="#ff2d1ef6" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="blendMode" type="int" value="1" />
+    </effect>
+    <effect id="com.alightcreative.effects.hueshift" locallyApplied="true">
+      <property name="hue" type="float" value="49.000000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="102391770" label="IMG_20260203_223327.jpg Copy" startTime="0" endTime="1215" fillType="media" fillImage="content://media/external/images/media/194615" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="1.666667" v="2711.220215,399.166748,0.000000" />
+      </location>
+      <scale value="-2.775926,2.775926" />
+      <rotation>
+        <kf t="0.006586" v="0.000000" />
+        <kf t="1.666667" v="-180.000000" />
+      </rotation>
+      <opacity value="0.468750" />
+    </transform>
+    <effect id="com.alightcreative.effects.chromakey" locallyApplied="true">
+      <property name="keyColor" type="color" value="#ff00fe02" />
+      <property name="threshold" type="float" value="0.256400" />
+      <property name="feather" type="float" value="0.603000" />
+      <property name="defringe" type="bool" value="true" />
+      <property name="invert" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.solidcolor" locallyApplied="true">
+      <property name="color" type="color" value="#ff2d1ef6" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="blendMode" type="int" value="1" />
+    </effect>
+    <effect id="com.alightcreative.effects.hueshift" locallyApplied="true">
+      <property name="hue" type="float" value="49.000000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="102391782" label="InShot_20260203_225939792.png Copy" startTime="0" endTime="1215" fillType="media" fillImage="content://media/external/images/media/194617" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="344.932312,158.361542,15.500000" />
+      <scale value="0.148471,0.148471" />
+    </transform>
+    <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+      <property name="bmode" type="int" value="2" />
+      <property name="overd" type="bool" value="false" />
+      <property name="strength" type="float" value="0.150000" />
+      <property name="oalpha" type="float" value="0.540000" />
+      <property name="lowThreshold" type="float" value="0.100000" />
+      <property name="highThreshold" type="float" value="1.000000" />
+      <property name="feather" type="float" value="0.300000" />
+      <property name="satvib" type="vec2" value="0.000000,1.000000" />
+      <property name="hue" type="float" value="360.000000" />
+      <property name="calpha" type="float" value="1.000000" />
+      <property name="GCE" type="bool" value="false" />
+      <property name="CHROM" type="bool" value="false" />
+      <property name="strengthhh" type="float" value="0.150000" />
+      <property name="angleee" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="cblend" type="bool" value="false" />
+      <property name="cmode" type="int" value="0" />
+      <property name="colblend" type="color" value="#ffffa800" />
+      <property name="alpb" type="float" value="0.500000" />
+      <property name="iter" type="float" value="1.000000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="62.000000" />
+    </shadow>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="102391781" label="InShot_20260203_225939792.png" startTime="0" endTime="1215" fillType="media" fillImage="content://media/external/images/media/194617" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="1369.065186,456.432617,0.000000" />
+      <scale value="-0.228803,0.228803" />
+    </transform>
+    <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+      <property name="bmode" type="int" value="2" />
+      <property name="overd" type="bool" value="false" />
+      <property name="strength" type="float" value="0.150000" />
+      <property name="oalpha" type="float" value="0.540000" />
+      <property name="lowThreshold" type="float" value="0.100000" />
+      <property name="highThreshold" type="float" value="1.000000" />
+      <property name="feather" type="float" value="0.300000" />
+      <property name="satvib" type="vec2" value="0.000000,1.000000" />
+      <property name="hue" type="float" value="360.000000" />
+      <property name="calpha" type="float" value="1.000000" />
+      <property name="GCE" type="bool" value="false" />
+      <property name="CHROM" type="bool" value="false" />
+      <property name="strengthhh" type="float" value="0.150000" />
+      <property name="angleee" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="cblend" type="bool" value="false" />
+      <property name="cmode" type="int" value="0" />
+      <property name="colblend" type="color" value="#ffffa800" />
+      <property name="alpb" type="float" value="0.500000" />
+      <property name="iter" type="float" value="1.000000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="74.000000" />
+    </shadow>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="102391784" label="Rectangle 1" startTime="0" endTime="1215" fillType="gradient" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="981.199219,544.439697,0.000000" />
+      <scale value="2.881627,2.881627" />
+      <opacity value="0.218750" />
+    </transform>
+    <fillColor value="#ff659844" />
+    <gradient type="radial" startColor="#ff17e1e1" endColor="#00ffffff" start="0.504104,0.485236" end="0.822122,0.886855" />
+    <effect id="com.alightcreative.effects.hueshift" locallyApplied="true">
+      <property name="hue" type="float" value="327.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+      <property name="bmode" type="int" value="2" />
+      <property name="overd" type="bool" value="false" />
+      <property name="strength" type="float" value="0.150000" />
+      <property name="oalpha" type="float" value="0.750000" />
+      <property name="lowThreshold" type="float" value="0.100000" />
+      <property name="highThreshold" type="float" value="1.000000" />
+      <property name="feather" type="float" value="0.300000" />
+      <property name="satvib" type="vec2" value="0.000000,1.000000" />
+      <property name="hue" type="float" value="360.000000" />
+      <property name="calpha" type="float" value="1.000000" />
+      <property name="GCE" type="bool" value="false" />
+      <property name="CHROM" type="bool" value="false" />
+      <property name="strengthhh" type="float" value="0.150000" />
+      <property name="angleee" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="cblend" type="bool" value="false" />
+      <property name="cmode" type="int" value="0" />
+      <property name="colblend" type="color" value="#ffffa800" />
+      <property name="alpb" type="float" value="0.500000" />
+      <property name="iter" type="float" value="1.000000" />
+    </effect>
+    <property name="size" type="vec2" value="205.000000,109.000000" />
+  </shape>
+  <shape id="102391787" label="IMG_20260203_235016.jpg" startTime="0" endTime="1215" fillType="media" fillImage="content://media/external/images/media/194628" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.006584" v="985.459595,680.471375,0.000000" />
+        <kf t="0.876543" v="985.459595,500.538391,0.000000" />
+      </location>
+      <scale>
+        <kf t="0.006584" v="0.000000,0.000000" />
+        <kf t="0.500411" v="0.673451,0.673451" />
+      </scale>
+      <rotation>
+        <kf t="0.362963" v="0.000000" />
+        <kf t="0.006584" v="-116.341461" />
+      </rotation>
+      <opacity value="0.515625" />
+    </transform>
+    <effect id="com.alightcreative.effects.chromakey" locallyApplied="true">
+      <property name="keyColor" type="color" value="#ff00b140" />
+      <property name="threshold" type="float" value="0.208400" />
+      <property name="feather" type="float" value="0.063000" />
+      <property name="defringe" type="bool" value="true" />
+      <property name="invert" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.solidcolor" locallyApplied="true">
+      <property name="color" type="color" value="#ff2d1ef6" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="blendMode" type="int" value="1" />
+    </effect>
+    <effect id="com.alightcreative.effects.edgeline" locallyApplied="true">
+      <property name="smoothing" type="float" value="1.910000" />
+      <property name="threshold" type="float" value="0.140000" />
+      <property name="amp" type="float" value="3.990000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="color2" type="color" value="#ff000000" />
+      <property name="color1" type="color" value="#ff00ffff" />
+      <property name="blendMode" type="int" value="0" />
+      <property name="fix" type="bool" value="true" />
+      <property name="newMode" type="bool" value="true" />
+      <property name="invert" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.inner-glow" locallyApplied="true">
+      <property name="radius" type="float" value="50.000000" />
+      <property name="alpha" type="float" value="0.450000" />
+      <property name="hardness" type="float" value="0.000000" />
+      <property name="color" type="color" value="#ff17e1e1" />
+      <property name="blendMode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.hueshift" locallyApplied="true">
+      <property name="hue" type="float" value="335.000000" />
+    </effect>
+    <property name="size" type="vec2" value="540.500000,540.000000" />
+  </shape>
+  <shape id="102391774" label="Rounded Rectangle 1" startTime="0" endTime="1215" fillType="color" mediaFillMode="fill" s=".roundrect">
+    <transform>
+      <location value="981.199219,544.439697,0.000000" />
+      <scale value="0.774631,0.774631" />
+      <opacity>
+        <kf t="0.006584" v="0.000000" />
+        <kf t="0.404115" v="0.320313" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <property name="size" type="vec2" value="477.000000,100.000000" />
+    <property name="cornerRadius" type="float" value="25.000000" />
+  </shape>
+  <shape id="102391778" label="Rounded Rectangle 2" startTime="266" endTime="1215" fillType="color" mediaFillMode="fill" s=".roundrect">
+    <transform>
+      <location value="142.531921,796.452881,0.000000" />
+      <scale value="0.234848,0.234848" />
+      <rotation value="-90.000000" />
+    </transform>
+    <effect id="com.alightcreative.effects.repeat.path" locallyApplied="true">
+      <property name="count" type="float">
+        <kf t="0.009484" v="28.000000" />
+        <kf t="0.307692" v="44.000000" />
+      </property>
+      <property name="startPos" type="float">
+        <kf t="0.307692" v="0.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+        <kf t="0.009484" v="1.000000" />
+      </property>
+      <property name="endPos" type="float" value="1.000000" />
+      <property name="pathPhase" type="float" value="0.000000" />
+      <property name="tangent" type="bool" value="true" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="scale" type="float" value="1.000000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="fillColor" type="color" value="#ff2d1ef6" />
+      <property name="blend" type="float" value="0.000000" />
+      <property name="colorAltCopies" type="bool" value="false" />
+      <property name="start" type="float" value="0.000000" />
+      <property name="end" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="easeIn" type="float" value="0.000000" />
+      <property name="easeOut" type="float" value="0.000000" />
+      <property name="overlap" type="float" value="0.000000" />
+      <property name="shape" type="int" value="0" />
+      <property name="invert" type="bool" value="false" />
+      <property name="randomOrder" type="bool" value="false" />
+      <property name="seed" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="66.000000,23.000000" />
+    <property name="cornerRadius" type="float" value="0.000000" />
+  </shape>
+  <text id="102391779" startTime="0" endTime="1215" fillType="gradient" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Muli&amp;weight=900" wrapWidth="512" align="center">
+    <transform>
+      <location value="981.199219,544.439697,0.000000" />
+      <scale value="1.700557,1.700557" />
+    </transform>
+    <fillColor value="#ff1ed91e" />
+    <gradient type="linear" startColor="#ff000000" endColor="#ff1ed91e" start="0.503634,0.997700" end="0.503355,-0.798155" />
+    <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+      <property name="bmode" type="int" value="2" />
+      <property name="overd" type="bool" value="false" />
+      <property name="strength" type="float" value="0.265000" />
+      <property name="oalpha" type="float" value="2.270000" />
+      <property name="lowThreshold" type="float" value="0.100000" />
+      <property name="highThreshold" type="float" value="1.000000" />
+      <property name="feather" type="float" value="0.300000" />
+      <property name="satvib" type="vec2" value="0.000000,1.000000" />
+      <property name="hue" type="float" value="360.000000" />
+      <property name="calpha" type="float" value="1.000000" />
+      <property name="GCE" type="bool" value="false" />
+      <property name="CHROM" type="bool" value="false" />
+      <property name="strengthhh" type="float" value="0.150000" />
+      <property name="angleee" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="cblend" type="bool" value="false" />
+      <property name="cmode" type="int" value="0" />
+      <property name="colblend" type="color" value="#ffffa800" />
+      <property name="alpb" type="float" value="0.500000" />
+      <property name="iter" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.inner-glow" locallyApplied="true">
+      <property name="radius" type="float" value="49.900002" />
+      <property name="alpha" type="float" value="0.560000" />
+      <property name="hardness" type="float" value="0.000000" />
+      <property name="color" type="color" value="#ff83e183" />
+      <property name="blendMode" type="int" value="2" />
+    </effect>
+    <effect id="com.alightcreative.effects.textspacing" locallyApplied="true">
+      <property name="letterspacing" type="float" value="0.100000" />
+      <property name="linespacing" type="float" value="1.028000" />
+    </effect>
+    <path-stroke direction="centered" end-size="1.500000">
+      <color value="#ff1ed91e" />
+      <size value="4.500000" />
+    </path-stroke>
+    <shadow direction="outside">
+      <opacity value="0.000000" />
+    </shadow>
+    <content>₹ 10,00,000</content>
+  </text>
+  <shape id="102391775" label="Rounded Rectangle 1 Copy" startTime="0" endTime="1215" fillType="color" mediaFillMode="fill" s=".roundrect">
+    <transform>
+      <location value="981.199219,544.439697,0.000000" />
+      <scale value="0.774631,0.774631" />
+      <opacity>
+        <kf t="0.006584" v="0.000000" />
+        <kf t="0.212346" v="0.205078" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.stripes" locallyApplied="true">
+      <property name="amount" type="float" value="0.900000" />
+      <property name="width" type="float" value="0.230000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float">
+        <kf t="0.171193" v="0.560000" />
+        <kf t="0.774486" v="1.680000" />
+      </property>
+      <property name="color" type="color" value="#ffffffff" />
+      <property name="punchout" type="bool" value="false" />
+      <property name="smoothing" type="float" value="0.105000" />
+      <property name="screenSpace" type="bool" value="true" />
+    </effect>
+    <effect id="com.alightcreative.effects.stripes" locallyApplied="true">
+      <property name="amount" type="float" value="0.900000" />
+      <property name="width" type="float" value="0.230000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float">
+        <kf t="0.171193" v="0.560000" />
+        <kf t="0.774486" v="1.680000" />
+      </property>
+      <property name="color" type="color" value="#ffffffff" />
+      <property name="punchout" type="bool" value="false" />
+      <property name="smoothing" type="float" value="0.105000" />
+      <property name="screenSpace" type="bool" value="true" />
+    </effect>
+    <effect id="com.alightcreative.effects.stripes" locallyApplied="true">
+      <property name="amount" type="float" value="0.900000" />
+      <property name="width" type="float" value="0.230000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float">
+        <kf t="0.171193" v="0.560000" />
+        <kf t="0.774486" v="1.680000" />
+      </property>
+      <property name="color" type="color" value="#ffffffff" />
+      <property name="punchout" type="bool" value="false" />
+      <property name="smoothing" type="float" value="0.105000" />
+      <property name="screenSpace" type="bool" value="true" />
+    </effect>
+    <effect id="com.alightcreative.effects.stripes" locallyApplied="true">
+      <property name="amount" type="float" value="0.900000" />
+      <property name="width" type="float" value="0.230000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float">
+        <kf t="0.171193" v="0.560000" />
+        <kf t="0.774486" v="1.680000" />
+      </property>
+      <property name="color" type="color" value="#ffffffff" />
+      <property name="punchout" type="bool" value="false" />
+      <property name="smoothing" type="float" value="0.105000" />
+      <property name="screenSpace" type="bool" value="true" />
+    </effect>
+    <effect id="com.alightcreative.effects.stripes" locallyApplied="true">
+      <property name="amount" type="float" value="0.900000" />
+      <property name="width" type="float" value="0.230000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float">
+        <kf t="0.171193" v="0.560000" />
+        <kf t="0.774486" v="1.680000" />
+      </property>
+      <property name="color" type="color" value="#ffffffff" />
+      <property name="punchout" type="bool" value="false" />
+      <property name="smoothing" type="float" value="0.105000" />
+      <property name="screenSpace" type="bool" value="true" />
+    </effect>
+    <effect id="com.alightcreative.effects.stripes" locallyApplied="true">
+      <property name="amount" type="float" value="0.900000" />
+      <property name="width" type="float" value="0.230000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float">
+        <kf t="0.171193" v="0.560000" />
+        <kf t="0.774486" v="1.680000" />
+      </property>
+      <property name="color" type="color" value="#ffffffff" />
+      <property name="punchout" type="bool" value="false" />
+      <property name="smoothing" type="float" value="0.105000" />
+      <property name="screenSpace" type="bool" value="true" />
+    </effect>
+    <effect id="com.alightcreative.effects.stripes" locallyApplied="true">
+      <property name="amount" type="float" value="0.900000" />
+      <property name="width" type="float" value="0.230000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float">
+        <kf t="0.171193" v="0.560000" />
+        <kf t="0.774486" v="1.680000" />
+      </property>
+      <property name="color" type="color" value="#ffffffff" />
+      <property name="punchout" type="bool" value="false" />
+      <property name="smoothing" type="float" value="0.105000" />
+      <property name="screenSpace" type="bool" value="true" />
+    </effect>
+    <effect id="com.alightcreative.effects.stripes" locallyApplied="true">
+      <property name="amount" type="float" value="0.900000" />
+      <property name="width" type="float" value="0.230000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float">
+        <kf t="0.171193" v="0.560000" />
+        <kf t="0.774486" v="1.680000" />
+      </property>
+      <property name="color" type="color" value="#ffffffff" />
+      <property name="punchout" type="bool" value="false" />
+      <property name="smoothing" type="float" value="0.105000" />
+      <property name="screenSpace" type="bool" value="true" />
+    </effect>
+    <property name="size" type="vec2" value="477.000000,100.000000" />
+    <property name="cornerRadius" type="float" value="25.000000" />
+  </shape>
+  <text id="102391780" startTime="750" endTime="1215" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Roboto&amp;weight=400" wrapWidth="512" align="left">
+    <transform>
+      <location value="981.199219,544.439697,0.000000" />
+      <scale value="0.774631,0.774631" />
+    </transform>
+    <fillColor value="#ff7f7f7f" />
+  </text>
+  <camera id="102391788" label="Camera 1" startTime="0" endTime="3015" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.350912" v="960.000000,540.000000,-1662.768799" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.002653" v="960.000000,540.000000,68.137451" />
+        <kf t="0.500166" v="960.000000,540.000000,-2807.260986" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="1.000000" v="960.000000,540.000000,-2448.760986" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </location>
+    </transform>
+    <fov value="60.000000" />
+    <focus-blur enabled="false">
+      <strength value="0.500000" />
+      <depth-of-field value="166.276886" />
+      <distance value="1662.768799" />
+    </focus-blur>
+    <fog enabled="false">
+      <near-z value="1662.768799" />
+      <far-z value="3325.537598" />
+    </fog>
+  </camera>
+  <shape id="102391793" label="InShot_20260204_090525829.png" startTime="550" endTime="4382" fillType="media" fillImage="content://media/external/images/media/195298" mediaFillMode="fill" parent="102391801" s=".rect">
+    <transform>
+      <location value="0.000000,0.000000,-1780.500000" />
+      <scale value="0.678933,0.678933" />
+    </transform>
+    <effect id="com.alightcreative.effects.softglow" locallyApplied="true">
+      <property name="strength" type="float" value="0.230000" />
+      <property name="brightness" type="float" value="0.620000" />
+      <property name="contrast" type="float" value="0.200000" />
+      <property name="highlights" type="float" value="0.500000" />
+      <property name="color" type="color" value="#ffff5566" />
+      <property name="blend" type="float" value="0.250000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="outsideAlpha" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="true">
+      <property name="exposure" type="float" value="-0.340000" />
+      <property name="gamma" type="float" value="1.040000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.satvib" locallyApplied="true">
+      <property name="saturation" type="float" value="0.210000" />
+      <property name="vib" type="float" value="1.240000" />
+    </effect>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+      <property name="brightness" type="float" value="0.080000" />
+      <property name="contrast" type="float" value="0.170000" />
+    </effect>
+    <effect id="com.alightcreative.effects.sharpen" locallyApplied="true">
+      <property name="strength" type="float" value="1.990000" />
+      <property name="radius" type="float" value="1.700000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="99.000000" />
+    </shadow>
+    <property name="size" type="vec2" value="242.000000,540.000000" />
+  </shape>
+  <shape id="102391794" label="Rectangle 3" startTime="783" endTime="6715" fillType="color" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.299225" v="960.000000,932.397705,-1616.479248" />
+        <kf t="0.375084" v="974.851685,852.811646,-1616.479248" />
+      </location>
+      <scale value="2.627208,2.627208" />
+      <opacity>
+        <kf t="0.804956" v="1.000000" />
+        <kf t="0.877950" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff3d4cf5" />
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float" value="1.155000" />
+    </effect>
+    <effect id="com.alightcreative.effects.fractalwarp4" locallyApplied="true">
+      <property name="offs" type="vec2">
+        <kf t="0.000000" v="0.000000,0.000000" />
+        <kf t="0.438257" v="0.000000,-893.000000" />
+      </property>
+      <property name="parr" type="vec2" value="0.000000,-1038.000000" />
+      <property name="mag" type="float" value="0.560000" />
+      <property name="scale" type="float" value="3.600000" />
+      <property name="intensity" type="float" value="0.500000" />
+      <property name="screenSpace" type="bool" value="false" />
+      <property name="octaves" type="float" value="4.000000" />
+    </effect>
+    <property name="size" type="vec2" value="283.000000,26.000000" />
+  </shape>
+  <shape id="102391795" label="InShot_20260204_094209045.mp4" startTime="433" endTime="4382" fillType="media" fillVideo="content://media/external/video/media/195300" inTime="1016" outTime="4965" mediaFillMode="fill" parent="102391801" s=".rect">
+    <transform>
+      <location value="0.000000,56.657349,-1713.000000" />
+      <scale value="1.001426,1.001426" />
+      <rotation>
+        <kf t="0.348189" v="-0.053047" />
+        <kf t="1.000000" v="63.605495" />
+      </rotation>
+    </transform>
+    <effect id="com.alightcreative.effects.chromakey" locallyApplied="true">
+      <property name="keyColor" type="color" value="#ff0000fe" />
+      <property name="threshold" type="float" value="0.211400" />
+      <property name="feather" type="float" value="0.067000" />
+      <property name="defringe" type="bool" value="true" />
+      <property name="invert" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.colorize" locallyApplied="true">
+      <property name="tint" type="vec3" value="-105.413002,0.369540,0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.softglow" locallyApplied="true">
+      <property name="strength" type="float" value="0.270000" />
+      <property name="brightness" type="float" value="0.730000" />
+      <property name="contrast" type="float" value="0.200000" />
+      <property name="highlights" type="float" value="0.500000" />
+      <property name="color" type="color" value="#ffff5566" />
+      <property name="blend" type="float" value="0.250000" />
+      <property name="alpha" type="float" value="1.000000" />
+      <property name="outsideAlpha" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.sharpen" locallyApplied="true">
+      <property name="strength" type="float" value="1.210000" />
+      <property name="radius" type="float" value="2.200000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="146.000000" />
+    </shadow>
+    <property name="size" type="vec2" value="303.500000,540.000000" />
+  </shape>
+  <text id="102391797" startTime="1866" endTime="4382" fillType="none" mediaFillMode="fill" parent="102391801" size="18.000000" font="imported?name=FredokaOne-Regular.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location value="6.260858,33.949821,-1957.000000" />
+      <scale value="0.832754,0.832754" />
+    </transform>
+    <fillColor value="#ff7f7f7f" />
+    <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+      <property name="bmode" type="int" value="2" />
+      <property name="overd" type="bool" value="false" />
+      <property name="strength" type="float" value="0.150000" />
+      <property name="oalpha" type="float" value="0.750000" />
+      <property name="lowThreshold" type="float" value="0.100000" />
+      <property name="highThreshold" type="float" value="1.000000" />
+      <property name="feather" type="float" value="0.300000" />
+      <property name="satvib" type="vec2" value="0.000000,1.000000" />
+      <property name="hue" type="float" value="360.000000" />
+      <property name="calpha" type="float" value="1.000000" />
+      <property name="GCE" type="bool" value="false" />
+      <property name="CHROM" type="bool" value="false" />
+      <property name="strengthhh" type="float" value="0.150000" />
+      <property name="angleee" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="cblend" type="bool" value="false" />
+      <property name="cmode" type="int" value="0" />
+      <property name="colblend" type="color" value="#ffffa800" />
+      <property name="alpb" type="float" value="0.500000" />
+      <property name="iter" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.texttransform" locallyApplied="true">
+      <property name="start" type="float">
+        <kf t="-0.003179" v="0.000000" />
+        <kf t="0.056439" v="1.000000" />
+      </property>
+      <property name="end" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="component" type="int" value="3" />
+      <property name="anchor" type="int" value="0" />
+      <property name="offset" type="vec2" value="0.000000,20.000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="scale" type="float" value="0.000000" />
+      <property name="stretch" type="float" value="0.000000" />
+      <property name="alpha" type="float">
+        <kf t="-0.003179" v="-1.000000" />
+      </property>
+      <property name="useFillColor" type="bool" value="false" />
+      <property name="fillColor" type="color" value="#ff00ff00" />
+      <property name="easeIn" type="float" value="0.000000" />
+      <property name="easeOut" type="float" value="0.000000" />
+      <property name="overlap" type="float" value="0.000000" />
+      <property name="shape" type="int" value="0" />
+      <property name="randomOrder" type="bool" value="false" />
+      <property name="seed" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.stripes" locallyApplied="true">
+      <property name="amount" type="float" value="0.900000" />
+      <property name="width" type="float" value="0.230000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float">
+        <kf t="0.255167" v="0.560000" />
+        <kf t="0.456677" v="1.680000" />
+      </property>
+      <property name="color" type="color" value="#ffffffff" />
+      <property name="punchout" type="bool" value="false" />
+      <property name="smoothing" type="float" value="0.105000" />
+      <property name="screenSpace" type="bool" value="true" />
+    </effect>
+    <path-stroke direction="centered" end-size="1.500000">
+      <color value="#ffffffff" />
+      <size value="7.500000" />
+    </path-stroke>
+    <content>IN JUST</content>
+  </text>
+  <shape id="102391798" label="InShot_20260204_101123246.png" startTime="2033" endTime="4382" fillType="media" fillImage="content://media/external/images/media/195307" mediaFillMode="fill" parent="102391801" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.074500" v="5.742003,39.398022,-2003.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+        <kf t="0.003406" v="5.790943,77.934326,-2003.000000" />
+      </location>
+      <scale>
+        <kf t="0.003406" v="0.082352,0.082352" />
+      </scale>
+      <opacity>
+        <kf t="0.067263" v="1.000000" />
+        <kf t="0.003406" v="0.000000" />
+      </opacity>
+    </transform>
+    <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+      <property name="bmode" type="int" value="2" />
+      <property name="overd" type="bool" value="false" />
+      <property name="strength" type="float" value="0.150000" />
+      <property name="oalpha" type="float" value="0.420000" />
+      <property name="lowThreshold" type="float" value="0.100000" />
+      <property name="highThreshold" type="float" value="1.000000" />
+      <property name="feather" type="float" value="0.300000" />
+      <property name="satvib" type="vec2" value="0.000000,1.000000" />
+      <property name="hue" type="float" value="360.000000" />
+      <property name="calpha" type="float" value="1.000000" />
+      <property name="GCE" type="bool" value="false" />
+      <property name="CHROM" type="bool" value="false" />
+      <property name="strengthhh" type="float" value="0.150000" />
+      <property name="angleee" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="cblend" type="bool" value="false" />
+      <property name="cmode" type="int" value="0" />
+      <property name="colblend" type="color" value="#ffffa800" />
+      <property name="alpb" type="float" value="0.500000" />
+      <property name="iter" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.stripes" locallyApplied="true">
+      <property name="amount" type="float" value="0.900000" />
+      <property name="width" type="float" value="0.230000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float">
+        <kf t="0.202214" v="0.560000" />
+        <kf t="0.418050" v="1.680000" />
+      </property>
+      <property name="color" type="color" value="#ffffffff" />
+      <property name="punchout" type="bool" value="false" />
+      <property name="smoothing" type="float" value="0.105000" />
+      <property name="screenSpace" type="bool" value="true" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <text id="102391799" startTime="2133" endTime="4382" fillType="gradient" mediaFillMode="fill" parent="102391801" size="18.000000" font="imported?name=FredokaOne-Regular.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location value="3.625643,44.327908,-2149.500000" />
+      <scale value="0.574175,0.574175" />
+      <opacity>
+        <kf t="0.025789" v="1.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff7f7f7f" />
+    <gradient type="linear" startColor="#ff1791e1" endColor="#ffffffff" start="1.015185,2.157997" end="1.075056,-0.116883" />
+    <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+      <property name="bmode" type="int" value="2" />
+      <property name="overd" type="bool" value="false" />
+      <property name="strength" type="float" value="0.965000" />
+      <property name="oalpha" type="float" value="0.830000" />
+      <property name="lowThreshold" type="float" value="0.100000" />
+      <property name="highThreshold" type="float" value="1.000000" />
+      <property name="feather" type="float" value="0.300000" />
+      <property name="satvib" type="vec2" value="0.000000,1.000000" />
+      <property name="hue" type="float" value="360.000000" />
+      <property name="calpha" type="float" value="1.000000" />
+      <property name="GCE" type="bool" value="true" />
+      <property name="CHROM" type="bool" value="false" />
+      <property name="strengthhh" type="float" value="0.150000" />
+      <property name="angleee" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="cblend" type="bool" value="false" />
+      <property name="cmode" type="int" value="0" />
+      <property name="colblend" type="color" value="#ffffa800" />
+      <property name="alpb" type="float" value="0.500000" />
+      <property name="iter" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.texttransform" locallyApplied="true">
+      <property name="start" type="float">
+        <kf t="-0.003557" v="0.000000" />
+        <kf t="0.100044" v="1.000000" />
+      </property>
+      <property name="end" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="component" type="int" value="1" />
+      <property name="anchor" type="int" value="0" />
+      <property name="offset" type="vec2" value="0.000000,20.000000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="scale" type="float" value="0.000000" />
+      <property name="stretch" type="float" value="0.000000" />
+      <property name="alpha" type="float" value="-1.000000" />
+      <property name="useFillColor" type="bool" value="false" />
+      <property name="fillColor" type="color" value="#ff00ff00" />
+      <property name="easeIn" type="float" value="0.000000" />
+      <property name="easeOut" type="float" value="0.000000" />
+      <property name="overlap" type="float" value="0.000000" />
+      <property name="shape" type="int" value="0" />
+      <property name="randomOrder" type="bool" value="true" />
+      <property name="seed" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.stripes" locallyApplied="true">
+      <property name="amount" type="float" value="0.900000" />
+      <property name="width" type="float" value="0.230000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="phase" type="float">
+        <kf t="0.166741" v="0.560000" />
+        <kf t="0.392174" v="1.680000" />
+      </property>
+      <property name="color" type="color" value="#ffffffff" />
+      <property name="punchout" type="bool" value="false" />
+      <property name="smoothing" type="float" value="0.105000" />
+      <property name="screenSpace" type="bool" value="true" />
+    </effect>
+    <shadow direction="outside">
+      <opacity value="0.340000" />
+      <size value="53.000000" />
+    </shadow>
+    <content>3 MOUNTHS</content>
+  </text>
+  <nullobj id="102391801" label="Null 1" startTime="2600" endTime="4616" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.202381" v="960.000000,540.000000,0.000000" />
+        <kf t="0.748016" v="113.898590,578.928833,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+      </location>
+      <scale value="1.472900,1.472900" />
+    </transform>
+  </nullobj>
+  <embedScene id="102391807" label="Group 1" startTime="3066" endTime="7132" fillType="intrinsic" outTime="4066" mediaFillMode="fill">
+    <transform>
+      <location>
+        <kf t="0.276686" v="960.000000,540.000000,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.149780" v="1239.562744,540.000000,0.000000" />
+        <kf t="0.526808" v="960.000000,540.000000,0.000000" />
+        <kf t="0.690851" v="960.000000,540.000000,0.000000" />
+      </location>
+      <scale>
+        <kf t="0.567880" v="1.000000,1.000000" />
+        <kf t="0.690851" v="1.364170,1.364170" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </scale>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+      <property name="bmode" type="int" value="2" />
+      <property name="overd" type="bool" value="false" />
+      <property name="strength" type="float">
+        <kf t="0.567880" v="0.150000" />
+        <kf t="0.551402" v="0.215000" />
+        <kf t="0.526808" v="0.025000" />
+      </property>
+      <property name="oalpha" type="float">
+        <kf t="0.526808" v="0.610000" />
+        <kf t="0.567880" v="0.610000" />
+        <kf t="0.551402" v="3.000000" />
+      </property>
+      <property name="lowThreshold" type="float" value="0.100000" />
+      <property name="highThreshold" type="float" value="1.000000" />
+      <property name="feather" type="float" value="0.300000" />
+      <property name="satvib" type="vec2" value="0.000000,1.000000" />
+      <property name="hue" type="float" value="360.000000" />
+      <property name="calpha" type="float" value="1.000000" />
+      <property name="GCE" type="bool" value="false" />
+      <property name="CHROM" type="bool" value="false" />
+      <property name="strengthhh" type="float" value="0.150000" />
+      <property name="angleee" type="float" value="0.000000" />
+      <property name="centerChannel" type="int" value="1" />
+      <property name="cblend" type="bool" value="false" />
+      <property name="cmode" type="int" value="0" />
+      <property name="colblend" type="color" value="#ffffa800" />
+      <property name="alpb" type="float" value="0.500000" />
+      <property name="iter" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.shake2" locallyApplied="true">
+      <property name="mag" type="float">
+        <kf t="0.588293" v="0.000000" />
+        <kf t="0.526808" v="0.000000" />
+        <kf t="0.551402" v="100.000000" />
+      </property>
+      <property name="freq" type="float" value="2.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float" value="0.000000" />
+      <property name="angle" type="float" value="45.000000" />
+      <property name="slack" type="float" value="0.250000" />
+      <property name="zshake" type="float" value="0.000000" />
+    </effect>
+    <scene title="" width="1920" height="1291" exportWidth="1920" exportHeight="1291" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5015" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="102391802" label="Rounded Rectangle 3" startTime="0" endTime="5015" fillType="color" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="960.000000,645.500061,0.000000" />
+          <scale value="1.472701,1.472701" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.inner-glow" locallyApplied="true">
+          <property name="radius" type="float" value="23.600000" />
+          <property name="alpha" type="float" value="0.750000" />
+          <property name="hardness" type="float" value="0.000000" />
+          <property name="color" type="color" value="#ffffffff" />
+          <property name="blendMode" type="int" value="2" />
+        </effect>
+        <effect id="com.alightcreative.effects.partx" locallyApplied="true">
+          <property name="colorfg" type="color" value="#ffffffff" />
+          <property name="colorbg" type="color" value="#00000000" />
+          <property name="autop" type="bool" value="true" />
+          <property name="EVO" type="float" value="1.390000" />
+          <property name="kStarDensity" type="float" value="0.200000" />
+          <property name="kMotionBlur" type="float" value="1.000000" />
+          <property name="kNumAngles" type="float" value="200.000000" />
+          <property name="scale" type="float" value="1.000000" />
+          <property name="stretch" type="vec2" value="1.000000,1.000000" />
+          <property name="bright" type="float" value="1.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="blendMode" type="int" value="3" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffffffff" />
+        </path-stroke>
+        <property name="size" type="vec2" value="471.000000,100.000000" />
+        <property name="cornerRadius" type="float" value="264.000000" />
+      </shape>
+      <shape id="102391803" label="InShot_20260203_222427888.mp4" startTime="0" endTime="5015" clippingMask="true" fillType="media" fillVideo="content://media/external/video/media/194613" inTime="-1184" outTime="3831" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="960.000000,645.500061,0.000000" />
+          <scale value="0.799479,0.799479" />
+          <opacity value="0.804688" />
+        </transform>
+        <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+          <property name="brightness" type="float" value="0.000000" />
+          <property name="contrast" type="float" value="0.210000" />
+        </effect>
+        <effect id="com.alightcreative.effects.colorize" locallyApplied="true">
+          <property name="tint" type="vec3" value="-138.623901,0.284377,0.000000" />
+        </effect>
+        <property name="size" type="vec2" value="960.000000,540.000000" />
+      </shape>
+      <shape id="102391805" label="Rounded Rectangle 4" startTime="0" endTime="5015" fillType="none" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="960.000000,645.500061,0.000000" />
+          <scale value="1.472701,1.472701" />
+        </transform>
+        <fillColor value="#ff6eef9e" />
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.480000" />
+          <property name="oalpha" type="float" value="1.060000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffffffff" />
+          <size value="6.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="471.000000,100.000000" />
+        <property name="cornerRadius" type="float" value="351.000000" />
+      </shape>
+      <shape id="102391806" label="Picsart_26-02-04_11-41-35-521.png" startTime="0" endTime="5015" fillType="media" fillImage="content://media/external/images/media/195310" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="960.000000,645.500061,0.000000" />
+          <scale value="1.195370,1.195370" />
+        </transform>
+        <effect id="com.alightcreative.effects.hueshift" locallyApplied="true">
+          <property name="hue" type="float" value="3.500000" />
+        </effect>
+        <effect id="com.alightcreative.effects.softglow" locallyApplied="true">
+          <property name="strength" type="float" value="0.100000" />
+          <property name="brightness" type="float" value="1.000000" />
+          <property name="contrast" type="float" value="0.200000" />
+          <property name="highlights" type="float" value="0.500000" />
+          <property name="color" type="color" value="#ffff5566" />
+          <property name="blend" type="float" value="0.250000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="outsideAlpha" type="float" value="0.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.hueshift" locallyApplied="true">
+          <property name="hue" type="float" value="18.500000" />
+        </effect>
+        <effect id="com.alightcreative.effects.brightcont2" locallyApplied="true">
+          <property name="brightness" type="float" value="-0.190000" />
+          <property name="contrast" type="float" value="0.470000" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <shape id="102391808" label="VID_20260110_225221_139.mp4" startTime="5250" endTime="10015" fillType="media" fillVideo="content://media/external/video/media/163296" outTime="4765" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,99.500000" />
+      <scale value="1.521875,1.521875" />
+      <opacity>
+        <kf t="0.155509" v="1.000000" />
+        <kf t="0.183631" v="0.000000" />
+      </opacity>
+    </transform>
+    <effect id="com.alightcreative.effects.chromakey" locallyApplied="true">
+      <property name="keyColor" type="color" value="#ff00fe01" />
+      <property name="threshold" type="float" value="0.262000" />
+      <property name="feather" type="float" value="0.728000" />
+      <property name="defringe" type="bool" value="true" />
+      <property name="invert" type="bool" value="false" />
+    </effect>
+    <effect id="com.alightcreative.effects.colorize" locallyApplied="true">
+      <property name="tint" type="vec3" value="-106.364243,0.285215,0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="960.000000,540.000000" />
+  </shape>
+  <camera id="102391810" label="Camera 2" startTime="5616" endTime="10015" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.092993" v="960.000000,540.000000,-2426.768799" />
+        <kf t="0.316395" v="960.000000,540.000000,-14117.768555" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.430175" v="960.000000,540.000000,-14117.768555" />
+        <kf t="0.505882" v="960.000000,540.000000,-18447.261719" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.672613" v="960.000000,540.000000,-18447.261719" />
+        <kf t="0.884856" v="960.000000,540.000000,-22296.261719" />
+      </location>
+    </transform>
+    <fov value="60.000000" />
+    <focus-blur enabled="false">
+      <strength value="0.500000" />
+      <depth-of-field value="166.276886" />
+      <distance value="1662.768799" />
+    </focus-blur>
+    <fog enabled="false">
+      <near-z value="1662.768799" />
+      <far-z value="3325.537598" />
+    </fog>
+  </camera>
+  <embedScene id="102391820" label="Group 2" startTime="6133" endTime="10015" fillType="intrinsic" outTime="3882" mediaFillMode="fill">
+    <transform>
+      <location>
+        <kf t="0.251172" v="932.650391,897.792969,-3401.520752" />
+        <kf t="0.439966" v="-3306.188965,902.185303,-3401.520752" e="cubicBezier 0.42 0.0 0.58 1.0" />
+      </location>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.flip3" locallyApplied="true">
+      <property name="angle" type="float">
+        <kf t="0.251172" v="0.000000" />
+        <kf t="0.439966" v="-33.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </property>
+      <property name="axis" type="float">
+        <kf t="0.251172" v="0.000000" />
+        <kf t="0.439966" v="30.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </property>
+      <property name="crop" type="float" value="1.000000" />
+      <property name="zdist" type="float" value="0.000000" />
+      <property name="solid" type="bool" value="false" />
+      <property name="solidColor" type="color" value="#ffdd4455" />
+      <property name="thickness" type="float" value="1.000000" />
+      <property name="enableLight" type="bool" value="false" />
+      <property name="lightIntensity" type="float" value="1.000000" />
+      <property name="lightColor" type="color" value="#ffffffff" />
+      <property name="shine" type="float" value="0.800000" />
+      <property name="spec" type="float" value="30.000000" />
+      <property name="ambient" type="float" value="0.100000" />
+      <property name="lightDir" type="vec2" value="75.000000,-75.000000" />
+      <property name="lightDepth" type="float" value="-100.000000" />
+    </effect>
+    <scene title="" width="10120" height="6232" exportWidth="10120" exportHeight="6232" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3882" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="102391811" label="Rounded Rectangle 3" startTime="0" endTime="3882" fillType="color" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="5087.718750,2758.349609,0.000000" />
+          <scale value="4.870050,4.870050" />
+        </transform>
+        <fillColor value="#ffef83d6" />
+        <property name="size" type="vec2" value="272.000000,384.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+      </shape>
+      <shape id="102391812" label="Copy of ---- Bright Blue Light Spinning Spiral Vortex VJ Loop Background Video for Edits(1080P_HD).mp4" startTime="0" endTime="3882" clippingMask="true" fillType="media" fillVideo="content://media/external/video/media/164022" inTime="-16" outTime="3866" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="6402.632813,2760.784668,0.000000" />
+          <scale value="3.488542,3.488542" />
+        </transform>
+        <effect id="com.alightcreative.effects.partx" locallyApplied="true">
+          <property name="colorfg" type="color" value="#ffffffff" />
+          <property name="colorbg" type="color" value="#00000000" />
+          <property name="autop" type="bool" value="true" />
+          <property name="EVO" type="float" value="1.000000" />
+          <property name="kStarDensity" type="float" value="0.200000" />
+          <property name="kMotionBlur" type="float" value="1.000000" />
+          <property name="kNumAngles" type="float" value="200.000000" />
+          <property name="scale" type="float" value="1.000000" />
+          <property name="stretch" type="vec2" value="1.000000,1.000000" />
+          <property name="bright" type="float" value="1.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="blendMode" type="int" value="3" />
+        </effect>
+        <effect id="com.alightcreative.effects.gradshadow" locallyApplied="true">
+          <property name="color" type="color" value="#ff000000" />
+          <property name="start" type="float" value="0.950000" />
+          <property name="angle" type="float" value="90.000000" />
+          <property name="alphb" type="float" value="1.000000" />
+          <property name="feather" type="float" value="100.000000" />
+          <property name="end" type="float" value="1.500000" />
+          <property name="bright" type="float" value="1.000000" />
+          <property name="blendMode" type="int" value="0" />
+          <property name="alphab" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.340000" />
+          <property name="oalpha" type="float" value="0.980000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <property name="size" type="vec2" value="960.000000,540.000000" />
+      </shape>
+      <shape id="102391816" label="New Project 66 [800AACC].png" startTime="0" endTime="3882" clippingMask="true" fillType="media" fillImage="content://media/external/images/media/195314" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="5057.369141,3113.142578,-66.023682" />
+          <scale value="3.156217,3.156217" />
+          <rotation value="4.390244" />
+        </transform>
+        <effect id="com.alightcreative.effects.gradshadow" locallyApplied="true">
+          <property name="color" type="color" value="#ff000000" />
+          <property name="start" type="float" value="1.080000" />
+          <property name="angle" type="float" value="90.000000" />
+          <property name="alphb" type="float" value="1.000000" />
+          <property name="feather" type="float" value="100.000000" />
+          <property name="end" type="float" value="1.500000" />
+          <property name="bright" type="float" value="1.000000" />
+          <property name="blendMode" type="int" value="0" />
+          <property name="alphab" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.softglow" locallyApplied="true">
+          <property name="strength" type="float" value="0.410000" />
+          <property name="brightness" type="float" value="1.150000" />
+          <property name="contrast" type="float" value="0.200000" />
+          <property name="highlights" type="float" value="0.500000" />
+          <property name="color" type="color" value="#ffff5566" />
+          <property name="blend" type="float" value="0.250000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="outsideAlpha" type="float" value="0.000000" />
+        </effect>
+        <shadow direction="outside">
+          <opacity value="0.250000" />
+          <size value="39.000000" />
+        </shadow>
+        <property name="size" type="vec2" value="1529.571777,860.383484" />
+      </shape>
+      <text id="102391817" startTime="0" endTime="3882" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Muli&amp;weight=900&amp;italic=1" wrapWidth="512" align="center">
+        <transform>
+          <location value="5087.718750,3690.964355,0.000000" />
+          <scale value="6.841796,6.841796" />
+        </transform>
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.495000" />
+          <property name="oalpha" type="float" value="1.500000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <content>BUSINESS </content>
+      </text>
+      <shape id="102391819" label="Rounded Rectangle 4" startTime="0" endTime="3882" fillType="none" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="5087.718750,2758.349609,0.000000" />
+          <scale value="4.870050,4.870050" />
+        </transform>
+        <fillColor value="#fff16755" />
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.220000" />
+          <property name="oalpha" type="float" value="1.060000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffffffff" />
+          <size value="9.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="272.000000,384.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+      </shape>
+      <shape id="102391825" label="Shape 1" startTime="0" endTime="3882" fillType="none" mediaFillMode="fill">
+        <transform>
+          <location value="5060.000000,3116.000000,0.000000" />
+        </transform>
+        <fillColor value="#ffcd5063" />
+        <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+          <property name="start" type="float" value="-0.073000" />
+          <property name="end" type="float" value="1.018000" />
+          <property name="angle" type="float" value="54.000000" />
+          <property name="feather" type="float" value="20.200001" />
+        </effect>
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.250000" />
+          <property name="oalpha" type="float" value="1.050000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.drawing.progress" locallyApplied="true">
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float">
+            <kf t="0.000000" v="0.000000" />
+            <kf t="0.261348" v="100.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+          </property>
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffff0000" />
+          <size value="93.000000" />
+        </path-stroke>
+        <path d="M -1223.0002 -2153.999C -1223.0002 -2153.999, -921.73486 -1989.4565, 32.87317 -650.3315C 987.48126 688.7935, 1322.6213 1417.0009, 1322.6213 1417.0009L -1223.0002 -2153.999" />
+      </shape>
+    </scene>
+  </embedScene>
+  <embedScene id="102391824" label="Group 2 Copy 2" startTime="8583" endTime="10015" fillType="intrinsic" outTime="1432" mediaFillMode="fill">
+    <transform>
+      <location>
+        <kf t="0.553073" v="-580.043823,1071.829224,-13000.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="0.250000" v="-580.000000,6312.852051,-13000.000000" />
+      </location>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.flip3" locallyApplied="true">
+      <property name="angle" type="float">
+        <kf t="1.192700" v="-33.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </property>
+      <property name="axis" type="float">
+        <kf t="1.192700" v="30.000000" e="cubicBezier 0.42 0.0 0.0 1.0" />
+      </property>
+      <property name="crop" type="float" value="1.000000" />
+      <property name="zdist" type="float" value="0.000000" />
+      <property name="solid" type="bool" value="false" />
+      <property name="solidColor" type="color" value="#ffdd4455" />
+      <property name="thickness" type="float" value="1.000000" />
+      <property name="enableLight" type="bool" value="false" />
+      <property name="lightIntensity" type="float" value="1.000000" />
+      <property name="lightColor" type="color" value="#ffffffff" />
+      <property name="shine" type="float" value="0.800000" />
+      <property name="spec" type="float" value="30.000000" />
+      <property name="ambient" type="float" value="0.100000" />
+      <property name="lightDir" type="vec2" value="75.000000,-75.000000" />
+      <property name="lightDepth" type="float" value="-100.000000" />
+    </effect>
+    <scene title="" width="10120" height="6232" exportWidth="10120" exportHeight="6232" precompose="dynamicResolution" bgcolor="#00000000" totalTime="1432" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="102391811" label="Rounded Rectangle 3" startTime="0" endTime="1432" fillType="color" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="5087.718750,2758.349609,0.000000" />
+          <scale value="4.870050,4.870050" />
+        </transform>
+        <fillColor value="#ffef83d6" />
+        <property name="size" type="vec2" value="272.000000,384.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+      </shape>
+      <shape id="102391812" label="Copy of ---- Bright Blue Light Spinning Spiral Vortex VJ Loop Background Video for Edits(1080P_HD).mp4" startTime="0" endTime="1432" clippingMask="true" fillType="media" fillVideo="content://media/external/video/media/164022" inTime="-16" outTime="1416" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="6402.632813,2760.784668,0.000000" />
+          <scale value="3.488542,3.488542" />
+        </transform>
+        <effect id="com.alightcreative.effects.partx" locallyApplied="true">
+          <property name="colorfg" type="color" value="#ffffffff" />
+          <property name="colorbg" type="color" value="#00000000" />
+          <property name="autop" type="bool" value="true" />
+          <property name="EVO" type="float" value="1.000000" />
+          <property name="kStarDensity" type="float" value="0.200000" />
+          <property name="kMotionBlur" type="float" value="1.000000" />
+          <property name="kNumAngles" type="float" value="200.000000" />
+          <property name="scale" type="float" value="1.000000" />
+          <property name="stretch" type="vec2" value="1.000000,1.000000" />
+          <property name="bright" type="float" value="1.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="blendMode" type="int" value="3" />
+        </effect>
+        <effect id="com.alightcreative.effects.gradshadow" locallyApplied="true">
+          <property name="color" type="color" value="#ff000000" />
+          <property name="start" type="float" value="0.950000" />
+          <property name="angle" type="float" value="90.000000" />
+          <property name="alphb" type="float" value="1.000000" />
+          <property name="feather" type="float" value="100.000000" />
+          <property name="end" type="float" value="1.500000" />
+          <property name="bright" type="float" value="1.000000" />
+          <property name="blendMode" type="int" value="0" />
+          <property name="alphab" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.340000" />
+          <property name="oalpha" type="float" value="0.980000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <property name="size" type="vec2" value="960.000000,540.000000" />
+      </shape>
+      <shape id="102391816" label="New Project 66 [800AACC].png" startTime="0" endTime="1432" clippingMask="true" fillType="media" fillImage="content://media/external/images/media/195314" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="5057.369141,3113.142578,-66.023682" />
+          <scale value="3.156217,3.156217" />
+          <rotation value="4.390244" />
+        </transform>
+        <effect id="com.alightcreative.effects.gradshadow" locallyApplied="true">
+          <property name="color" type="color" value="#ff000000" />
+          <property name="start" type="float" value="1.080000" />
+          <property name="angle" type="float" value="90.000000" />
+          <property name="alphb" type="float" value="1.000000" />
+          <property name="feather" type="float" value="100.000000" />
+          <property name="end" type="float" value="1.500000" />
+          <property name="bright" type="float" value="1.000000" />
+          <property name="blendMode" type="int" value="0" />
+          <property name="alphab" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.softglow" locallyApplied="true">
+          <property name="strength" type="float" value="0.410000" />
+          <property name="brightness" type="float" value="1.150000" />
+          <property name="contrast" type="float" value="0.200000" />
+          <property name="highlights" type="float" value="0.500000" />
+          <property name="color" type="color" value="#ffff5566" />
+          <property name="blend" type="float" value="0.250000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="outsideAlpha" type="float" value="0.000000" />
+        </effect>
+        <shadow direction="outside">
+          <opacity value="0.250000" />
+          <size value="39.000000" />
+        </shadow>
+        <property name="size" type="vec2" value="1529.571777,860.383484" />
+      </shape>
+      <text id="102391817" startTime="0" endTime="1432" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Muli&amp;weight=900&amp;italic=1" wrapWidth="512" align="center">
+        <transform>
+          <location value="5087.718750,3690.964355,0.000000" />
+          <scale value="6.841796,6.841796" />
+        </transform>
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.495000" />
+          <property name="oalpha" type="float" value="1.500000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <content>TALENT </content>
+      </text>
+      <shape id="102391819" label="Rounded Rectangle 4" hidden="true" startTime="0" endTime="1432" fillType="none" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="5087.718750,2758.349609,0.000000" />
+          <scale value="4.870050,4.870050" />
+        </transform>
+        <fillColor value="#fff16755" />
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.220000" />
+          <property name="oalpha" type="float" value="1.060000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffffffff" />
+          <size value="9.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="272.000000,384.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+      </shape>
+      <shape id="102391826" label="Shape 1" startTime="0" endTime="1432" fillType="none" mediaFillMode="fill">
+        <transform>
+          <location value="5060.000000,3116.000000,0.000000" />
+        </transform>
+        <fillColor value="#ffcd5063" />
+        <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+          <property name="start" type="float" value="-0.073000" />
+          <property name="end" type="float" value="1.018000" />
+          <property name="angle" type="float" value="54.000000" />
+          <property name="feather" type="float" value="20.200001" />
+        </effect>
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.250000" />
+          <property name="oalpha" type="float" value="1.050000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.drawing.progress" locallyApplied="true">
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float">
+            <kf t="0.657123" v="0.000000" />
+            <kf t="1.010861" v="100.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+          </property>
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffff0000" />
+          <size value="93.000000" />
+        </path-stroke>
+        <path d="M -1223.0002 -2153.999C -1223.0002 -2153.999, -921.73486 -1989.4565, 32.87317 -650.3315C 987.48126 688.7935, 1322.6213 1417.0009, 1322.6213 1417.0009L -1223.0002 -2153.999" />
+      </shape>
+    </scene>
+  </embedScene>
+  <embedScene id="102391823" label="Group 2 Copy" startTime="7733" endTime="10015" fillType="intrinsic" outTime="2282" mediaFillMode="fill">
+    <transform>
+      <location>
+        <kf t="0.106066" v="5015.131348,698.909180,-6500.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+        <kf t="-0.003511" v="5015.000000,8113.887207,-6512.000000" />
+      </location>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.flip3" locallyApplied="true">
+      <property name="angle" type="float">
+        <kf t="0.748443" v="30.000000" />
+      </property>
+      <property name="axis" type="float">
+        <kf t="0.748443" v="346.000000" />
+      </property>
+      <property name="crop" type="float" value="1.000000" />
+      <property name="zdist" type="float" value="0.000000" />
+      <property name="solid" type="bool" value="false" />
+      <property name="solidColor" type="color" value="#ffdd4455" />
+      <property name="thickness" type="float" value="1.000000" />
+      <property name="enableLight" type="bool" value="false" />
+      <property name="lightIntensity" type="float" value="1.000000" />
+      <property name="lightColor" type="color" value="#ffffffff" />
+      <property name="shine" type="float" value="0.800000" />
+      <property name="spec" type="float" value="30.000000" />
+      <property name="ambient" type="float" value="0.100000" />
+      <property name="lightDir" type="vec2" value="75.000000,-75.000000" />
+      <property name="lightDepth" type="float" value="-100.000000" />
+    </effect>
+    <scene title="" width="10120" height="6232" exportWidth="10120" exportHeight="6232" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2282" fps="60" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="102391811" label="Rounded Rectangle 3" startTime="0" endTime="2282" fillType="color" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="5087.718750,2758.349609,0.000000" />
+          <scale value="4.870050,4.870050" />
+        </transform>
+        <fillColor value="#ffef83d6" />
+        <property name="size" type="vec2" value="272.000000,384.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+      </shape>
+      <shape id="102391812" label="Copy of ---- Bright Blue Light Spinning Spiral Vortex VJ Loop Background Video for Edits(1080P_HD).mp4" startTime="0" endTime="2282" clippingMask="true" fillType="media" fillVideo="content://media/external/video/media/164022" inTime="-16" outTime="2266" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="6402.632813,2760.784668,0.000000" />
+          <scale value="3.488542,3.488542" />
+        </transform>
+        <effect id="com.alightcreative.effects.partx" locallyApplied="true">
+          <property name="colorfg" type="color" value="#ffffffff" />
+          <property name="colorbg" type="color" value="#00000000" />
+          <property name="autop" type="bool" value="true" />
+          <property name="EVO" type="float" value="1.000000" />
+          <property name="kStarDensity" type="float" value="0.200000" />
+          <property name="kMotionBlur" type="float" value="1.000000" />
+          <property name="kNumAngles" type="float" value="200.000000" />
+          <property name="scale" type="float" value="1.000000" />
+          <property name="stretch" type="vec2" value="1.000000,1.000000" />
+          <property name="bright" type="float" value="1.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="angle" type="float" value="0.000000" />
+          <property name="blendMode" type="int" value="3" />
+        </effect>
+        <effect id="com.alightcreative.effects.gradshadow" locallyApplied="true">
+          <property name="color" type="color" value="#ff000000" />
+          <property name="start" type="float" value="0.950000" />
+          <property name="angle" type="float" value="90.000000" />
+          <property name="alphb" type="float" value="1.000000" />
+          <property name="feather" type="float" value="100.000000" />
+          <property name="end" type="float" value="1.500000" />
+          <property name="bright" type="float" value="1.000000" />
+          <property name="blendMode" type="int" value="0" />
+          <property name="alphab" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.340000" />
+          <property name="oalpha" type="float" value="0.980000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <property name="size" type="vec2" value="960.000000,540.000000" />
+      </shape>
+      <shape id="102391816" label="New Project 66 [800AACC].png" startTime="0" endTime="2282" clippingMask="true" fillType="media" fillImage="content://media/external/images/media/195314" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="5057.369141,3113.142578,-66.023682" />
+          <scale value="3.156217,3.156217" />
+          <rotation value="4.390244" />
+        </transform>
+        <effect id="com.alightcreative.effects.gradshadow" locallyApplied="true">
+          <property name="color" type="color" value="#ff000000" />
+          <property name="start" type="float" value="1.080000" />
+          <property name="angle" type="float" value="90.000000" />
+          <property name="alphb" type="float" value="1.000000" />
+          <property name="feather" type="float" value="100.000000" />
+          <property name="end" type="float" value="1.500000" />
+          <property name="bright" type="float" value="1.000000" />
+          <property name="blendMode" type="int" value="0" />
+          <property name="alphab" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.softglow" locallyApplied="true">
+          <property name="strength" type="float" value="0.410000" />
+          <property name="brightness" type="float" value="1.150000" />
+          <property name="contrast" type="float" value="0.200000" />
+          <property name="highlights" type="float" value="0.500000" />
+          <property name="color" type="color" value="#ffff5566" />
+          <property name="blend" type="float" value="0.250000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="outsideAlpha" type="float" value="0.000000" />
+        </effect>
+        <shadow direction="outside">
+          <opacity value="0.250000" />
+          <size value="39.000000" />
+        </shadow>
+        <property name="size" type="vec2" value="1529.571777,860.383484" />
+      </shape>
+      <text id="102391817" startTime="0" endTime="2282" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Muli&amp;weight=900&amp;italic=1" wrapWidth="512" align="center">
+        <transform>
+          <location value="5087.718750,3690.964355,0.000000" />
+          <scale value="6.841796,6.841796" />
+        </transform>
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.495000" />
+          <property name="oalpha" type="float" value="1.500000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <content>DEGREE</content>
+      </text>
+      <shape id="102391819" label="Rounded Rectangle 4" startTime="0" endTime="2282" fillType="none" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="5087.718750,2758.349609,0.000000" />
+          <scale value="4.870050,4.870050" />
+        </transform>
+        <fillColor value="#fff16755" />
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.220000" />
+          <property name="oalpha" type="float" value="1.060000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffffffff" />
+          <size value="9.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="272.000000,384.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+      </shape>
+      <shape id="102391827" label="Shape 1" startTime="0" endTime="2282" fillType="none" mediaFillMode="fill">
+        <transform>
+          <location value="5060.000000,3116.000000,0.000000" />
+          <scale value="-1.000000,1.000000" />
+        </transform>
+        <fillColor value="#ffcd5063" />
+        <effect id="com.alightcreative.effects.wipe2" locallyApplied="true">
+          <property name="start" type="float" value="-0.073000" />
+          <property name="end" type="float" value="1.018000" />
+          <property name="angle" type="float" value="54.000000" />
+          <property name="feather" type="float" value="20.200001" />
+        </effect>
+        <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true">
+          <property name="bmode" type="int" value="2" />
+          <property name="overd" type="bool" value="false" />
+          <property name="strength" type="float" value="0.250000" />
+          <property name="oalpha" type="float" value="1.050000" />
+          <property name="lowThreshold" type="float" value="0.100000" />
+          <property name="highThreshold" type="float" value="1.000000" />
+          <property name="feather" type="float" value="0.300000" />
+          <property name="satvib" type="vec2" value="0.000000,1.000000" />
+          <property name="hue" type="float" value="360.000000" />
+          <property name="calpha" type="float" value="1.000000" />
+          <property name="GCE" type="bool" value="false" />
+          <property name="CHROM" type="bool" value="false" />
+          <property name="strengthhh" type="float" value="0.150000" />
+          <property name="angleee" type="float" value="0.000000" />
+          <property name="centerChannel" type="int" value="1" />
+          <property name="cblend" type="bool" value="false" />
+          <property name="cmode" type="int" value="0" />
+          <property name="colblend" type="color" value="#ffffa800" />
+          <property name="alpb" type="float" value="0.500000" />
+          <property name="iter" type="float" value="1.000000" />
+        </effect>
+        <effect id="com.alightcreative.effects.drawing.progress" locallyApplied="true">
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float">
+            <kf t="0.000000" v="0.000000" />
+            <kf t="0.346626" v="100.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+          </property>
+        </effect>
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffff0000" />
+          <size value="93.000000" />
+        </path-stroke>
+        <path d="M -1223.0002 -2153.999C -1223.0002 -2153.999, -921.73486 -1989.4565, 32.87317 -650.3315C 987.48126 688.7935, 1322.6213 1417.0009, 1322.6213 1417.0009L -1223.0002 -2153.999" />
+      </shape>
+    </scene>
+  </embedScene>
+</scene>

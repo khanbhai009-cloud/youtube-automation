@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-05-29 11:54 AM
+5.0.270.1002578 (1002351)
+6dff462 (Apr 11, 2024 6:17:55 PM)
+-->
+<scene title="New Project 64" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="15665" fps="30" modifiedTime="1748499896339" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <media uri="content://media/external/images/media/1000041770" type="image/jpeg" duration="0" orientation="0" infoUpdated="1748499844727" width="0" height="0" />
+  <media uri="content://media/external/images/media/1000041914" type="image/jpeg" duration="0" orientation="0" infoUpdated="1748499818377" width="0" height="0" />
+  <media uri="content://media/external/images/media/1000041766" type="image/png" duration="0" orientation="0" infoUpdated="1748499790799" width="0" height="0" />
+  <shape id="10156848" label="Rectangle 1" startTime="0" endTime="15665" fillType="color" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <scale value="9.600000,5.400000" />
+    </transform>
+    <fillColor value="#ffc0eeff" />
+    <property name="size" type="vec2" value="100.000000,100.000000" />
+  </shape>
+  <embedScene id="10156859" label="Group 1" startTime="0" endTime="15665" fillType="intrinsic" outTime="15665" mediaFillMode="fill">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+      <pivot value="2.750000,-4.250000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.flip3" locallyApplied="true">
+      <property name="angle" type="float">
+        <kf t="0.001021" v="0.000000" />
+        <kf t="0.218066" v="-18.200001" />
+        <kf t="0.433003" v="9.300000" />
+        <kf t="0.767060" v="-18.800001" />
+      </property>
+      <property name="axis" type="float">
+        <kf t="0.001021" v="0.000000" />
+        <kf t="0.218066" v="46.000000" />
+        <kf t="0.433003" v="46.000000" />
+        <kf t="0.767060" v="0.000000" />
+      </property>
+      <property name="crop" type="float" value="1.000000" />
+      <property name="zdist" type="float" value="0.000000" />
+      <property name="solid" type="bool" value="false" />
+      <property name="solidColor" type="color" value="#ffdd4455" />
+      <property name="thickness" type="float" value="1.000000" />
+      <property name="enableLight" type="bool" value="false" />
+      <property name="lightIntensity" type="float" value="1.000000" />
+      <property name="lightColor" type="color" value="#ffffffff" />
+      <property name="shine" type="float" value="0.800000" />
+      <property name="spec" type="float" value="30.000000" />
+      <property name="ambient" type="float" value="0.100000" />
+      <property name="lightDir" type="vec2" value="75.000000,-75.000000" />
+      <property name="lightDepth" type="float" value="-100.000000" />
+    </effect>
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="15665" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10156849" label="Rectangle 2" startTime="0" endTime="15665" fillType="color" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="537.500000,540.000000,0.000000" />
+          <scale value="3.175000,3.175000" />
+        </transform>
+        <fillColor value="#ff00445e" />
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="10156850" label="Rectangle 2 Copy" startTime="0" endTime="15665" fillType="color" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="1388.000000,531.500000,0.000000" />
+          <scale value="3.175000,3.175000" />
+        </transform>
+        <fillColor value="#ff00445e" />
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <shape id="10156851" label="image_search_1746974250758.png" startTime="0" endTime="15665" fillType="media" fillImage="content://media/external/images/media/1000041770" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="537.500000,540.000000,0.000000" />
+          <scale value="0.549074,0.549074" />
+        </transform>
+        <effect id="com.alightcreative.effects.pagecurl" locallyApplied="true">
+          <property name="progress" type="float">
+            <kf t="0.001023" v="0.230000" />
+            <kf t="0.767061" v="0.310000" e="random 0.5 0.5 0.5 0.5 0.5 0.0" />
+          </property>
+          <property name="radius" type="float" value="0.100000" />
+          <property name="angle" type="float" value="38.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="strength" type="float" value="0.100000" />
+          <property name="backColor" type="color" value="#ff888888" />
+          <property name="backAlpha" type="float" value="1.000000" />
+          <property name="backBlendMode" type="int" value="1" />
+          <property name="shineColor" type="color" value="#ffffffff" />
+          <property name="shineAlpha" type="float" value="1.000000" />
+          <property name="shineSpec" type="float" value="30.000000" />
+          <property name="shineBlendMode" type="int" value="2" />
+          <property name="dropShadowColor" type="color" value="#ff000000" />
+          <property name="dropShadowAlpha" type="float" value="0.800000" />
+          <property name="softDropShadow" type="bool" value="true" />
+          <property name="frontShadowColor" type="color" value="#ffffffff" />
+          <property name="frontShadowAlpha" type="float" value="1.000000" />
+          <property name="frontShadowBlendMode" type="int" value="2" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+      <shape id="10156853" label="image_search_1746986779982.jpg" startTime="0" endTime="15665" fillType="media" fillImage="content://media/external/images/media/1000041914" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="1388.000000,531.500000,0.000000" />
+          <scale value="0.482407,0.482407" />
+        </transform>
+        <effect id="com.alightcreative.effects.pagecurl" locallyApplied="true">
+          <property name="progress" type="float">
+            <kf t="0.767061" v="0.240000" e="random 0.5 0.5 0.5 0.5 0.5 0.0" />
+            <kf t="0.001023" v="0.180000" />
+          </property>
+          <property name="radius" type="float" value="0.100000" />
+          <property name="angle" type="float" value="38.000000" />
+          <property name="alpha" type="float" value="1.000000" />
+          <property name="strength" type="float" value="0.100000" />
+          <property name="backColor" type="color" value="#ff888888" />
+          <property name="backAlpha" type="float" value="1.000000" />
+          <property name="backBlendMode" type="int" value="1" />
+          <property name="shineColor" type="color" value="#ffffffff" />
+          <property name="shineAlpha" type="float" value="1.000000" />
+          <property name="shineSpec" type="float" value="30.000000" />
+          <property name="shineBlendMode" type="int" value="2" />
+          <property name="dropShadowColor" type="color" value="#ff000000" />
+          <property name="dropShadowAlpha" type="float" value="0.800000" />
+          <property name="softDropShadow" type="bool" value="true" />
+          <property name="frontShadowColor" type="color" value="#ffffffff" />
+          <property name="frontShadowAlpha" type="float" value="1.000000" />
+          <property name="frontShadowBlendMode" type="int" value="2" />
+        </effect>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+      <shape id="10156852" label="image_search_1746974158787.png" startTime="0" endTime="15665" fillType="media" fillImage="content://media/external/images/media/1000041766" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="763.898193,327.248474,0.000000" />
+          <scale value="0.104530,0.104530" />
+        </transform>
+        <property name="size" type="vec2" value="637.000000,763.000000" />
+      </shape>
+      <shape id="10156855" label="image_search_1746974158787.png Copy" startTime="0" endTime="15665" fillType="media" fillImage="content://media/external/images/media/1000041766" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="1583.000000,355.983093,0.000000" />
+          <scale value="0.104530,0.104530" />
+        </transform>
+        <property name="size" type="vec2" value="607.000000,813.000000" />
+      </shape>
+      <text id="10156856" startTime="0" endTime="15665" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Roboto&amp;weight=500" wrapWidth="512" align="left">
+        <transform>
+          <location value="545.500000,370.792969,0.000000" />
+          <scale value="0.720703,0.720703" />
+          <rotation value="1.097561" />
+          <opacity value="0.601563" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.effects.textprogress" locallyApplied="true">
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float">
+            <kf t="0.000000" v="0.000000" />
+            <kf t="0.220235" v="1.000000" />
+          </property>
+          <property name="cursor" type="int" value="0" />
+          <property name="blink" type="bool" value="false" />
+        </effect>
+        <content>Name - Vault Tube </content>
+      </text>
+      <text id="10156857" label="Name - Elon Musk Copy" startTime="3400" endTime="15665" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Roboto&amp;weight=500" wrapWidth="512" align="left">
+        <transform>
+          <location value="544.500000,413.462769,0.000000" />
+          <scale value="0.720703,0.720703" />
+          <rotation value="1.097561" />
+          <opacity value="0.601563" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.effects.textprogress" locallyApplied="true">
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float">
+            <kf t="0.000000" v="0.000000" />
+            <kf t="0.281287" v="1.000000" />
+          </property>
+          <property name="cursor" type="int" value="0" />
+          <property name="blink" type="bool" value="false" />
+        </effect>
+        <content>DOB - 28June 1971</content>
+      </text>
+      <text id="10156858" label="Name - Elon Musk Copy 2" startTime="6866" endTime="15665" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Roboto&amp;weight=500" wrapWidth="620" align="left">
+        <transform>
+          <location value="555.000000,539.500000,0.000000" />
+          <scale value="0.661290,0.661290" />
+          <rotation value="1.097561" />
+          <opacity value="0.601563" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <effect id="com.alightcreative.effects.textprogress" locallyApplied="true">
+          <property name="start" type="float" value="0.000000" />
+          <property name="end" type="float">
+            <kf t="0.000000" v="0.000000" />
+            <kf t="0.392088" v="1.000000" />
+          </property>
+          <property name="cursor" type="int" value="0" />
+          <property name="blink" type="bool" value="false" />
+        </effect>
+        <content>Net Worth - $336 billion</content>
+      </text>
+    </scene>
+  </embedScene>
+</scene>

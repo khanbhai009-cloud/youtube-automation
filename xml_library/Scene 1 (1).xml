@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-04-09 02:56 AM
+5.0.273 (1002592)
+a34a6c0 (7 Oct 2024 14:17:29)
+-->
+<scene title="New Project" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="9399" fps="30" modifiedTime="1744152999806" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.273" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <media uri="content://media/external/images/media/1000059445" filename="Runway.png" title="Runway.png" type="image/png" size="1960839" orientation="0" infoUpdated="1744152993304" width="1920" height="1080" />
+  <media uri="content://media/external/images/media/1000052448" filename="Cloud.H03.2k.png" title="Cloud.H03.2k.png" type="image/png" size="3445880" orientation="0" infoUpdated="1744152993304" width="2048" height="2048" />
+  <media uri="content://media/external/images/media/1000059447" filename="Daco_5636682.png" title="Daco_5636682.png" type="image/png" size="97378" orientation="0" infoUpdated="1744152993304" width="1730" height="463" />
+  <bookmark t="4650" />
+  <bookmark t="9750" />
+  <shape id="93" label="Sky Background " startTime="0" endTime="9399" fillType="gradient" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="960.000000,-898.015625,1000.000000" />
+      <scale value="15.571079,8.758749" />
+    </transform>
+    <fillColor value="#ff95fce9" />
+    <gradient type="linear" startColor="#ff3d4cf5" endColor="#ffffffff" start="0.483032,-0.182427" end="0.525391,2.228591" />
+    <property name="size" type="vec2" value="145.000000,726.000000" />
+  </shape>
+  <shape id="94" label="Runway.png" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000059445" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+    </transform>
+    <property name="size" type="vec2" value="960.000000,540.000000" />
+  </shape>
+  <embedScene id="97" label="Circle" startTime="0" endTime="9399" fillType="intrinsic" blending="lighten" outTime="9399" mediaFillMode="fill">
+    <transform>
+      <location value="960.000000,787.476563,0.000000" />
+      <scale>
+        <kf t="0.108097" v="1.000000,1.000000" e="cubicBezier 0.5412284 0.0 0.3919612 1.0" />
+        <kf t="0.001702" v="0.000000,0.000000" />
+      </scale>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.flip3" locallyApplied="true">
+      <property name="angle" type="float" value="75.000000" />
+      <property name="axis" type="float" value="90.000000" />
+      <property name="crop" type="float" value="1.000000" />
+      <property name="zdist" type="float" value="0.000000" />
+      <property name="solid" type="bool" value="false" />
+      <property name="solidColor" type="color" value="#ffdd4455" />
+      <property name="thickness" type="float" value="1.000000" />
+      <property name="enableLight" type="bool" value="false" />
+      <property name="lightIntensity" type="float" value="1.000000" />
+      <property name="lightColor" type="color" value="#ffffffff" />
+      <property name="shine" type="float" value="0.800000" />
+      <property name="spec" type="float" value="30.000000" />
+      <property name="ambient" type="float" value="0.100000" />
+      <property name="lightDir" type="vec2" value="75.000000,-75.000000" />
+      <property name="lightDepth" type="float" value="-100.000000" />
+    </effect>
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="10032" fps="30" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.273" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="95" label="Circle 1" startTime="0" endTime="10032" fillType="color" mediaFillMode="fill" s=".circle">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+          <scale value="2.170000,2.170000" />
+        </transform>
+        <fillColor value="#ffff4444" />
+        <path-stroke direction="centered" end-size="1.500000">
+          <color value="#ffffffff" />
+          <size value="49.500000" />
+        </path-stroke>
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+      <embedScene id="96" label="Group 1" startTime="0" endTime="10032" fillType="intrinsic" outTime="10032" mediaFillMode="fill">
+        <transform>
+          <location value="960.000000,540.000000,0.000000" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="0" fps="30" modifiedTime="0" amver="1002592" ffver="106" am="com.alightcreative.motion/5.0.273" amplatform="android" retime="off" retimeAdaptFPS="false" />
+      </embedScene>
+    </scene>
+  </embedScene>
+  <shape id="98" label="Cloud.H03.2k.png" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="1766.562500,-64.707031,-400.000000" />
+      <scale value="1.612037,1.612037" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="99" label="Cloud.H03.2k.png Copy" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="-38.460655,-678.361267,400.000000" />
+      <scale value="3.211111,3.211111" />
+      <opacity value="0.496094" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="102" label="Cloud.H03.2k.png Copy 2" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="1583.187256,-770.461975,-605.664063" />
+      <scale value="3.836111,3.836111" />
+      <opacity value="0.500000" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="103" label="Cloud.H03.2k.png Copy 3" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="60.144592,-2057.879395,176.210938" />
+      <scale value="3.836111,3.836111" />
+      <opacity value="0.500000" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="104" label="Cloud.H03.2k.png Copy 4" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="1668.991699,-1708.677979,176.210938" />
+      <scale value="3.836111,3.836111" />
+      <opacity value="0.500000" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="105" label="Cloud.H03.2k.png Copy 5" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="1569.670044,-3208.098389,-288.828125" />
+      <scale value="3.836111,3.836111" />
+      <opacity value="0.500000" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="106" label="Cloud.H03.2k.png Copy 6" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="-35.060364,-2894.070068,-288.828125" />
+      <scale value="3.330555,3.330555" />
+      <opacity value="0.500000" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="107" label="Cloud.H03.2k.png Copy 7" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="938.499939,-4420.542969,-288.828125" />
+      <scale value="3.330555,3.330555" />
+      <opacity value="0.302734" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="108" label="Cloud.H03.2k.png Copy 8" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="-240.490097,-5087.884766,-577.656250" />
+      <scale value="3.330555,3.330555" />
+      <opacity value="0.302734" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="109" label="Cloud.H03.2k.png Copy 9" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="1861.628296,-5210.026855,-577.656250" />
+      <scale value="3.330555,3.330555" />
+      <opacity value="0.302734" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="110" label="Cloud.H03.2k.png Copy 10" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="159.250748,-5922.482910,275.718750" />
+      <scale value="3.330555,3.330555" />
+      <opacity value="0.500000" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="111" label="Cloud.H03.2k.png Copy 11" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="1549.396240,-5925.619141,-705.699219" />
+      <scale value="2.819444,2.819444" />
+      <opacity value="0.500000" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="112" label="Cloud.H03.2k.png Copy 12" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000052448" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="771.315918,-6885.690430,-1200.000000" />
+      <scale value="2.819444,2.819444" />
+      <opacity value="0.500000" />
+    </transform>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="100" label="line" startTime="600" endTime="9399" fillType="none" mediaFillMode="fill">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+    </transform>
+    <fillColor value="#ff4adbbd" />
+    <effect id="com.alightcreative.effects.drawing.progress" locallyApplied="true">
+      <property name="start" type="float" value="0.000000" />
+      <property name="end" type="float">
+        <kf t="0.001819" v="0.000000" />
+        <kf t="0.509490" v="100.000000" e="cubicBezier 0.495431 0.0 0.48840517 1.0" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.stripes" locallyApplied="true">
+      <property name="amount" type="float" value="69.200005" />
+      <property name="width" type="float" value="0.500000" />
+      <property name="angle" type="float" value="0.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="color" type="color" value="#ff2d1ef6" />
+      <property name="punchout" type="bool" value="true" />
+      <property name="smoothing" type="float" value="0.010000" />
+      <property name="screenSpace" type="bool" value="false" />
+    </effect>
+    <path-stroke direction="centered" end-size="1.500000">
+      <color value="#ffffffff" />
+      <size value="28.000000" />
+    </path-stroke>
+    <path d="M -2.4609375 232.08594L -2.4609375 -6605.551L -2.4609375 232.08594" />
+  </shape>
+  <camera id="101" label="Camera 1" startTime="0" endTime="9399" mediaFillMode="fill" parent="114" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.108097" v="0.000000,0.000000,-1662.768799" />
+        <kf t="0.533674" v="0.000000,-6829.328125,-1662.768799" e="cubicBezier 0.47765085 0.0 0.40273705 1.0" />
+      </location>
+    </transform>
+    <fov value="60.000000" />
+    <focus-blur enabled="false">
+      <strength value="0.500000" />
+      <depth-of-field value="166.276886" />
+      <distance value="1662.768799" />
+    </focus-blur>
+    <fog enabled="false">
+      <near-z value="1662.768799" />
+      <far-z value="3325.537598" />
+    </fog>
+  </camera>
+  <nullobj id="114" label="Null 1" startTime="-766" endTime="9399" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.457452" v="960.000000,540.000000,0.000000" />
+        <kf t="0.959174" v="336.718689,540.316406,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+      </location>
+    </transform>
+  </nullobj>
+  <shape id="113" label="Daco_5636682.png" startTime="0" endTime="9399" fillType="media" fillImage="content://media/external/images/media/1000059447" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.494734" v="1086.718750,-6134.249023,0.000000" />
+        <kf t="1.037345" v="241.562561,-6134.249023,0.000000" e="cubicBezier 0.42 0.0 0.58 1.0" />
+      </location>
+      <scale value="-0.755208,0.755208" />
+    </transform>
+    <property name="size" type="vec2" value="960.000000,256.500000" />
+  </shape>
+</scene>

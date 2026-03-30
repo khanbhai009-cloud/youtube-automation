@@ -1,0 +1,914 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2026-01-30 03:10 PM
+5.0.270.1002578 (1002351)
+6dff462 (11 Apr 2024 6:17:55 pm)
+-->
+<scene title="Full Project " width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="23615" fps="30" modifiedTime="1769766043270" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" templateLink="share/u/ymkbZH03OKXG8rwkOpas2B9P7o93/p/psZht8WuBg-d49e1e5086dcc6c5/projectfiles.zip" retime="freeze" retimeAdaptFPS="false">
+  <media uri="am:7A964C0018F260AFE5692A3A2F8A800E8ADC8A6E.mp3" filename="New Project 1942 [EF87F94].mp3" title="New Project 1942 [EF87F94].mp3" type="audio/mpeg" duration="23616000" size="160348" sig="7A964C0018F260AFE5692A3A2F8A800E8ADC8A6E" infoUpdated="1769766008323" />
+  <media uri="am:17B22ACDE5A41BCF1DA3862983E0DE6AD9C985BE.jpg" type="image/jpeg" duration="0" sig="17B22ACDE5A41BCF1DA3862983E0DE6AD9C985BE" orientation="0" infoUpdated="1769766008323" width="0" height="0" />
+  <media uri="am:F684B5CC97808D56C2232CE8DFD4684CB55FC2B0.jpg" filename="584161162_18065119220421774_1121096837492243335_n.jpg" title="584161162_18065119220421774_1121096837492243335_n.jpg" type="image/jpeg" size="125836" sig="F684B5CC97808D56C2232CE8DFD4684CB55FC2B0" orientation="0" infoUpdated="1769766008323" width="1080" height="1080" />
+  <media uri="am:753719506DE9EFE80692A3D949A4602964257A65.jpg" filename="__naveen._.31-___3807558148199192051_42494733773___--1.jpg" title="__naveen._.31-___3807558148199192051_42494733773___--1.jpg" type="image/webp" size="79190" sig="753719506DE9EFE80692A3D949A4602964257A65" orientation="0" infoUpdated="1769766008323" width="720" height="960" />
+  <media uri="am:7ED2D5F4373C17DF346F3287DB30AFEA7512D526.jpg" filename="__naveen._.31-___3807558148199192051_42494733773___-.jpg" title="__naveen._.31-___3807558148199192051_42494733773___-.jpg" type="image/webp" size="53026" sig="7ED2D5F4373C17DF346F3287DB30AFEA7512D526" orientation="0" infoUpdated="1769766008323" width="720" height="960" />
+  <media uri="am:FDFD3AEE6C435FE79CC940EEDB1B992D5988898B.jpg" filename="__naveen._.31-___3807558148199192051_42494733773___--2.jpg" title="__naveen._.31-___3807558148199192051_42494733773___--2.jpg" type="image/webp" size="75644" sig="FDFD3AEE6C435FE79CC940EEDB1B992D5988898B" orientation="0" infoUpdated="1769766008323" width="720" height="960" />
+  <media uri="am:A6A7568FF6AAB158BFCD85714257B9B85E95A620.jpg" filename="__naveen._.31-___3807558148199192051_42494733773___--3.jpg" title="__naveen._.31-___3807558148199192051_42494733773___--3.jpg" type="image/webp" size="57010" sig="A6A7568FF6AAB158BFCD85714257B9B85E95A620" orientation="0" infoUpdated="1769766008323" width="720" height="960" />
+  <media uri="am:E05552C958979FEEA552A5FB27348F3B61BDF114.jpg" filename="__naveen._.31-___3807558148199192051_42494733773___--5.jpg" title="__naveen._.31-___3807558148199192051_42494733773___--5.jpg" type="image/webp" size="56308" sig="E05552C958979FEEA552A5FB27348F3B61BDF114" orientation="0" infoUpdated="1769766008323" width="720" height="960" />
+  <media uri="am:F384137432C40A654ECACEAF5C7EA784986B52C9.mp4" filename="super 8 film overlay(720P_HD).mp4" title="super 8 film overlay(720P_HD).mp4" type="video/mp4" duration="15233000" size="1745869" fps="0.25" sig="F384137432C40A654ECACEAF5C7EA784986B52C9" orientation="0" infoUpdated="1769766008323" width="1280" height="720" />
+  <bookmark t="2716" />
+  <bookmark t="5450" />
+  <bookmark t="9850" />
+  <bookmark t="13450" />
+  <bookmark t="17650" />
+  <bookmark t="7450" />
+  <bookmark t="11850" />
+  <bookmark t="15450" />
+  <bookmark t="21583" />
+  <bookmark t="19616" />
+  <bookmark t="23583" />
+  <audio id="102378759" startTime="-33" endTime="23615" src="am:7A964C0018F260AFE5692A3A2F8A800E8ADC8A6E.mp3" outTime="23616" mediaFillMode="fill" />
+  <text id="102378717" startTime="0" endTime="465" fillType="media" fillImage="am:17B22ACDE5A41BCF1DA3862983E0DE6AD9C985BE.jpg" mediaFillMode="fill" size="20.000000" font="imported?name=American Captain.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location>
+        <kf t="0.034409" v="854.813660,564.088867,0.000000" />
+      </location>
+      <scale value="8.727305,8.727305" />
+    </transform>
+    <fillColor value="#fffbe300" />
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.034409" v="0.000000" />
+      </property>
+      <property name="gamma" type="float">
+        <kf t="0.034409" v="0.775000" />
+      </property>
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.dblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.034409" v="0.360000" />
+        <kf t="0.107527" v="0.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="8.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.991398" v="0.930465" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="300.000000" />
+    </shadow>
+    <content>talk </content>
+  </text>
+  <text id="102378721" label="talk Copy" startTime="433" endTime="866" fillType="media" fillImage="am:17B22ACDE5A41BCF1DA3862983E0DE6AD9C985BE.jpg" mediaFillMode="fill" size="20.000000" font="imported?name=American Captain.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location>
+        <kf t="0.030023" v="854.813660,564.088867,0.000000" />
+      </location>
+      <scale value="8.727305,8.727305" />
+    </transform>
+    <fillColor value="#fffbe300" />
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.032333" v="0.000000" />
+      </property>
+      <property name="gamma" type="float">
+        <kf t="0.032333" v="0.775000" />
+      </property>
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.dblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.032333" v="0.360000" />
+        <kf t="0.106236" v="0.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="8.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993072" v="0.930465" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="300.000000" />
+    </shadow>
+    <content>to me </content>
+  </text>
+  <text id="102378718" startTime="834" endTime="1132" fillType="media" fillImage="am:17B22ACDE5A41BCF1DA3862983E0DE6AD9C985BE.jpg" mediaFillMode="fill" size="20.000000" font="imported?name=American Captain.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location>
+        <kf t="0.030201" v="854.813660,564.088867,0.000000" />
+      </location>
+      <scale value="8.727305,8.727305" />
+    </transform>
+    <fillColor value="#fffbe300" />
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.033557" v="0.000000" />
+      </property>
+      <property name="gamma" type="float">
+        <kf t="0.033557" v="0.775000" />
+      </property>
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.dblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.033557" v="0.360000" />
+        <kf t="0.107383" v="0.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="8.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993289" v="0.930465" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="300.000000" />
+    </shadow>
+    <content>numbers </content>
+  </text>
+  <text id="102378723" label="numbers Copy" startTime="1100" endTime="1432" fillType="media" fillImage="am:17B22ACDE5A41BCF1DA3862983E0DE6AD9C985BE.jpg" mediaFillMode="fill" size="20.000000" font="imported?name=American Captain.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location>
+        <kf t="0.033133" v="854.813660,564.088867,0.000000" />
+      </location>
+      <scale value="8.727305,8.727305" />
+    </transform>
+    <fillColor value="#fffbe300" />
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.033133" v="0.000000" />
+      </property>
+      <property name="gamma" type="float">
+        <kf t="0.033133" v="0.775000" />
+      </property>
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.dblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.033133" v="0.360000" />
+        <kf t="0.105422" v="0.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="8.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.990964" v="0.930465" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="300.000000" />
+    </shadow>
+    <content>never </content>
+  </text>
+  <text id="102378724" label="numbers Copy 2" startTime="1400" endTime="1799" fillType="media" fillImage="am:17B22ACDE5A41BCF1DA3862983E0DE6AD9C985BE.jpg" mediaFillMode="fill" size="20.000000" font="imported?name=American Captain.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location>
+        <kf t="0.030075" v="854.813660,564.088867,0.000000" />
+      </location>
+      <scale value="8.727305,8.727305" />
+    </transform>
+    <fillColor value="#fffbe300" />
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.032581" v="0.000000" />
+      </property>
+      <property name="gamma" type="float">
+        <kf t="0.032581" v="0.775000" />
+      </property>
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.dblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.032581" v="0.360000" />
+        <kf t="0.105263" v="0.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="8.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.992481" v="0.930465" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="300.000000" />
+    </shadow>
+    <content>lie </content>
+  </text>
+  <text id="102378719" startTime="1767" endTime="2065" fillType="media" fillImage="am:17B22ACDE5A41BCF1DA3862983E0DE6AD9C985BE.jpg" mediaFillMode="fill" size="20.000000" font="imported?name=American Captain.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location>
+        <kf t="0.030201" v="854.813660,564.088867,0.000000" />
+      </location>
+      <scale value="8.727305,8.727305" />
+    </transform>
+    <fillColor value="#fffbe300" />
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.033557" v="0.000000" />
+      </property>
+      <property name="gamma" type="float">
+        <kf t="0.033557" v="0.775000" />
+      </property>
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.dblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.033557" v="0.360000" />
+        <kf t="0.107383" v="0.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="8.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993289" v="0.930465" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="300.000000" />
+    </shadow>
+    <content>add </content>
+  </text>
+  <text id="102378725" label="add Copy" startTime="2066" endTime="2365" fillType="media" fillImage="am:17B22ACDE5A41BCF1DA3862983E0DE6AD9C985BE.jpg" mediaFillMode="fill" size="20.000000" font="imported?name=American Captain.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location>
+        <kf t="0.030100" v="854.813660,564.088867,0.000000" />
+      </location>
+      <scale value="8.727305,8.727305" />
+    </transform>
+    <fillColor value="#fffbe300" />
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.033445" v="0.000000" />
+      </property>
+      <property name="gamma" type="float">
+        <kf t="0.033445" v="0.775000" />
+      </property>
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.dblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.033445" v="0.360000" />
+        <kf t="0.107023" v="0.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="8.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993311" v="0.930465" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="300.000000" />
+    </shadow>
+    <content>it up </content>
+  </text>
+  <text id="102378726" label="add Copy" startTime="2333" endTime="2732" fillType="media" fillImage="am:17B22ACDE5A41BCF1DA3862983E0DE6AD9C985BE.jpg" mediaFillMode="fill" size="20.000000" font="imported?name=American Captain.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location>
+        <kf t="0.030075" v="854.813660,564.088867,0.000000" />
+      </location>
+      <scale value="8.727305,8.727305" />
+    </transform>
+    <fillColor value="#fffbe300" />
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.032581" v="0.000000" />
+      </property>
+      <property name="gamma" type="float">
+        <kf t="0.032581" v="0.775000" />
+      </property>
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.dblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.032581" v="0.360000" />
+        <kf t="0.105263" v="0.000000" />
+      </property>
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="8.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.992481" v="0.930465" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="300.000000" />
+    </shadow>
+    <content>thets me</content>
+  </text>
+  <shape id="102378729" label="1768559253419.jpg" startTime="2700" endTime="5465" fillType="media" fillImage="am:F684B5CC97808D56C2232CE8DFD4684CB55FC2B0.jpg" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.005425" v="930.568665,712.752625,0.000000" />
+        <kf t="0.970344" v="930.568665,712.752625,0.000000" />
+      </location>
+      <scale>
+        <kf t="0.005425" v="2.006229,2.006229" />
+        <kf t="0.933816" v="2.283334,2.283334" />
+      </scale>
+    </transform>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.054250" v="0.000000" e="cubicBezier 0.0 1.0 0.6441282 1.0" />
+        <kf t="0.000000" v="1.440000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.077758" v="0.480000" />
+        <kf t="0.005425" v="2.000000" />
+        <kf t="0.801447" v="0.480000" />
+        <kf t="0.837613" v="2.000000" />
+      </property>
+      <property name="gamma" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.fractalwarp4" locallyApplied="false">
+      <property name="offs" type="vec2">
+        <kf t="0.000000" v="0.000000,0.000000" />
+        <kf t="0.934177" v="0.000000,-893.000000" />
+      </property>
+      <property name="parr" type="vec2" value="0.000000,-1038.000000" />
+      <property name="mag" type="float" value="0.050000" />
+      <property name="scale" type="float" value="0.390000" />
+      <property name="intensity" type="float" value="0.500000" />
+      <property name="screenSpace" type="bool" value="false" />
+      <property name="octaves" type="float" value="4.000000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="102378733" label="Rounded Rectangle 1" startTime="5000" endTime="5199" fillType="color" blending="multiply" mediaFillMode="fill" s=".roundrect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+    </transform>
+    <fillColor value="#ff17e1e1" />
+    <property name="size" type="vec2" value="1091.000000,213.750000" />
+    <property name="cornerRadius" type="float" value="25.000000" />
+  </shape>
+  <shape id="102378734" label="Rounded Rectangle 1 Copy" startTime="5166" endTime="5365" fillType="color" blending="multiply" mediaFillMode="fill" s=".roundrect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+    </transform>
+    <fillColor value="#ff1ed91e" />
+    <property name="size" type="vec2" value="1091.000000,213.750000" />
+    <property name="cornerRadius" type="float" value="25.000000" />
+  </shape>
+  <shape id="102378730" label="Rectangle 1" startTime="2700" endTime="5465" fillType="color" blending="mask" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+    </transform>
+    <fillColor value="#ff6fada2" />
+    <property name="size" type="vec2">
+      <kf t="0.005787" v="1179.000000,589.000000" />
+      <kf t="0.210850" v="1179.000000,203.000000" e="cubicBezier 0.0 1.0 0.71130574 0.895023" />
+    </property>
+  </shape>
+  <text id="102378731" label="add Copy" startTime="2700" endTime="5465" fillType="media" fillImage="am:17B22ACDE5A41BCF1DA3862983E0DE6AD9C985BE.jpg" mediaFillMode="fill" size="20.000000" font="imported?name=American Captain.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location>
+        <kf t="-0.192767" v="869.834167,199.601929,0.000000" />
+        <kf t="0.198915" v="869.834167,199.601929,0.000000" e="cubicBezier 0.0 1.0 0.75 0.75" />
+        <kf t="0.005787" v="854.813660,-146.369751,0.000000" />
+      </location>
+      <scale value="3.088697,3.088697" />
+    </transform>
+    <fillColor value="#fffbe300" />
+    <effect id="com.alightcreative.effects.exposure" hidden="true" locallyApplied="false">
+      <property name="exposure" type="float" value="0.000000" />
+      <property name="gamma" type="float" value="0.470000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="300.000000" />
+    </shadow>
+    <content>naveen</content>
+  </text>
+  <text id="102378732" label="add Copy 2" startTime="2700" endTime="5465" fillType="media" fillImage="am:17B22ACDE5A41BCF1DA3862983E0DE6AD9C985BE.jpg" mediaFillMode="fill" size="20.000000" font="imported?name=American Captain.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location>
+        <kf t="-0.192767" v="889.521667,870.930298,0.000000" />
+        <kf t="0.174684" v="889.521667,870.930298,0.000000" e="cubicBezier 0.0 0.9017082 0.75 0.75" />
+        <kf t="0.005787" v="899.697449,1252.458618,0.000000" />
+      </location>
+      <scale value="3.088697,3.088697" />
+    </transform>
+    <fillColor value="#fffbe300" />
+    <effect id="com.alightcreative.effects.exposure" hidden="true" locallyApplied="false">
+      <property name="exposure" type="float" value="0.000000" />
+      <property name="gamma" type="float" value="0.470000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <shadow direction="outside">
+      <size value="300.000000" />
+    </shadow>
+    <content>Boy </content>
+  </text>
+  <shape id="102378750" label="584161162_18065119220421774_1121096837492243335_n.jpg" startTime="5433" endTime="7465" fillType="media" fillImage="am:F684B5CC97808D56C2232CE8DFD4684CB55FC2B0.jpg" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="969.832947,857.956055,0.000000" />
+      <scale value="2.297493,2.297493" />
+    </transform>
+    <effect id="com.alightcreative.effects.satvib" locallyApplied="false">
+      <property name="saturation" type="float" value="-1.000000" />
+      <property name="vib" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="24.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993500" v="4.066033" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.008366" v="0.810000" />
+        <kf t="0.057579" v="0.000000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="false">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="false">
+      <property name="brightness" type="float" value="0.000000" />
+      <property name="contrast" type="float" value="0.600000" />
+    </effect>
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.000000" v="1.220000" />
+        <kf t="0.057579" v="0.030000" />
+      </property>
+      <property name="gamma" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="540.000000,540.000000" />
+  </shape>
+  <shape id="102378751" label="__naveen._.31-___3807558148199192051_42494733773___--1.jpg" startTime="7433" endTime="9865" fillType="media" fillImage="am:753719506DE9EFE80692A3D949A4602964257A65.jpg" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.006990" v="867.578369,811.416565,0.000000" />
+      </location>
+      <scale>
+        <kf t="0.006990" v="2.403281,2.403281" />
+        <kf t="0.993832" v="3.088800,3.088800" />
+      </scale>
+    </transform>
+    <effect id="com.alightcreative.effects.satvib" locallyApplied="false">
+      <property name="saturation" type="float" value="-1.000000" />
+      <property name="vib" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="24.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993500" v="4.066033" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.008366" v="0.810000" />
+        <kf t="0.057579" v="0.000000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="false">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="false">
+      <property name="brightness" type="float" value="0.000000" />
+      <property name="contrast" type="float" value="0.600000" />
+    </effect>
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.000000" v="1.220000" />
+        <kf t="0.057579" v="0.030000" />
+      </property>
+      <property name="gamma" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="405.000000,540.000000" />
+  </shape>
+  <shape id="102378752" label="__naveen._.31-___3807558148199192051_42494733773___-.jpg" startTime="9833" endTime="11865" fillType="media" fillImage="am:7ED2D5F4373C17DF346F3287DB30AFEA7512D526.jpg" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.006890" v="867.578369,811.416565,0.000000" />
+      </location>
+      <scale>
+        <kf t="0.006890" v="2.403281,2.403281" />
+        <kf t="0.993602" v="3.088800,3.088800" />
+      </scale>
+    </transform>
+    <effect id="com.alightcreative.effects.satvib" locallyApplied="false">
+      <property name="saturation" type="float" value="-1.000000" />
+      <property name="vib" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="24.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993110" v="4.066033" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.008366" v="0.810000" />
+        <kf t="0.057579" v="0.000000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="false">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="false">
+      <property name="brightness" type="float" value="0.000000" />
+      <property name="contrast" type="float" value="0.600000" />
+    </effect>
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.000000" v="1.220000" />
+        <kf t="0.057579" v="0.030000" />
+      </property>
+      <property name="gamma" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="405.000000,540.000000" />
+  </shape>
+  <shape id="102378753" label="__naveen._.31-___3807558148199192051_42494733773___--2.jpg" startTime="11833" endTime="13465" fillType="media" fillImage="am:FDFD3AEE6C435FE79CC940EEDB1B992D5988898B.jpg" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.006740" v="867.578369,811.416565,0.000000" />
+      </location>
+      <scale>
+        <kf t="0.006740" v="2.403281,2.403281" />
+        <kf t="0.993260" v="3.088800,3.088800" />
+      </scale>
+    </transform>
+    <effect id="com.alightcreative.effects.satvib" locallyApplied="false">
+      <property name="saturation" type="float" value="-1.000000" />
+      <property name="vib" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="24.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993260" v="4.066033" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.007966" v="0.810000" />
+        <kf t="0.056985" v="0.000000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="false">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="false">
+      <property name="brightness" type="float" value="0.000000" />
+      <property name="contrast" type="float" value="0.600000" />
+    </effect>
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.000000" v="1.220000" />
+        <kf t="0.056985" v="0.030000" />
+      </property>
+      <property name="gamma" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="405.000000,540.000000" />
+  </shape>
+  <shape id="102378754" label="__naveen._.31-___3807558148199192051_42494733773___--3.jpg" startTime="13433" endTime="15465" fillType="media" fillImage="am:A6A7568FF6AAB158BFCD85714257B9B85E95A620.jpg" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.006890" v="867.578369,811.416565,0.000000" />
+      </location>
+      <scale>
+        <kf t="0.006890" v="2.403281,2.403281" />
+        <kf t="0.993602" v="3.088800,3.088800" />
+      </scale>
+    </transform>
+    <effect id="com.alightcreative.effects.satvib" locallyApplied="false">
+      <property name="saturation" type="float" value="-1.000000" />
+      <property name="vib" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="24.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993110" v="4.066033" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.008366" v="0.810000" />
+        <kf t="0.057579" v="0.000000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="false">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="false">
+      <property name="brightness" type="float" value="0.000000" />
+      <property name="contrast" type="float" value="0.600000" />
+    </effect>
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.000000" v="1.220000" />
+        <kf t="0.057579" v="0.030000" />
+      </property>
+      <property name="gamma" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="405.000000,540.000000" />
+  </shape>
+  <shape id="102378755" label="__naveen._.31-___3807558148199192051_42494733773___--1.jpg" startTime="15433" endTime="17665" fillType="media" fillImage="am:753719506DE9EFE80692A3D949A4602964257A65.jpg" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.006720" v="867.578369,811.416565,0.000000" />
+      </location>
+      <scale>
+        <kf t="0.006720" v="2.403281,2.403281" />
+        <kf t="0.993728" v="3.088800,3.088800" />
+      </scale>
+    </transform>
+    <effect id="com.alightcreative.effects.satvib" locallyApplied="false">
+      <property name="saturation" type="float" value="-1.000000" />
+      <property name="vib" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="24.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993280" v="4.066033" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.008065" v="0.810000" />
+        <kf t="0.057348" v="0.000000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="false">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="false">
+      <property name="brightness" type="float" value="0.000000" />
+      <property name="contrast" type="float" value="0.600000" />
+    </effect>
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.000000" v="1.220000" />
+        <kf t="0.057348" v="0.030000" />
+      </property>
+      <property name="gamma" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="405.000000,540.000000" />
+  </shape>
+  <shape id="102378756" label="__naveen._.31-___3807558148199192051_42494733773___--5.jpg" startTime="17633" endTime="19665" fillType="media" fillImage="am:E05552C958979FEEA552A5FB27348F3B61BDF114.jpg" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.006890" v="867.578369,811.416565,0.000000" />
+      </location>
+      <scale>
+        <kf t="0.006890" v="2.403281,2.403281" />
+        <kf t="0.993602" v="3.088800,3.088800" />
+      </scale>
+    </transform>
+    <effect id="com.alightcreative.effects.satvib" locallyApplied="false">
+      <property name="saturation" type="float" value="-1.000000" />
+      <property name="vib" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="24.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993110" v="4.066033" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.008366" v="0.810000" />
+        <kf t="0.057579" v="0.000000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="false">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="false">
+      <property name="brightness" type="float" value="0.000000" />
+      <property name="contrast" type="float" value="0.600000" />
+    </effect>
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.000000" v="1.220000" />
+        <kf t="0.057579" v="0.030000" />
+      </property>
+      <property name="gamma" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="405.000000,540.000000" />
+  </shape>
+  <shape id="102378757" label="__naveen._.31-___3807558148199192051_42494733773___--2.jpg" startTime="19600" endTime="21599" fillType="media" fillImage="am:FDFD3AEE6C435FE79CC940EEDB1B992D5988898B.jpg" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.006503" v="867.578369,811.416565,0.000000" />
+      </location>
+      <scale>
+        <kf t="0.006503" v="2.403281,2.403281" />
+        <kf t="0.993497" v="3.088800,3.088800" />
+      </scale>
+    </transform>
+    <effect id="com.alightcreative.effects.satvib" locallyApplied="false">
+      <property name="saturation" type="float" value="-1.000000" />
+      <property name="vib" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="24.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993497" v="4.066033" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.008004" v="0.810000" />
+        <kf t="0.057529" v="0.000000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="false">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="false">
+      <property name="brightness" type="float" value="0.000000" />
+      <property name="contrast" type="float" value="0.600000" />
+    </effect>
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.000000" v="1.220000" />
+        <kf t="0.057529" v="0.030000" />
+      </property>
+      <property name="gamma" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="405.000000,540.000000" />
+  </shape>
+  <shape id="102378758" label="__naveen._.31-___3807558148199192051_42494733773___--3.jpg" startTime="21566" endTime="23599" fillType="media" fillImage="am:A6A7568FF6AAB158BFCD85714257B9B85E95A620.jpg" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location>
+        <kf t="0.006886" v="867.578369,811.416565,0.000000" />
+      </location>
+      <scale>
+        <kf t="0.006886" v="2.403281,2.403281" />
+        <kf t="0.993605" v="3.088800,3.088800" />
+      </scale>
+    </transform>
+    <effect id="com.alightcreative.effects.satvib" locallyApplied="false">
+      <property name="saturation" type="float" value="-1.000000" />
+      <property name="vib" type="float" value="1.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.randomdisplace" locallyApplied="false">
+      <property name="mag" type="float" value="24.000000" />
+      <property name="evolution" type="float" value="0.000000" />
+      <property name="seed" type="float">
+        <kf t="0.000000" v="0.000000" />
+        <kf t="0.993114" v="4.066033" />
+      </property>
+      <property name="scatter" type="float" value="0.500000" />
+    </effect>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="false">
+      <property name="strength" type="float">
+        <kf t="0.008362" v="0.810000" />
+        <kf t="0.057550" v="0.000000" />
+      </property>
+    </effect>
+    <effect id="com.alightcreative.effects.tile" locallyApplied="false">
+      <property name="scale" type="float" value="1.000000" />
+      <property name="phase" type="float" value="0.000000" />
+      <property name="mirror" type="bool" value="true" />
+      <property name="vertoffs" type="bool" value="false" />
+      <property name="angle" type="float" value="0.000000" />
+    </effect>
+    <effect id="com.alightcreative.effects.brightcont2" locallyApplied="false">
+      <property name="brightness" type="float" value="0.000000" />
+      <property name="contrast" type="float" value="0.600000" />
+    </effect>
+    <effect id="com.alightcreative.effects.exposure" locallyApplied="false">
+      <property name="exposure" type="float">
+        <kf t="0.000000" v="1.220000" />
+        <kf t="0.057550" v="0.030000" />
+      </property>
+      <property name="gamma" type="float" value="1.000000" />
+      <property name="offset" type="float" value="0.000000" />
+    </effect>
+    <property name="size" type="vec2" value="405.000000,540.000000" />
+  </shape>
+  <shape id="102378743" label="super 8 film overlay(720P_HD).mp4" startTime="5433" endTime="17765" fillType="media" blending="screen" fillVideo="am:F384137432C40A654ECACEAF5C7EA784986B52C9.mp4" inTime="2933" outTime="15233" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="864.669800,534.399963,0.000000" />
+      <scale value="1.375898,1.375898" />
+    </transform>
+    <effect id="com.alightcreative.effects.satvib" locallyApplied="false">
+      <property name="saturation" type="float" value="-1.000000" />
+      <property name="vib" type="float" value="1.000000" />
+    </effect>
+    <property name="size" type="vec2" value="960.000000,540.000000" />
+  </shape>
+  <shape id="102378747" label="super 8 film overlay(720P_HD).mp4 Copy" startTime="17633" endTime="23532" fillType="media" blending="screen" fillVideo="am:F384137432C40A654ECACEAF5C7EA784986B52C9.mp4" inTime="9366" outTime="15233" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="864.669800,534.399963,0.000000" />
+      <scale value="1.375898,1.375898" />
+    </transform>
+    <effect id="com.alightcreative.effects.satvib" locallyApplied="false">
+      <property name="saturation" type="float" value="-1.000000" />
+      <property name="vib" type="float" value="1.000000" />
+    </effect>
+    <property name="size" type="vec2" value="960.000000,540.000000" />
+  </shape>
+  <shape id="102378737" label="Rectangle 2" startTime="5433" endTime="23532" fillType="color" blending="linear-burn" mediaFillMode="fill" s=".rect">
+    <transform>
+      <location value="960.000000,540.000000,0.000000" />
+    </transform>
+    <fillColor value="#ffff4444" />
+    <property name="size" type="vec2" value="1380.078369,1380.078369" />
+  </shape>
+</scene>
