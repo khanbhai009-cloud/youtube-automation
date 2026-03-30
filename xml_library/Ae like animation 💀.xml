@@ -1,0 +1,772 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2025-06-01 07:29 PM
+5.0.270.1002578 (1002351)
+6dff462 (11 Apr 2024 6:17:55 pm)
+-->
+<scene title="Ae like animation &#128128;" width="1920" height="1080" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#ffffffff" totalTime="13865" fps="30" modifiedTime="1748786390885" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <media uri="content://media/external/video/media/1000264334" filename="Record_2025-05-31-17-21-13.mp4" title="Record_2025-05-31-17-21-13.mp4" type="video/mp4" duration="30380500" size="36973248" fps="0.59" orientation="0" infoUpdated="1748786377234" width="862" height="1920" />
+  <media uri="content://media/external/video/media/1000262568" filename="Record_2025-05-25-23-13-19.mp4" title="Record_2025-05-25-23-13-19.mp4" type="video/mp4" duration="15982700" size="17845312" fps="0.34" orientation="0" infoUpdated="1748786377234" width="862" height="1920" />
+  <media uri="content://media/external/images/media/1000264360" filename="01 (1).png" title="01 (1).png" type="image/png" size="19723" orientation="0" infoUpdated="1748786377234" width="500" height="500" />
+  <media uri="content://media/external/images/media/1000264344" filename="Screenshot_2025-05-31-18-38-39-53_f9ee0578fe1cc94de7482bd41accb329.png" title="Screenshot_2025-05-31-18-38-39-53_f9ee0578fe1cc94de7482bd41accb329.png" type="image/png" size="16661" orientation="0" infoUpdated="1748786377234" width="465" height="85" />
+  <media uri="content://media/external/video/media/1000264337" filename="VID-20250531-WA0026.mp4" title="VID-20250531-WA0026.mp4" type="video/mp4" duration="25829333" size="5494280" fps="0.47" orientation="0" infoUpdated="1748786377234" width="576" height="1280" />
+  <media uri="content://media/external/images/media/1000264176" filename="Screenshot_2025-05-31-04-05-56-19_da12b4d69ba00bd9279f440202b88de5.jpg" title="Screenshot_2025-05-31-04-05-56-19_da12b4d69ba00bd9279f440202b88de5.jpg" type="image/jpeg" size="249818" orientation="0" infoUpdated="1748786377234" width="1080" height="2408" />
+  <media uri="content://media/external/images/media/1000263000" filename="1200x630wa (1) (1).png" title="1200x630wa (1) (1).png" type="image/png" size="12060" orientation="0" infoUpdated="1748786377234" width="1200" height="630" />
+  <media uri="content://media/external/images/media/1000262566" type="image/png" duration="0" orientation="0" infoUpdated="1748786377234" width="0" height="0" />
+  <media uri="content://media/external/images/media/1000262570" type="image/png" duration="0" orientation="0" infoUpdated="1748786377234" width="0" height="0" />
+  <media uri="content://media/external/images/media/1000262561" filename="Up-Left-Arrow-Flat-icon.png" title="Up-Left-Arrow-Flat-icon.png" type="image/png" size="1241" orientation="0" infoUpdated="1748786377234" width="128" height="128" />
+  <bookmark t="16" />
+  <bookmark t="6383" />
+  <audio id="10197123" label="Record_2025-05-31-17-21-13.mp4" startTime="0" endTime="13865" src="content://media/external/video/media/1000264334" inTime="6467" outTime="20332" mediaFillMode="fill">
+    <gain value="0.450000" />
+  </audio>
+  <audio id="10196954" label="Record_2025-05-25-23-13-19.mp4" startTime="0" endTime="13865" src="content://media/external/video/media/1000262568" inTime="1200" outTime="15065" mediaFillMode="fill">
+    <gain value="1.500000" />
+  </audio>
+  <embedScene id="10197001" label="Group 1" startTime="0" endTime="13865" fillType="intrinsic" outTime="13865" mediaFillMode="fill">
+    <transform>
+      <location>
+        <kf t="0.188677" v="960.000000,540.000000,0.000000" />
+        <kf t="0.224738" v="1132.500000,676.257568,0.000000" e="cubicBezier 0.0 0.8220588 0.0 1.0" />
+      </location>
+      <pivot value="-153.231445,118.509827" />
+      <opacity>
+        <kf t="0.186296" v="1.000000" />
+        <kf t="0.222358" v="0.000000" e="cubicBezier 0.0 0.82 0.0 1.0" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <embedScene id="10196992" label="Group 2" startTime="0" endTime="4032" fillType="intrinsic" outTime="4032" mediaFillMode="fill" parent="10196993">
+        <transform>
+          <location>
+            <kf t="0.326389" v="-1.000000,0.000000,0.000000" />
+            <kf t="0.549603" v="-1.000000,83.500000,0.000000" e="elastic 0.18055555 1.0 0.1889706 0.56455886" />
+          </location>
+          <pivot value="-246.488892,103.870789" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <embedScene id="10196958" label="Group 1" startTime="0" endTime="4032" fillType="intrinsic" outTime="4032" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.409226" v="1137.072876,534.277710,0.000000" e="elastic 0.12709858 1.0 0.35941175 0.6636275" />
+                <kf t="0.003969" v="1135.572876,647.298218,0.000000" />
+              </location>
+              <pivot value="-422.859375,24.114075" />
+              <scale value="0.831764,0.831764" />
+              <opacity>
+                <kf t="0.078373" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+                <kf t="0.003969" v="0.000000" />
+              </opacity>
+            </transform>
+            <fillColor value="#ff000000" />
+            <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+              <bookmark t="1283" />
+              <bookmark t="1516" />
+              <shape id="10196956" label="Rounded Rectangle 1" startTime="0" endTime="4032" fillType="color" mediaFillMode="fill" s=".roundrect">
+                <transform>
+                  <location value="537.140625,517.500000,0.000000" />
+                  <scale>
+                    <kf t="0.318205" v="1.000000,1.000000" />
+                    <kf t="0.375992" v="0.650000,0.650000" />
+                  </scale>
+                </transform>
+                <fillColor value="#ff000000" />
+                <property name="size" type="vec2" value="100.000000,100.000000" />
+                <property name="cornerRadius" type="float">
+                  <kf t="0.318205" v="30.000000" />
+                  <kf t="0.375992" v="106.000000" />
+                </property>
+              </shape>
+              <shape id="10196957" label="Up-Left-Arrow-Flat-icon.png" startTime="0" endTime="4032" clippingMask="true" fillType="media" fillImage="content://media/external/images/media/1000262561" mediaFillMode="fill" s=".rect">
+                <transform>
+                  <location>
+                    <kf t="0.045387" v="537.140625,663.000000,0.000000" />
+                    <kf t="0.218998" v="537.140625,512.500000,0.000000" e="elastic 0.20975152 1.0 0.14519608 0.33877456" />
+                    <kf t="0.268601" v="537.140625,512.500000,0.000000" />
+                    <kf t="0.318204" v="535.640625,465.228180,0.000000" />
+                    <kf t="0.375992" v="535.640625,733.728149,0.000000" />
+                  </location>
+                  <scale value="0.085185,0.085185" />
+                  <rotation>
+                    <kf t="0.318204" v="92.195122" />
+                    <kf t="0.375992" v="166.829269" />
+                  </rotation>
+                </transform>
+                <property name="size" type="vec2" value="540.000000,540.000000" />
+              </shape>
+            </scene>
+          </embedScene>
+        </scene>
+      </embedScene>
+      <nullobj id="10196993" label="Null 1" startTime="0" endTime="4032" mediaFillMode="fill" type="perspective">
+        <transform>
+          <location>
+            <kf t="0.359623" v="960.000000,540.000000,0.000000" />
+            <kf t="0.549603" v="960.000000,485.777863,0.000000" e="elastic 0.18055555 1.0 0.1889706 0.56455886" />
+          </location>
+        </transform>
+      </nullobj>
+    </scene>
+  </embedScene>
+  <embedScene id="10197000" label="Group 3" startTime="0" endTime="13865" fillType="intrinsic" outTime="-2147473816" mediaFillMode="fill">
+    <transform>
+      <location>
+        <kf t="0.188677" v="960.000000,540.000000,0.000000" />
+        <kf t="0.224738" v="938.500000,676.257568,0.000000" e="cubicBezier 0.0 0.6779412 0.035555556 1.0" />
+      </location>
+      <pivot value="-42.616028,93.225586" />
+      <opacity>
+        <kf t="0.188677" v="1.000000" />
+        <kf t="0.222358" v="0.000000" e="cubicBezier 0.0 0.82 0.0 1.0" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <embedScene id="10196995" label="Group 1" startTime="0" endTime="3966" fillType="intrinsic" outTime="3966" mediaFillMode="fill" parent="10196994">
+        <transform>
+          <location>
+            <kf t="0.373928" v="0.000000,0.000000,0.000000" />
+            <kf t="0.600857" v="0.000000,83.944214,0.000000" e="elastic 0.18055555 1.0 0.1889706 0.56455886" />
+          </location>
+          <pivot value="-42.616028,79.476563" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3966" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <embedScene id="10196959" label="Group 1 Copy" startTime="0" endTime="3966" fillType="intrinsic" outTime="3966" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.390822" v="1341.493286,534.276245,0.000000" e="elastic 0.12709858 1.0 0.35941175 0.6636275" />
+                <kf t="0.004034" v="1338.993286,647.296753,0.000000" />
+              </location>
+              <pivot value="-422.859375,24.114075" />
+              <scale value="0.843926,0.843926" />
+              <opacity>
+                <kf t="0.079678" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+                <kf t="0.004034" v="0.000000" />
+              </opacity>
+            </transform>
+            <fillColor value="#ff000000" />
+            <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3966" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+              <shape id="10196956" label="Rounded Rectangle 1" startTime="0" endTime="3966" fillType="color" mediaFillMode="fill" s=".roundrect">
+                <transform>
+                  <location value="537.140625,517.500000,0.000000" />
+                  <scale>
+                    <kf t="0.323500" v="1.000000,1.000000" />
+                    <kf t="0.373928" v="0.665000,0.665000" />
+                  </scale>
+                </transform>
+                <fillColor value="#ff000000" />
+                <property name="size" type="vec2" value="100.000000,100.000000" />
+                <property name="cornerRadius" type="float">
+                  <kf t="0.323500" v="30.000000" />
+                  <kf t="0.373928" v="98.000000" />
+                </property>
+              </shape>
+              <shape id="10196957" label="Up-Left-Arrow-Flat-icon.png" startTime="0" endTime="3966" clippingMask="true" fillType="media" fillImage="content://media/external/images/media/1000262570" mediaFillMode="fill" s=".rect">
+                <transform>
+                  <location>
+                    <kf t="0.054462" v="537.140625,658.000000,0.000000" />
+                    <kf t="0.180534" v="537.140625,517.500000,0.000000" e="elastic 0.20975152 1.0 0.14519608 0.33877456" />
+                    <kf t="0.273071" v="537.140625,517.500000,0.000000" />
+                    <kf t="0.323500" v="537.140625,445.000000,0.000000" />
+                    <kf t="0.373928" v="537.140625,694.070435,0.000000" />
+                  </location>
+                  <scale value="0.194444,0.194444" />
+                  <rotation>
+                    <kf t="0.256178" v="-10.975616" />
+                    <kf t="0.306606" v="25.243902" />
+                  </rotation>
+                </transform>
+                <property name="size" type="vec2" value="540.000000,540.000000" />
+              </shape>
+            </scene>
+          </embedScene>
+        </scene>
+      </embedScene>
+      <nullobj id="10196994" label="Null 2" startTime="0" endTime="4032" mediaFillMode="fill" type="perspective">
+        <transform>
+          <location>
+            <kf t="0.409226" v="960.000000,540.000000,0.000000" />
+            <kf t="0.574405" v="960.000000,483.555756,0.000000" e="elastic 0.18055555 1.0 0.1889706 0.56455886" />
+          </location>
+        </transform>
+      </nullobj>
+    </scene>
+  </embedScene>
+  <embedScene id="10196999" label="Group 4" startTime="0" endTime="13865" fillType="intrinsic" outTime="-2147473816" mediaFillMode="fill">
+    <transform>
+      <location>
+        <kf t="0.188677" v="960.000000,540.000000,0.000000" />
+        <kf t="0.224738" v="726.824951,676.257568,0.000000" e="cubicBezier 0.0 0.80588233 0.0 1.0" />
+      </location>
+      <pivot value="131.624634,107.069336" />
+      <opacity>
+        <kf t="0.188677" v="1.000000" />
+        <kf t="0.224738" v="0.000000" e="cubicBezier 0.0 0.82 0.0 1.0" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.motionblur4" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <embedScene id="10196997" label="Group 3" startTime="0" endTime="4032" fillType="intrinsic" outTime="4032" mediaFillMode="fill" parent="10196996">
+        <transform>
+          <location>
+            <kf t="0.417411" v="0.002319,-0.091187,0.000000" />
+            <kf t="0.582837" v="-0.997681,39.408813,0.000000" e="elastic 0.18055555 1.0 0.1889706 0.56455886" />
+          </location>
+          <pivot value="160.274414,94.230591" />
+          <scale value="1.017998,1.017998" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <embedScene id="10196960" label="Group 1 Copy 2" startTime="0" endTime="4032" fillType="intrinsic" outTime="4032" mediaFillMode="fill">
+            <transform>
+              <location>
+                <kf t="0.400794" v="1544.693726,545.968689,0.000000" e="elastic 0.12709858 1.0 0.35941175 0.6636275" />
+                <kf t="0.053571" v="1542.193726,658.989197,0.000000" />
+              </location>
+              <pivot value="-424.859375,-28.401550" />
+              <scale>
+                <kf t="0.400794" v="0.845083,0.845083" />
+                <kf t="0.632441" v="0.703952,0.703952" e="elastic 0.20000002 1.0 0.0 0.5875441" />
+              </scale>
+              <opacity>
+                <kf t="0.127976" v="1.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+                <kf t="0.053571" v="0.000000" />
+              </opacity>
+            </transform>
+            <fillColor value="#ff000000" />
+            <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="4032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+              <shape id="10196956" label="Rounded Rectangle 1" startTime="200" endTime="4032" fillType="color" mediaFillMode="fill" s=".roundrect">
+                <transform>
+                  <location value="537.140625,517.500000,0.000000" />
+                  <scale>
+                    <kf t="0.352296" v="1.000000,1.000000" />
+                    <kf t="0.404488" v="0.685000,0.685000" />
+                  </scale>
+                </transform>
+                <fillColor value="#ff000000" />
+                <property name="size" type="vec2" value="100.000000,100.000000" />
+                <property name="cornerRadius" type="float">
+                  <kf t="0.352296" v="30.000000" />
+                  <kf t="0.404488" v="103.000000" />
+                </property>
+              </shape>
+              <shape id="10196957" label="Up-Left-Arrow-Flat-icon.png" startTime="200" endTime="4032" clippingMask="true" fillType="media" fillImage="content://media/external/images/media/1000262566" mediaFillMode="fill" s=".rect">
+                <transform>
+                  <location>
+                    <kf t="0.047756" v="537.140625,663.000000,0.000000" />
+                    <kf t="0.204332" v="537.140625,517.500000,0.000000" e="elastic 0.20975152 1.0 0.14519608 0.33877456" />
+                    <kf t="0.291232" v="537.140625,517.500000,0.000000" />
+                    <kf t="0.352296" v="537.140625,436.000000,0.000000" />
+                    <kf t="0.404488" v="537.140625,729.557434,0.000000" />
+                  </location>
+                  <scale value="0.200000,0.200000" />
+                  <rotation value="150.365860" />
+                </transform>
+                <property name="size" type="vec2" value="540.000000,540.000000" />
+              </shape>
+            </scene>
+          </embedScene>
+        </scene>
+      </embedScene>
+      <nullobj id="10196996" label="Null 3" startTime="1633" endTime="4032" mediaFillMode="fill" type="perspective">
+        <transform>
+          <location>
+            <kf t="0.117966" v="960.000000,540.000000,0.000000" />
+            <kf t="0.368070" v="960.000000,525.186646,0.000000" e="elastic 0.18055555 1.0 0.1889706 0.56455886" />
+          </location>
+        </transform>
+      </nullobj>
+    </scene>
+  </embedScene>
+  <embedScene id="10197008" label="Group 5" startTime="2700" endTime="3732" fillType="intrinsic" outTime="1032" mediaFillMode="fill">
+    <transform>
+      <location value="968.351685,555.454712,0.000000" />
+      <pivot value="-71.111206,28.444336" />
+      <scale>
+        <kf t="0.726744" v="1.000000,1.000000" />
+        <kf t="0.823643" v="1.000000,1.000000" />
+        <kf t="0.920543" v="0.612999,0.612999" e="cubicBezier 0.0 0.0 0.3033333 1.0" />
+        <kf t="0.984496" v="1.091581,1.091581" e="cubicBezier 0.0 0.0 0.3 1.0" />
+      </scale>
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2033" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <embedScene id="10197007" label="Group 2" startTime="0" endTime="2033" fillType="intrinsic" outTime="2033" mediaFillMode="fill">
+        <transform>
+          <location>
+            <kf t="0.253812" v="888.888794,568.444336,0.000000" e="elastic 0.22222222 1.0 0.37328434 1.0" />
+            <kf t="0.007870" v="888.888794,628.032227,0.000000" />
+          </location>
+          <scale>
+            <kf t="0.253812" v="1.000000,1.000000" e="elastic 0.22222222 1.0 0.37328434 1.0" />
+            <kf t="0.007870" v="0.000000,0.000000" />
+          </scale>
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2033" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="10197004" label="Rounded Rectangle 1" startTime="0" endTime="2033" fillType="color" mediaFillMode="fill" s=".roundrect">
+            <transform>
+              <location>
+                <kf t="0.303000" v="960.000000,540.000000,0.000000" />
+              </location>
+            </transform>
+            <fillColor value="#ff000000" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+            <property name="cornerRadius" type="float" value="32.000000" />
+          </shape>
+          <shape id="10197006" label="1200x630wa (1) (1).png" startTime="0" endTime="2033" clippingMask="true" fillType="media" fillImage="content://media/external/images/media/1000263000" mediaFillMode="fill" s=".rect">
+            <transform>
+              <location>
+                <kf t="0.434334" v="958.000000,540.000000,0.000000" />
+                <kf t="0.581899" v="958.000000,741.500000,0.000000" />
+              </location>
+              <scale value="0.352604,0.352604" />
+            </transform>
+            <property name="size" type="vec2" value="960.000000,504.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+    </scene>
+  </embedScene>
+  <embedScene id="10197126" label="Group 2" startTime="3700" endTime="13865" fillType="intrinsic" outTime="10165" mediaFillMode="fill" parent="10197127">
+    <transform>
+      <location value="-43.553467,124.459839,0.000000" />
+      <pivot value="-30.500000,-50.989746" />
+      <scale>
+        <kf t="0.063945" v="0.649200,0.649200" e="elastic 0.19333333 1.0 0.4501147 1.0" />
+        <kf t="0.001673" v="0.233632,0.233632" />
+      </scale>
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.moblurplus" locallyApplied="true">
+      <property name="tune" type="float" value="1.000000" />
+      <property name="PANGLE" type="vec2" value="0.500000,0.500000" />
+      <property name="PSCALE" type="vec2" value="0.500000,0.500000" />
+      <property name="usePos" type="bool" value="true" />
+      <property name="useScale" type="bool" value="true" />
+      <property name="useAngle" type="bool" value="true" />
+    </effect>
+    <scene title="" width="1920" height="1286" exportWidth="1920" exportHeight="1286" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2033" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10197125" label="Rounded Rectangle 1" startTime="0" endTime="2033" fillType="color" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="960.935547,628.000000,-1430.778320" />
+          <scale value="0.505000,0.505000" />
+        </transform>
+        <fillColor value="#ffd4fdae" />
+        <property name="size" type="vec2" value="98.000000,96.000000" />
+        <property name="cornerRadius" type="float" value="25.000000" />
+      </shape>
+      <shape id="10197124" label="Screenshot_2025-05-31-04-05-56-19_da12b4d69ba00bd9279f440202b88de5.jpg" startTime="0" endTime="2032" clippingMask="true" fillType="media" fillImage="content://media/external/images/media/1000264176" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="958.370117,820.146484,-1348.500000" />
+        </transform>
+        <property name="size" type="vec2" value="242.000000,540.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <nullobj id="10197127" label="Null 1" startTime="4333" endTime="13865" mediaFillMode="fill" parent="10197138" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.001784" v="0.000000,0.000000,0.000000" />
+        <kf t="0.099665" v="0.000000,-213.984375,0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+      </location>
+    </transform>
+  </nullobj>
+  <text id="10197128" startTime="4400" endTime="13865" fillType="color" mediaFillMode="fill" parent="10197127" size="18.000000" font="imported?name=Inter_18pt-Black.ttf" wrapWidth="512" align="left">
+    <transform>
+      <location value="-0.500000,384.984375,0.000000" />
+      <opacity>
+        <kf t="0.103857" v="1.000000" />
+        <kf t="0.001690" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <content>The perfect Boom SFX</content>
+  </text>
+  <embedScene id="10197131" label="Group 6" startTime="4600" endTime="13865" fillType="intrinsic" outTime="-2147476417" mediaFillMode="fill" parent="10197138">
+    <transform>
+      <location>
+        <kf t="0.052132" v="-131.555298,-0.277954,0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.008958" v="-132.055298,84.222046,0.000000" />
+      </location>
+      <pivot value="-28.329224,269.522949" />
+      <scale value="0.660124,0.660124" />
+      <opacity>
+        <kf t="0.052132" v="1.000000" />
+        <kf t="0.008958" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2033" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <text id="10197129" startTime="0" endTime="2032" fillType="color" mediaFillMode="fill" size="18.000000" font="imported?name=Inter_18pt-Black.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="938.500000,820.045898,0.000000" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <content>$9.99 USD</content>
+      </text>
+      <text id="10197130" startTime="0" endTime="2033" fillType="color" mediaFillMode="fill" size="18.000000" font="imported?name=Inter_18pt-Black.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="924.841553,799.000000,0.000000" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <content>____________</content>
+      </text>
+    </scene>
+  </embedScene>
+  <embedScene id="10197132" label="Group 6 Copy" startTime="4700" endTime="13865" fillType="intrinsic" outTime="9165" mediaFillMode="fill" parent="10197138">
+    <transform>
+      <location>
+        <kf t="0.052701" v="112.000122,-0.000122,0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.009056" v="111.500122,84.499878,0.000000" />
+      </location>
+      <pivot value="-28.329224,269.522949" />
+      <scale value="0.660124,0.660124" />
+      <opacity>
+        <kf t="0.052701" v="1.000000" />
+        <kf t="0.009056" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <text id="10197129" startTime="0" endTime="2032" fillType="color" mediaFillMode="fill" size="18.000000" font="imported?name=Inter_18pt-Black.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="938.500000,820.045898,0.000000" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <content>$0.00 USD</content>
+      </text>
+    </scene>
+  </embedScene>
+  <embedScene id="10197135" label="Group 7" startTime="4833" endTime="13865" fillType="intrinsic" outTime="-2147476649" mediaFillMode="fill" parent="10197138">
+    <transform>
+      <location>
+        <kf t="0.035097" v="206.500000,277.500000,0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.001882" v="206.500000,371.584717,0.000000" />
+      </location>
+      <pivot value="110.250000,-5.233093" />
+      <scale value="0.588537,0.588537" />
+      <opacity>
+        <kf t="0.035097" v="1.000000" />
+        <kf t="0.001882" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2032" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10197133" label="Rounded Rectangle 1" startTime="0" endTime="2032" fillType="color" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="960.000000,539.999878,0.000000" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <property name="size" type="vec2" value="182.000000,37.000000" />
+        <property name="cornerRadius" type="float" value="92.000000" />
+      </shape>
+      <text id="10197134" startTime="0" endTime="2032" fillType="color" mediaFillMode="fill" size="18.000000" font="googlefonts?name=Roboto&amp;weight=400" wrapWidth="512" align="left">
+        <transform>
+          <location value="1106.500000,529.033936,0.000000" />
+        </transform>
+        <content>Exclusive </content>
+      </text>
+    </scene>
+  </embedScene>
+  <embedScene id="10197136" label="Group 7 Copy" startTime="4933" endTime="13865" fillType="intrinsic" outTime="8932" mediaFillMode="fill" parent="10197138">
+    <transform>
+      <location>
+        <kf t="0.035490" v="-121.500000,396.611084,0.000000" e="cubicBezier 0.0 0.0 0.0 1.0" />
+        <kf t="0.001903" v="-121.500000,490.695801,0.000000" />
+      </location>
+      <pivot value="110.250000,-5.233093" />
+      <scale value="1.021370,1.021370" />
+      <opacity>
+        <kf t="0.035490" v="1.000000" />
+        <kf t="0.001903" v="0.000000" />
+      </opacity>
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="3932" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10197133" label="Rounded Rectangle 1" startTime="0" endTime="3932" fillType="color" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="1081.321289,534.499878,0.000000" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <property name="size" type="vec2" value="272.000000,37.000000" />
+        <property name="cornerRadius" type="float" value="92.000000" />
+      </shape>
+      <text id="10197134" startTime="0" endTime="3932" fillType="color" mediaFillMode="fill" size="12.000000" font="googlefonts?name=Roboto&amp;weight=400" wrapWidth="512" align="left">
+        <transform>
+          <location value="1106.500000,529.033936,0.000000" />
+        </transform>
+        <content>Download present Boom now</content>
+      </text>
+    </scene>
+  </embedScene>
+  <nullobj id="10197138" label="Null 2" startTime="4966" endTime="13865" mediaFillMode="fill" parent="10197155" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.028093" v="0.000061,0.017639,0.000000" />
+        <kf t="0.215417" v="-1.498108,-398.754242,0.000000" e="cubicBezier 0.6733333 0.0 0.22444442 1.0" />
+      </location>
+    </transform>
+  </nullobj>
+  <embedScene id="10197141" label="Group 8" startTime="5666" endTime="13865" fillType="intrinsic" outTime="-2147477483" mediaFillMode="fill" parent="10197138">
+    <transform>
+      <location>
+        <kf t="0.087450" v="-121.525879,391.879395,0.000000" e="elastic 0.23333333 1.0 0.36637256 1.0" />
+        <kf t="0.004147" v="-121.499878,474.879395,0.000000" />
+      </location>
+      <pivot value="-51.568970,124.349487" />
+      <scale value="0.737755,0.737755" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2033" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10197139" label="1200x630wa (1) (1).png" startTime="0" endTime="2032" fillType="media" fillImage="content://media/external/images/media/1000263000" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="726.824951,664.349487,0.000000" />
+          <scale value="0.232292,0.232292" />
+        </transform>
+        <border direction="inside" id="1">
+          <color value="#ff000000" />
+        </border>
+        <property name="size" type="vec2" value="960.000000,504.000000" />
+      </shape>
+      <text id="10197140" startTime="0" endTime="2033" fillType="color" mediaFillMode="fill" size="14.000000" font="imported?name=Inter_18pt-Black.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="1057.037109,664.349487,0.000000" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <content>Instant Digital Download </content>
+      </text>
+    </scene>
+  </embedScene>
+  <embedScene id="10197142" label="Group 8 Copy" startTime="6000" endTime="13865" fillType="intrinsic" outTime="7865" mediaFillMode="fill" parent="10197138">
+    <transform>
+      <location>
+        <kf t="0.091164" v="-131.581604,483.263916,0.000000" e="elastic 0.23333333 1.0 0.36637256 1.0" />
+        <kf t="0.002161" v="-132.519897,572.263916,0.000000" />
+      </location>
+      <pivot value="-51.568970,124.349487" />
+      <scale value="0.737755,0.737755" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="6599" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10197139" label="1200x630wa (1) (1).png" startTime="0" endTime="6599" fillType="media" fillImage="content://media/external/images/media/1000263000" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="726.824951,664.349487,0.000000" />
+          <scale value="0.232292,0.232292" />
+        </transform>
+        <border direction="inside" id="1">
+          <color value="#ff000000" />
+        </border>
+        <property name="size" type="vec2" value="960.000000,504.000000" />
+      </shape>
+      <text id="10197140" startTime="0" endTime="6599" fillType="color" mediaFillMode="fill" size="14.000000" font="imported?name=Inter_18pt-Black.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="1057.037109,664.349487,0.000000" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <content>100% rolyalty free</content>
+      </text>
+    </scene>
+  </embedScene>
+  <embedScene id="10197143" label="Group 8 Copy 2" startTime="6333" endTime="13865" fillType="intrinsic" outTime="7532" mediaFillMode="fill" parent="10197138">
+    <transform>
+      <location>
+        <kf t="0.068640" v="-128.025879,582.877380,0.000000" e="elastic 0.23333333 1.0 0.36637256 1.0" />
+        <kf t="0.002257" v="-128.307007,656.438599,0.000000" />
+      </location>
+      <pivot value="-51.568970,124.349487" />
+      <scale value="0.737755,0.737755" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="6599" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10197139" label="1200x630wa (1) (1).png" startTime="0" endTime="6599" fillType="media" fillImage="content://media/external/images/media/1000263000" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location value="726.824951,664.349487,0.000000" />
+          <scale value="0.232292,0.232292" />
+        </transform>
+        <border direction="inside" id="1">
+          <color value="#ff000000" />
+        </border>
+        <property name="size" type="vec2" value="960.000000,504.000000" />
+      </shape>
+      <text id="10197140" startTime="0" endTime="6599" fillType="color" mediaFillMode="fill" size="14.000000" font="imported?name=Inter_18pt-Black.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="1057.037109,664.349487,0.000000" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <content>lifetime Access </content>
+      </text>
+    </scene>
+  </embedScene>
+  <embedScene id="10197153" label="Group 9" startTime="6333" endTime="13865" fillType="intrinsic" outTime="7532" mediaFillMode="fill" parent="10197138">
+    <transform>
+      <location>
+        <kf t="0.143787" v="-91.649963,598.389038,0.000000" e="elastic 0.23333333 1.0 0.36637256 1.0" />
+        <kf t="0.002257" v="-91.641296,725.731689,0.000000" />
+      </location>
+      <pivot value="-47.621033,0.000000" />
+      <scale value="0.648374,0.648374" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1476" exportWidth="1920" exportHeight="1476" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7532" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <embedScene id="10197147" label="background " startTime="0" endTime="7532" fillType="intrinsic" outTime="7532" mediaFillMode="fill">
+        <transform>
+          <location value="724.665039,1220.974121,0.000000" />
+          <pivot value="-30.500000,-50.989746" />
+          <scale value="0.286324,0.286324" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1286" exportWidth="1920" exportHeight="1286" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2033" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="10197125" label="Rounded Rectangle 1" startTime="0" endTime="2033" fillType="color" mediaFillMode="fill" s=".roundrect">
+            <transform>
+              <location value="960.935547,628.000000,-1430.778320" />
+              <scale value="0.505000,0.505000" />
+            </transform>
+            <fillColor value="#ffd4fdae" />
+            <property name="size" type="vec2" value="98.000000,96.000000" />
+            <property name="cornerRadius" type="float" value="25.000000" />
+          </shape>
+          <shape id="10197124" label="Screenshot_2025-05-31-04-05-56-19_da12b4d69ba00bd9279f440202b88de5.jpg" startTime="0" endTime="2032" clippingMask="true" fillType="media" fillImage="content://media/external/images/media/1000264176" mediaFillMode="fill" s=".rect">
+            <transform>
+              <location value="958.370117,820.146484,-1348.500000" />
+            </transform>
+            <property name="size" type="vec2" value="242.000000,540.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="10197146" label="play " startTime="0" endTime="7532" fillType="intrinsic" inTime="4200" outTime="11732" mediaFillMode="fill">
+        <transform>
+          <location value="741.725952,508.673340,0.000000" />
+          <pivot value="-33.218384,644.575195" />
+          <scale value="0.665164,0.665164" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="2219" exportWidth="1920" exportHeight="2219" precompose="dynamicResolution" bgcolor="#00000000" totalTime="25865" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="10197145" label="Circle 1" startTime="0" endTime="25865" fillType="color" mediaFillMode="fill" s=".circle">
+            <transform>
+              <location value="928.501831,1748.999878,0.000000" />
+            </transform>
+            <fillColor value="#ffc1f074" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="10197144" label="VID-20250531-WA0026.mp4" startTime="0" endTime="25861" clippingMask="true" fillType="media" fillVideo="content://media/external/video/media/1000264337" outTime="25829" mediaFillMode="fill" s=".rect">
+            <transform>
+              <location value="926.781616,1109.999878,0.000000" />
+              <scale value="2.055555,2.055555" />
+            </transform>
+            <gain value="0.000000" />
+            <property name="size" type="vec2" value="243.000000,540.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <embedScene id="10197151" label="Group 10" startTime="0" endTime="7531" fillType="intrinsic" outTime="7531" mediaFillMode="fill">
+        <transform>
+          <location value="1106.000000,1183.581543,0.000000" />
+          <scale value="0.413897,0.413897" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <scene title="" width="1920" height="1413" exportWidth="1920" exportHeight="1413" precompose="dynamicResolution" bgcolor="#00000000" totalTime="7531" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+          <shape id="10197148" label="Screenshot_2025-05-31-18-38-39-53_f9ee0578fe1cc94de7482bd41accb329.png" startTime="0" endTime="7531" fillType="media" fillImage="content://media/external/images/media/1000264344" mediaFillMode="fill" s=".rect">
+            <transform>
+              <location value="960.000000,637.756226,0.000000" />
+              <scale value="0.861979,0.861979" />
+            </transform>
+            <property name="size" type="vec2" value="960.000000,175.000000" />
+          </shape>
+          <shape id="10197149" label="Rectangle 1" startTime="0" endTime="7531" clippingMask="true" fillType="color" mediaFillMode="fill" s=".rect">
+            <transform>
+              <location value="970.960815,706.500000,0.000000" />
+              <scale value="7.065000,7.065000" />
+            </transform>
+            <fillColor value="#ff000000" />
+            <property name="size" type="vec2" value="100.000000,100.000000" />
+          </shape>
+          <shape id="10197150" label="Rectangle 2" startTime="0" endTime="7531" clippingMask="true" fillType="color" mediaFillMode="fill" s=".rect">
+            <transform>
+              <location>
+                <kf t="1.000000" v="958.501831,657.048645,0.000000" />
+                <kf t="0.444828" v="-406.539185,657.048645,0.000000" />
+              </location>
+            </transform>
+            <fillColor value="#ff888888" />
+            <property name="size" type="vec2" value="671.000000,168.000000" />
+          </shape>
+        </scene>
+      </embedScene>
+      <shape id="10197152" label="Rounded Rectangle 1" startTime="0" endTime="7532" fillType="none" mediaFillMode="fill" s=".roundrect">
+        <transform>
+          <location value="1077.189087,1140.642090,0.000000" />
+        </transform>
+        <fillColor value="#ffd4b275" />
+        <path-stroke direction="centered" end-size="1.500000" />
+        <property name="size" type="vec2" value="493.000000,136.000000" />
+        <property name="cornerRadius" type="float" value="65.000000" />
+      </shape>
+      <text id="10197154" startTime="0" endTime="7532" fillType="color" mediaFillMode="fill" size="14.000000" font="imported?name=Poppins-Bold.ttf" wrapWidth="512" align="left">
+        <transform>
+          <location value="1106.000000,1046.916504,0.000000" />
+          <scale value="1.158203,1.158203" />
+        </transform>
+        <fillColor value="#ff000000" />
+        <content>The perfect Boom SFX </content>
+      </text>
+    </scene>
+  </embedScene>
+  <nullobj id="10197155" label="Null 3" startTime="6333" endTime="13865" mediaFillMode="fill" type="perspective">
+    <transform>
+      <location>
+        <kf t="0.090680" v="960.000000,540.000000,0.000000" />
+        <kf t="0.316383" v="981.525818,61.865242,-321.448242" e="cubicBezier 0.42 0.0 1.0 1.0" />
+      </location>
+    </transform>
+  </nullobj>
+  <embedScene id="10197161" label="Group 10" startTime="8000" endTime="13865" fillType="intrinsic" outTime="5865" mediaFillMode="fill">
+    <transform>
+      <location>
+        <kf t="0.201705" v="1287.375122,543.737000,-684.500000" />
+        <kf t="0.224382" v="1340.875122,543.737000,-684.500000" />
+        <kf t="0.247229" v="1308.984985,543.737000,-684.500000" />
+      </location>
+      <pivot value="-633.102661,-12.004883" />
+      <scale>
+        <kf t="0.201705" v="0.623252,0.623252" />
+        <kf t="0.224382" v="0.368015,0.368015" />
+        <kf t="0.247229" v="0.517893,0.517893" />
+      </scale>
+    </transform>
+    <fillColor value="#ff000000" />
+    <scene title="" width="1920" height="1080" exportWidth="1920" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="5765" fps="30" modifiedTime="0" amver="1002351" ffver="106" am="com.alightcreative.motion/5.0.270.1002578" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <shape id="10197160" label="01 (1).png" startTime="0" endTime="5765" fillType="media" fillImage="content://media/external/images/media/1000264360" mediaFillMode="fill" s=".rect">
+        <transform>
+          <location>
+            <kf t="0.199480" v="820.869080,568.500000,-1077.500000" e="cubicBezier 0.0 0.0 0.5488888 1.0" />
+            <kf t="0.002949" v="1390.753784,748.123718,-1077.500000" />
+          </location>
+          <scale value="0.096296,0.096296" />
+        </transform>
+        <property name="size" type="vec2" value="540.000000,540.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+</scene>
