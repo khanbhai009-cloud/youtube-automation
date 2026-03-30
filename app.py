@@ -122,7 +122,7 @@ async def run_xml_analyzer():
     try:
         # Ye command aapki xml_analyzer.py file ko run karegi
         process = subprocess.run(
-            ["python", "xml_analyzer.py"], 
+            ["python", "tools/xml_analyzer.py"], 
             capture_output=True, 
             text=True, 
             check=True
