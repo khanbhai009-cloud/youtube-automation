@@ -81,7 +81,6 @@
 
   <div class="grid">
 
-    <!-- Trigger Panel -->
     <div class="card">
       <h2>⚡ Trigger Pipeline</h2>
       <div class="niche-btns">
@@ -94,11 +93,13 @@
         <label class="toggle"><input type="checkbox" id="scheduleToggle" checked><span class="slider"></span></label>
         Schedule upload (USA prime time 8 PM ET)
       </div>
+      
+      <button class="run-btn" id="runXmlBtn" onclick="runXmlAnalyzer()" style="background: linear-gradient(135deg, #0055ff, #0033cc); margin-bottom: 12px;">🛠️ Run XML Analyzer</button>
+      
       <button class="run-btn" id="runBtn" onclick="triggerPipeline()">🚀 Generate Video Now</button>
       <div style="margin-top:12px;color:#555;font-size:0.8rem;text-align:center" id="runMsg"></div>
     </div>
 
-    <!-- Stats -->
     <div class="card">
       <h2>📊 Stats</h2>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
@@ -112,7 +113,6 @@
 
   <div class="grid">
 
-    <!-- Live Logs -->
     <div class="card">
       <h2>📟 Live Logs</h2>
       <div class="log-box" id="logBox">
@@ -120,7 +120,6 @@
       </div>
     </div>
 
-    <!-- Schedule -->
     <div class="card">
       <h2>📅 Auto Schedule (EST)</h2>
       <div id="scheduleList" style="color:#888;font-size:0.85rem">Loading...</div>
@@ -129,13 +128,11 @@
   </div>
 
 
-  <!-- Director Brief -->
   <div class="card" id="directorCard" style="margin-bottom:20px;border-color:#ff440030">
     <h2>🤖 Director Agent — Last Decision</h2>
     <div id="directorBrief" style="color:#555;font-size:0.85rem">No run yet — Director has not fired.</div>
   </div>
 
-  <!-- History -->
   <div class="card">
     <h2>🎥 Video History</h2>
     <div id="historyList" style="color:#888;font-size:0.85rem">No videos yet.</div>
@@ -151,6 +148,33 @@ function selectNiche(el, niche) {
   document.querySelectorAll('.niche-btn').forEach(b => b.classList.remove('active'));
   el.classList.add('active');
   selectedNiche = niche;
+}
+
+// Naya XML Analyzer Function
+async function runXmlAnalyzer() {
+  const btn = document.getElementById('runXmlBtn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> Running Analyzer...';
+  document.getElementById('runMsg').textContent = 'XML Analyzer chal raha hai...';
+  
+  try {
+    const r = await fetch('/run-xml', { method: 'POST' });
+    if (!r.ok) {
+      const err = await r.json();
+      document.getElementById('runMsg').textContent = '⚠️ ' + (err.detail || 'Error running analyzer');
+      addLog('❌ XML Analyzer Error: ' + (err.detail || 'Error'), 'error');
+    } else {
+      const data = await r.json();
+      document.getElementById('runMsg').textContent = '✅ ' + data.message;
+      addLog('✅ ' + data.message, 'success');
+    }
+  } catch(e) {
+    document.getElementById('runMsg').textContent = '❌ Fetch error: ' + e.message;
+    addLog('❌ XML Fetch error: ' + e.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '🛠️ Run XML Analyzer';
+  }
 }
 
 async function triggerPipeline() {
