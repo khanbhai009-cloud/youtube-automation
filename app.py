@@ -120,9 +120,14 @@ async def trigger_pipeline(req: TriggerRequest, bg: BackgroundTasks):
 @app.post("/run-xml")
 async def run_xml_analyzer():
     try:
-        # Ye command aapki xml_analyzer.py file ko run karegi
+        # Yahan par --db aur xml_library/ ka path add kar diya gaya hai
         process = subprocess.run(
-            ["python", "tools/xml_analyzer.py"], 
+            [
+                "python", 
+                "tools/xml_analyzer.py", 
+                "--db", "effects_library.db", 
+                "xml_library/"
+            ], 
             capture_output=True, 
             text=True, 
             check=True
@@ -132,6 +137,7 @@ async def run_xml_analyzer():
         raise HTTPException(status_code=500, detail=f"Analyzer fail ho gaya: {e.stderr}")
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+        
         
 @app.get("/status")
 async def get_status():
