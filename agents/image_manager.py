@@ -25,7 +25,7 @@ VIDEO_H     = 1080
 GOOGLE_API_KEY  = os.environ.get("GOOGLE_API_KEY", "")
 GOOGLE_ENDPOINT = (
     "https://generativelanguage.googleapis.com/v1beta/models"
-    "/imagen-3.0-generate-002:predict"
+    "/imagen-3.0-generate-001:predict"
 )
 GOOGLE_MAX_RETRIES    = 3
 GOOGLE_RETRY_WAIT     = 12   # 12 sec between retries (stays under 10/min)
