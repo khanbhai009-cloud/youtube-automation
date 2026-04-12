@@ -11,7 +11,7 @@ from agents.research_agent import get_trending_topic
 from agents.script_agent import generate_script, build_timeline, get_full_script_text
 from agents.production_agent import render_video
 from utils.sheets_client import log_video, update_status
-from agents.youtube_agent import upload_video
+from agents.upload_agent import upload_video
 
 # ── State ─────────────────────────────────────────────────────────────────────
 
