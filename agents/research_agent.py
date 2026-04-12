@@ -4,7 +4,16 @@ import random
 from tavily import TavilyClient
 from pytrends.request import TrendReq
 
-tavily = TavilyClient(api_key=os.getenv("TAVILY_API_KEY"))
+_tavily_client = None
+
+def _get_tavily():
+    global _tavily_client
+    if _tavily_client is None:
+        api_key = os.getenv("TAVILY_API_KEY")
+        if not api_key:
+            raise ValueError("TAVILY_API_KEY not set")
+        _tavily_client = TavilyClient(api_key=api_key)
+    return _tavily_client
 
 NICHE_SEEDS = {
     "psychology": [
@@ -51,7 +60,7 @@ def get_trending_topic(niche: str = "psychology") -> dict:
     # Step 2: Deep research via Tavily
     try:
         search_query = f"{trending_kw} psychology facts 2025"
-        results = tavily.search(
+        results = _get_tavily().search(
             query=search_query,
             search_depth="advanced",
             max_results=5,

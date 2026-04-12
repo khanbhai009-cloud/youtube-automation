@@ -97,7 +97,10 @@ class TriggerRequest(BaseModel):
 
 @app.on_event("startup")
 async def startup():
-    ensure_headers()
+    try:
+        ensure_headers()
+    except Exception as e:
+        print(f"[APP] Sheets init skipped (configure API keys to enable): {e}")
     scheduler.start()
     print("[APP] Scheduler started. YouTube AI Factory is live! 🎬")
 
