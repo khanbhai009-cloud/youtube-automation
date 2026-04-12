@@ -171,9 +171,20 @@ async def health():
 # ══════════════════════════════════════════════
 
 TEST_TEXT = (
-    "Kya tum jaante ho ki duniya ki sabse dangerous psychological trick kya hai. "
-    "Jo banda yeh jaanta hai woh kisi ko bhi control kar sakta hai. "
-    "Aaj main tumhe woh secret bataunga jo psychology ki books mein band hai."
+    "They found something --- DISTURBING. "
+    "A study of ten thousand people revealed "
+    "that the ones closest to you --- "
+    "are the ones most likely to manipulate you. "
+    "Not strangers. --- Your own circle. "
+    "And the worst part? "
+    "You already KNOW this is true. "
+    "You've felt it. --- That moment when someone "
+    "made you feel guilty --- for something "
+    "that was never your fault. "
+    "That's not an accident. --- "
+    "That's a TECHNIQUE. "
+    "And today --- you're going to see it "
+    "for exactly what it is."
 )
 
 VOICE_TESTS = {
