@@ -9,8 +9,7 @@ from langgraph.graph import StateGraph, END
 from agents.director_agent import run_director
 from agents.research_agent import get_trending_topic
 from agents.script_agent import generate_script, build_timeline, get_full_script_text
-from agents.production_agent import generate_audio, render_video
-from agents.upload_agent import upload_video
+from agents.production_agent import render_video
 from utils.sheets_client import log_video, update_status
 
 
@@ -152,30 +151,26 @@ def script_node(state: VideoState) -> dict:
 def production_node(state: VideoState) -> dict:
     print("\n═══ PHASE 3: PRODUCTION ═══")
     try:
-        brief = state.get("strategy_brief", {})
-        niche = state.get("niche", "default").lower().strip()  # ✅ FIX: niche extracted
+        niche = state.get("niche", "default").lower().strip()
 
-        audio_path = generate_audio(
-            state["script_text"],
-            state["topic"],
-            niche=niche,        # ✅ FIX: voice profile auto-selected by niche
-        )
+        # ✨ NAYE PIPELINE KE HISAB SE UPDATED ✨
+        # Ab render_video khud hi sab handle kar leta hai
         video_path = render_video(
-            audio_path,
-            state["timeline"],
-            state["script_data"],
-            state["topic"],
-            thumbnail_style=brief.get("thumbnail_style", "plain_icon"),
-            thumbnail_colors=brief.get("thumbnail_color_scheme", "white_bold"),
-            niche=niche,        # ✅ FIX: passed to render too
+            script_data=state["script_data"],
+            topic=state["topic"],
+            niche=niche,
+            use_bgm=True
         )
+        
         update_status(state["topic"], "Rendered")
         return {
-            "audio_path": audio_path, "video_path": video_path, "error": None,
-            "logs": [f"✅ Rendered | 🎨 {brief.get('thumbnail_style')} / {brief.get('thumbnail_color_scheme')} | 🎙️ Voice: {niche}"],
+            "audio_path": "auto_handled_in_render", # Ab alag se audio return karne ki zaroorat nahi
+            "video_path": video_path, 
+            "error": None,
+            "logs": [f"✅ Rendered | 🎨 AI Cinematic Pipeline | 🎙️ Voice: {niche}"],
         }
     except Exception as e:
-        traceback.print_exc()   # ✅ FIX: full stacktrace visible in HF logs
+        traceback.print_exc()   
         return {"error": f"Production failed: {e}", "logs": [f"❌ Production error: {e}"]}
 
 
@@ -205,10 +200,10 @@ def upload_node(state: VideoState) -> dict:
 
 def error_handler_node(state: VideoState) -> dict:
     retry     = state.get("retry_count", 0)
-    error_msg = state.get("error", "Unknown error")  # ✅ FIX: capture actual error
+    error_msg = state.get("error", "Unknown error")  
 
     print(f"\n[ERROR HANDLER] Retry #{retry + 1}")
-    print(f"[ERROR HANDLER] Reason: {error_msg}")    # ✅ FIX: visible in logs
+    print(f"[ERROR HANDLER] Reason: {error_msg}")    
     print(f"[ERROR HANDLER] Restarting from Director...")
 
     return {
@@ -225,7 +220,6 @@ def _route(state: VideoState, next_node: str) -> str:
         if state.get("retry_count", 0) < 2:
             return "retry"
         else:
-            # ✅ FIX: give_up reason clearly logged
             print(f"\n[PIPELINE] ❌ GIVE UP after 2 retries | Last error: {state.get('error')}")
             return "give_up"
     return next_node
