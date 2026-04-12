@@ -157,10 +157,15 @@ def get_word_timestamps(audio_path: str) -> list:
             timestamp_granularities=["word"],
         )
 
-    words = [
-        {"word": w.word, "start": w.start, "end": w.end}
-        for w in resp.words
-    ]
+    raw_words = resp.words or []
+
+    # Groq returns either objects or dicts depending on version — handle both
+    def _extract(w):
+        if isinstance(w, dict):
+            return {"word": w["word"], "start": w["start"], "end": w["end"]}
+        return {"word": w.word, "start": w.start, "end": w.end}
+
+    words = [_extract(w) for w in raw_words]
     print(f"[WHISPER] ✅ {len(words)} word timestamps")
     return words
 
