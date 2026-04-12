@@ -53,7 +53,7 @@ def _google_imagen(prompt: str, idx: int) -> bytes | None:
 
     full_prompt = (
         f"{prompt}, cinematic, photorealistic, dramatic lighting, "
-        f"4K, wide establishing shot, no text, no watermarks, no human faces"
+        f"4K, wide establishing shot, no text, no watermarks"
     )
 
     payload = {
