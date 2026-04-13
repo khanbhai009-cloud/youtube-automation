@@ -428,7 +428,7 @@ def build_final_video(
     )
 
     print(f"[FFMPEG] Rendering {n} scenes → {output_path}")
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
 
     if result.returncode != 0:
         print(f"[FFMPEG ERROR]\n{result.stderr[-1500:]}")

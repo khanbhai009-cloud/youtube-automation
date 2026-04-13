@@ -234,7 +234,30 @@ def render_scene_with_ffmpeg(
           f"zoom={zoom_type} grade={color_grade} intensity={intensity}")
 
     try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=120)
+        cmd = [
+            "ffmpeg",
+            "-y",
+            "-loop",
+            "1",
+            "-t",
+            str(duration),
+            "-i",
+            image_path,
+            "-vf",
+            f"scale=trunc(iw/2)*2:trunc(ih/2)*2,{filter_chain}",
+            "-c:v",
+            "libx264",
+            "-preset",
+            "fast",
+            "-crf",
+            "18",
+            "-pix_fmt",
+            "yuv420p",
+            "-r",
+            str(FPS),
+            output_path,
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
 
         if result.returncode == 0:
             print(f"[FFMPEG TOOL] ✅ Scene {scene_idx:02d} → {output_path}")
