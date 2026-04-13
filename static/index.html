@@ -219,6 +219,37 @@
     <div id="directorBrief" style="color:#555;font-size:0.85rem">No run yet — Director has not fired.</div>
   </div>
 
+  <!-- ═══ AGENT INTELLIGENCE PANEL ═══ -->
+  <div class="card" id="agentPanel" style="margin-bottom:20px;border-color:#a855f730">
+    <h2 style="color:#a855f7">🧠 Agent Intelligence — Last Run</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:18px">
+      <div class="stat">
+        <div class="num" id="aiCriticScore" style="color:#a855f7">—</div>
+        <div class="lbl">Critic Score /10</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="aiCriticLoops" style="color:#a855f7">—</div>
+        <div class="lbl">Critic Iterations</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="aiFFmpegRetries" style="color:#a855f7">—</div>
+        <div class="lbl">FFmpeg Self-Heals</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div>
+        <div style="color:#666;font-size:0.75rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Critic Feedback</div>
+        <div id="aiCriticFeedback" style="color:#888;font-size:0.82rem;line-height:1.5">Run a pipeline to see critic analysis.</div>
+        <div id="aiBannedPhrases" style="margin-top:6px;font-size:0.78rem;color:#ff4444"></div>
+      </div>
+      <div>
+        <div style="color:#666;font-size:0.75rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px">Scene Directives</div>
+        <div id="aiSceneDirectives" style="color:#888;font-size:0.82rem;font-family:monospace;line-height:1.6;max-height:120px;overflow-y:auto">No directives yet.</div>
+      </div>
+    </div>
+    <div id="aiFFmpegError" style="margin-top:12px;font-size:0.78rem;color:#ff4444;display:none"></div>
+  </div>
+
   <div class="card">
     <h2>🎥 Video History</h2>
     <div id="historyList" style="color:#888;font-size:0.85rem">No videos yet.</div>
@@ -399,6 +430,7 @@ async function pollStatus() {
       pollInterval = null;
       if (data.last_result) {
         updateDirectorCard(data.last_result);
+        updateAgentPanel(data.last_result);
         const r = data.last_result;
         if (r.error) {
           addLog('❌ Error: ' + r.error, 'error');
@@ -480,6 +512,52 @@ function updateDirectorCard(result) {
     card.innerHTML = logs.map(l =>
       `<div class="log-line info" style="padding:3px 0">${l}</div>`
     ).join('');
+  }
+}
+
+function updateAgentPanel(result) {
+  if (!result) return;
+
+  // ── Critic metrics ───────────────────────────────────────────
+  const score      = result.best_critic_score ?? '—';
+  const iterations = result.critic_iterations != null ? result.critic_iterations + 1 : '—';
+  const ffmpegHits = result.ffmpeg_retry_count ?? '—';
+  document.getElementById('aiCriticScore').textContent    = score;
+  document.getElementById('aiCriticLoops').textContent    = iterations;
+  document.getElementById('aiFFmpegRetries').textContent  = ffmpegHits;
+
+  // ── Critic feedback ─────────────────────────────────────────
+  const critiques = result.critic_feedback || [];
+  if (critiques.length) {
+    const last = critiques[critiques.length - 1];
+    const tone  = last.tone_assessment   || '—';
+    const risk  = last.retention_risk    || '—';
+    const hook  = last.hook_strength     || '—';
+    document.getElementById('aiCriticFeedback').innerHTML =
+      `<div style="margin-bottom:4px"><span style="color:#a855f7">Tone:</span> ${tone} &nbsp;|&nbsp; <span style="color:#a855f7">Retention Risk:</span> ${risk} &nbsp;|&nbsp; <span style="color:#a855f7">Hook:</span> ${hook}/10</div>` +
+      `<div style="color:#aaa">${last.feedback || '—'}</div>`;
+    const banned = last.banned_phrases_found || [];
+    document.getElementById('aiBannedPhrases').textContent =
+      banned.length ? `⚠️ Banned phrases detected: ${banned.join(', ')}` : '';
+  }
+
+  // ── Scene directives ─────────────────────────────────────────
+  const directives = result.scene_directives || [];
+  if (directives.length) {
+    document.getElementById('aiSceneDirectives').innerHTML = directives.map(d =>
+      `<div><span style="color:#a855f7">[${String(d.scene_idx).padStart(2,'0')}]</span> ` +
+      `<span style="color:#4af">${(d.section||'').padEnd(12)}</span> ` +
+      `${d.zoom_type||''} · ${d.color_grade||''} · ${d.intensity||''}</div>`
+    ).join('');
+  }
+
+  // ── FFmpeg error (self-healing) ──────────────────────────────
+  const errEl = document.getElementById('aiFFmpegError');
+  if (result.ffmpeg_error && result.ffmpeg_retry_count > 0) {
+    errEl.style.display = 'block';
+    errEl.textContent   = `⚡ Self-Healing triggered ${result.ffmpeg_retry_count}× — Last error: ${result.ffmpeg_error.slice(-120)}`;
+  } else {
+    errEl.style.display = 'none';
   }
 }
 

@@ -142,6 +142,15 @@ def generate_script(research_data: dict, style_hints: dict = None) -> dict:
 
     points_count = max(3, min(7, length // 30))
 
+    rewrite_block = ""
+    if hints.get("rewrite_instructions"):
+        rewrite_block = f"""
+⚠️ CRITIC REWRITE INSTRUCTIONS — apply ALL of these:
+{hints['rewrite_instructions']}
+
+This is a rewrite. The previous version was rejected. Fix every point above.
+"""
+
     user_msg = f"""Write a viral YouTube script about: "{topic}"
 
 Research context:
@@ -150,7 +159,7 @@ Research context:
 Target keywords: {keywords}
 Format: {fmt} | Title style: {title_f} | Target length: {length}s
 Number of main points: {points_count}
-
+{rewrite_block}
 REMEMBER:
 - Hook must open with a stat or challenge, NOT a question starting with "Have you ever..."
 - Each section heading = 3-5 words MAX (shown on screen)

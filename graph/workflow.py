@@ -1,322 +1,166 @@
+"""
+graph/workflow.py
+
+LangGraph StateGraph wrapper around the Agentic Pipeline v2.
+
+This file maintains the LangGraph interface expected by app.py and the scheduler,
+but delegates all agent logic to main_agent_loop.py where the full multi-agent
+architecture lives (Critic loops, Scene Director tool-calls, self-healing FFmpeg).
+
+State additions from v1 → v2:
+  critic_feedback     List[dict]  — all Critic Agent reviews
+  critic_iterations   int         — how many critic loops ran
+  best_critic_score   int         — highest score achieved
+  scene_directives    List[dict]  — FFmpeg tool calls per scene (Scene Director)
+  scene_clips         List[str]   — per-scene rendered MP4 clip paths
+  production_status   str         — "pending" | "rendering" | "done" | "failed"
+  ffmpeg_error        str|None    — last FFmpeg stderr (for self-healing)
+  ffmpeg_retry_count  int         — total FFmpeg self-healing retries
+"""
+
 from __future__ import annotations
-import traceback
 import time
+import traceback
+import operator
 from pathlib import Path
 from typing import TypedDict, Optional, List, Annotated
-import operator
 
 from langgraph.graph import StateGraph, END
 
-from agents.director_agent import run_director
-from agents.research_agent import get_trending_topic
-from agents.script_agent import generate_script, build_timeline, get_full_script_text
-from agents.production_agent import render_video
-from utils.sheets_client import log_video, update_status
-from agents.upload_agent import upload_video
-
-# ── State ─────────────────────────────────────────────────────────────────────
-
-class VideoState(TypedDict):
-    strategy_brief:  dict
-    analytics_raw:   dict
-    trends_raw:      dict
-    niche:           str
-    topic:           str
-    keywords:        List[str]
-    research_snippets: List[str]
-    script_data:     dict
-    timeline:        List[dict]
-    script_text:     str
-    audio_path:      str
-    video_path:      str
-    youtube_url:     str
-    upload_status:   str
-    active_title:    str
-    schedule_upload: bool          # ← FIXED: added to state
-    error:           Optional[str]
-    retry_count:     int
-    logs:            Annotated[List[str], operator.add]
+from main_agent_loop import (
+    _initial_state,
+    phase_director,
+    phase_research,
+    phase_script,
+    phase_critic_loop,
+    phase_scene_director,
+    phase_production_prep,
+    phase_render_scenes,
+    phase_final_assembly,
+    phase_upload,
+    AgentState,
+)
 
 
-# ── Nodes ─────────────────────────────────────────────────────────────────────
+# ── Thin LangGraph node wrappers ──────────────────────────────────────────────
 
-def director_node(state: VideoState) -> dict:
-    print("\n╔══════════════════════════════════════╗")
-    print("║  PHASE 0: DIRECTOR — FULL ANALYSIS  ║")
-    print("╚══════════════════════════════════════╝")
-    try:
-        result = run_director()
-        brief  = result["strategy_brief"]
-        return {
-            "strategy_brief": brief,
-            "analytics_raw":  result["analytics_raw"],
-            "trends_raw":     result["trends_raw"],
-            "niche":          brief["niche"],
-            "topic":          brief.get("topic", ""),
-            "error": None,
-            "logs": [
-                f"🎬 Director → [{brief['niche'].upper()}] {brief['topic']}",
-                f"📐 Format: {brief['video_format']} | Thumb: {brief['thumbnail_style']}",
-                f"⏰ Upload UTC {brief['upload_hour_utc']:02d}:00 | A/B: {'✅' if brief['ab_test'].get('enabled') else '❌'}",
-                f"📊 Diagnosis: {brief['channel_diagnosis']} | {brief['reasoning']}",
-            ],
-        }
-    except Exception as e:
-        traceback.print_exc()
-        return {
-            "error": f"Director failed: {e}",
-            "strategy_brief": {}, "analytics_raw": {}, "trends_raw": {},
-            "niche": "psychology", "topic": "",
-            "logs": [f"❌ Director error: {e}"],
-        }
+def director_node(state: AgentState) -> dict:
+    updated = phase_director(dict(state))
+    return {k: v for k, v in updated.items() if k in AgentState.__annotations__}
 
 
-def research_node(state: VideoState) -> dict:
-    print("\n═══ PHASE 1: RESEARCH ═══")
-    try:
-        brief   = state.get("strategy_brief", {})
-        niche   = state.get("niche", "psychology")
-        d_topic = brief.get("topic", "")
-
-        trends_raw = state.get("trends_raw", {})
-        if niche in trends_raw and trends_raw[niche].get("keywords"):
-            data = dict(trends_raw[niche])
-            if d_topic:
-                data["topic"] = d_topic
-            print(f"[RESEARCH] Reusing Director trends: {data['topic']}")
-        else:
-            data = get_trending_topic(niche)
-            if d_topic:
-                data["topic"] = d_topic
-
-        return {
-            "topic":              data["topic"],
-            "keywords":           data["keywords"],
-            "research_snippets":  data["research_snippets"],
-            "error": None,
-            "logs": [f"✅ Research: {data['topic']} | {len(data['keywords'])} keywords"],
-        }
-    except Exception as e:
-        traceback.print_exc()
-        return {"error": f"Research failed: {e}", "logs": [f"❌ Research error: {e}"]}
+def research_node(state: AgentState) -> dict:
+    updated = phase_research(dict(state))
+    return {k: v for k, v in updated.items() if k in AgentState.__annotations__}
 
 
-def script_node(state: VideoState) -> dict:
-    print("\n═══ PHASE 2: SCRIPTING ═══")
-    try:
-        brief = state.get("strategy_brief", {})
-        research_data = {
-            "topic":              state["topic"],
-            "keywords":           state["keywords"],
-            "research_snippets":  state["research_snippets"],
-        }
-        style_hints = {
-            "video_format":       brief.get("video_format", "shocking_facts"),
-            "title_formula":      brief.get("title_formula", "dark_truth"),
-            "target_length_secs": brief.get("target_length_secs", 210),
-            "ab_test":            brief.get("ab_test", {}),
-        }
-        script_data  = generate_script(research_data, style_hints=style_hints)
-        timeline     = build_timeline(script_data)
-        script_text  = get_full_script_text(script_data)
-
-        # A/B title selection
-        ab = brief.get("ab_test", {})
-        if ab.get("enabled") and ab.get("title_a") and ab.get("title_b"):
-            use_b        = int(time.time()) % 2 == 1
-            active_title = ab["title_b"] if use_b else ab["title_a"]
-            variant      = "B" if use_b else "A"
-        else:
-            active_title = script_data.get("title", state["topic"])
-            variant      = "A"
-
-        log_video({
-            "topic":         state["topic"],
-            "script":        script_text,
-            "audio_path":    "",
-            "thumbnail_url": "",
-            "status":        f"Scripted (title_{variant})",
-            "youtube_url":   "",
-            "tags":          script_data.get("tags", []),
-        })
-        return {
-            "script_data":  script_data,
-            "timeline":     timeline,
-            "script_text":  script_text,
-            "active_title": active_title,
-            "error": None,
-            "logs": [
-                f"✅ Script ready | Format: {style_hints['video_format']}",
-                f"🅰️🅱️ Title variant {variant}: {active_title}",
-            ],
-        }
-    except Exception as e:
-        traceback.print_exc()
-        return {"error": f"Script failed: {e}", "logs": [f"❌ Script error: {e}"]}
+def script_node(state: AgentState) -> dict:
+    updated = phase_script(dict(state))
+    return {k: v for k, v in updated.items() if k in AgentState.__annotations__}
 
 
-def production_node(state: VideoState) -> dict:
-    print("\n═══ PHASE 3: PRODUCTION ═══")
-    try:
-        niche = state.get("niche", "default").lower().strip()
-
-        video_path = render_video(
-            script_data=state["script_data"],
-            topic=state["topic"],
-            niche=niche,
-            use_bgm=True,
-        )
-
-        # ── Sanity check — file exist karta hai? ──
-        if not video_path or not Path(video_path).exists():
-            raise FileNotFoundError(f"render_video returned invalid path: {video_path}")
-
-        size_mb = round(Path(video_path).stat().st_size / 1024 / 1024, 1)
-        print(f"[PRODUCTION] ✅ File OK: {video_path} ({size_mb} MB)")
-
-        update_status(state["topic"], "Rendered")
-        return {
-            "audio_path": "handled_in_render",
-            "video_path": video_path,
-            "error": None,
-            "logs": [f"✅ Rendered {size_mb}MB | 🎨 AI Cinematic | 🎙️ am_adam+echo"],
-        }
-    except Exception as e:
-        traceback.print_exc()
-        return {
-            "error": f"Production failed: {e}",
-            "logs": [f"❌ Production error: {e}"],
-        }
+def critic_loop_node(state: AgentState) -> dict:
+    updated = phase_critic_loop(dict(state))
+    return {k: v for k, v in updated.items() if k in AgentState.__annotations__}
 
 
-def upload_node(state: VideoState) -> dict:
-    print("\n═══ PHASE 4: UPLOAD ═══")
-    try:
-        brief        = state.get("strategy_brief", {})
-        script_data  = state["script_data"]
-        upload_hour  = brief.get("upload_hour_utc", 1)
-        should_schedule = state.get("schedule_upload", True)  # ← FIXED
-
-        video_path = state.get("video_path", "")
-
-        # ── Guard: file must exist before upload ──
-        if not video_path or not Path(video_path).exists():
-            raise FileNotFoundError(
-                f"Video file not found: '{video_path}' — render may have failed silently"
-            )
-
-        size_mb = round(Path(video_path).stat().st_size / 1024 / 1024, 1)
-        print(f"[UPLOAD] File: {video_path} ({size_mb} MB)")
-        print(f"[UPLOAD] Schedule: {should_schedule} | UTC hour: {upload_hour}")
-
-        result = upload_video(
-            video_path=video_path,
-            title=state.get("active_title") or script_data.get("title", state["topic"]),
-            description=script_data.get("description", ""),
-            tags=script_data.get("tags", []),
-            schedule=should_schedule,          # ← FIXED
-            upload_hour_utc=upload_hour,
-        )
-
-        update_status(state["topic"], "Posted", result["url"])
-        return {
-            "youtube_url":   result["url"],
-            "upload_status": result["status"],
-            "error": None,
-            "logs": [f"✅ Uploaded → {result['url']} | ⏰ UTC {upload_hour:02d}:00"],
-        }
-    except Exception as e:
-        traceback.print_exc()
-        return {
-            "error":         f"Upload failed: {e}",
-            "upload_status": "failed",
-            "logs":          [f"❌ Upload error: {e}"],
-        }
+def scene_director_node(state: AgentState) -> dict:
+    updated = phase_scene_director(dict(state))
+    return {k: v for k, v in updated.items() if k in AgentState.__annotations__}
 
 
-def error_handler_node(state: VideoState) -> dict:
-    retry     = state.get("retry_count", 0)
-    error_msg = state.get("error", "Unknown error")
-
-    print(f"\n[ERROR HANDLER] Retry #{retry + 1}")
-    print(f"[ERROR HANDLER] Reason: {error_msg}")
-    print(f"[ERROR HANDLER] Restarting from Director...")
-
-    return {
-        "retry_count": retry + 1,
-        "error": None,
-        "logs": [f"⚠️ Retry #{retry + 1} | Reason: {error_msg}"],
-    }
+def production_prep_node(state: AgentState) -> dict:
+    updated = phase_production_prep(dict(state))
+    return {k: v for k, v in updated.items() if k in AgentState.__annotations__}
 
 
-# ── Routing ───────────────────────────────────────────────────────────────────
+def render_scenes_node(state: AgentState) -> dict:
+    updated = phase_render_scenes(dict(state))
+    return {k: v for k, v in updated.items() if k in AgentState.__annotations__}
 
-def _route(state: VideoState, next_node: str) -> str:
+
+def final_assembly_node(state: AgentState) -> dict:
+    updated = phase_final_assembly(dict(state))
+    return {k: v for k, v in updated.items() if k in AgentState.__annotations__}
+
+
+def upload_node(state: AgentState) -> dict:
+    updated = phase_upload(dict(state))
+    return {k: v for k, v in updated.items() if k in AgentState.__annotations__}
+
+
+# ── Routing helpers ───────────────────────────────────────────────────────────
+
+def _route_after_research(state: AgentState) -> str:
+    return "error_end" if state.get("error") else "script"
+
+def _route_after_script(state: AgentState) -> str:
+    return "error_end" if state.get("error") else "critic_loop"
+
+def _route_after_prep(state: AgentState) -> str:
+    return "error_end" if state.get("error") else "render_scenes"
+
+def _route_after_render(state: AgentState) -> str:
+    return "error_end" if state.get("error") else "final_assembly"
+
+def _route_after_assembly(state: AgentState) -> str:
     if state.get("error"):
-        if state.get("retry_count", 0) < 2:
-            return "retry"
-        else:
-            print(f"\n[PIPELINE] ❌ GIVE UP after 2 retries | Last error: {state.get('error')}")
-            return "give_up"
-    return next_node
+        return "error_end"
+    if state.get("video_path") and Path(state["video_path"]).exists():
+        return "upload"
+    return "error_end"
 
 
-EDGE_MAP = {
-    "research":      "research",
-    "script":        "script",
-    "production":    "production",
-    "upload":        "upload",
-    "retry":         "error_handler",
-    "give_up":       END,
-}
+def error_end_node(state: AgentState) -> dict:
+    print(f"[WORKFLOW] Pipeline ended with error: {state.get('error')}")
+    return {}
 
+
+# ── Graph builder ─────────────────────────────────────────────────────────────
 
 def build_workflow():
-    g = StateGraph(VideoState)
+    g = StateGraph(AgentState)
 
     for name, fn in [
-        ("director",      director_node),
-        ("research",      research_node),
-        ("script",        script_node),
-        ("production",    production_node),
-        ("upload",        upload_node),
-        ("error_handler", error_handler_node),
+        ("director",        director_node),
+        ("research",        research_node),
+        ("script",          script_node),
+        ("critic_loop",     critic_loop_node),
+        ("scene_director",  scene_director_node),
+        ("production_prep", production_prep_node),
+        ("render_scenes",   render_scenes_node),
+        ("final_assembly",  final_assembly_node),
+        ("upload",          upload_node),
+        ("error_end",       error_end_node),
     ]:
         g.add_node(name, fn)
 
     g.set_entry_point("director")
-    g.add_conditional_edges("director",    lambda s: _route(s, "research"),    EDGE_MAP)
-    g.add_conditional_edges("research",    lambda s: _route(s, "script"),      EDGE_MAP)
-    g.add_conditional_edges("script",      lambda s: _route(s, "production"),  EDGE_MAP)
-    g.add_conditional_edges("production",  lambda s: _route(s, "upload"),      EDGE_MAP)
-    g.add_edge("upload",        END)
-    g.add_edge("error_handler", "director")
+    g.add_edge("director", "research")
+    g.add_conditional_edges("research", _route_after_research,
+                            {"script": "script", "error_end": "error_end"})
+    g.add_conditional_edges("script", _route_after_script,
+                            {"critic_loop": "critic_loop", "error_end": "error_end"})
+    g.add_edge("critic_loop", "scene_director")
+    g.add_edge("scene_director", "production_prep")
+    g.add_conditional_edges("production_prep", _route_after_prep,
+                            {"render_scenes": "render_scenes", "error_end": "error_end"})
+    g.add_conditional_edges("render_scenes", _route_after_render,
+                            {"final_assembly": "final_assembly", "error_end": "error_end"})
+    g.add_conditional_edges("final_assembly", _route_after_assembly,
+                            {"upload": "upload", "error_end": "error_end"})
+    g.add_edge("upload",    END)
+    g.add_edge("error_end", END)
 
     return g.compile()
 
 
+# ── Public API (used by app.py scheduler and /run endpoint) ──────────────────
+
 def run_pipeline(niche: str = "auto", schedule_upload: bool = True) -> dict:
-    workflow = build_workflow()
-    initial: VideoState = {
-        "strategy_brief":    {},
-        "analytics_raw":     {},
-        "trends_raw":        {},
-        "niche":             "psychology" if niche == "auto" else niche,
-        "topic":             "",
-        "keywords":          [],
-        "research_snippets": [],
-        "script_data":       {},
-        "timeline":          [],
-        "script_text":       "",
-        "audio_path":        "",
-        "video_path":        "",
-        "youtube_url":       "",
-        "upload_status":     "",
-        "active_title":      "",
-        "schedule_upload":   schedule_upload,   # ← FIXED: now in state
-        "error":             None,
-        "retry_count":       0,
-        "logs":              [],
-    }
-    return workflow.invoke(initial)
-    
+    """
+    Drop-in replacement for the old run_pipeline().
+    Now uses the full Agentic v2 pipeline with Critic loops and Scene Director.
+    """
+    from main_agent_loop import run_agentic_pipeline
+    return run_agentic_pipeline(niche=niche, schedule_upload=schedule_upload)

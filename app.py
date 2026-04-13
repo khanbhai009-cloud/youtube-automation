@@ -69,13 +69,20 @@ def _run_pipeline_background(niche: str, schedule_upload: bool = True):
         try:
             result = run_pipeline(niche=niche, schedule_upload=schedule_upload)
             entry = {
-                "niche": niche,
-                "topic": result.get("topic", ""),
-                "title": result.get("script_data", {}).get("title", ""),
-                "youtube_url": result.get("youtube_url", ""),
-                "status": result.get("upload_status", "unknown"),
-                "time": datetime.now().isoformat(),
-                "logs": result.get("logs", []),
+                "niche":               niche,
+                "topic":               result.get("topic", ""),
+                "title":               result.get("active_title") or result.get("script_data", {}).get("title", ""),
+                "youtube_url":         result.get("youtube_url", ""),
+                "status":              result.get("upload_status", "unknown"),
+                "time":                datetime.now().isoformat(),
+                "logs":                result.get("logs", []),
+                "best_critic_score":   result.get("best_critic_score", 0),
+                "critic_iterations":   result.get("critic_iterations", 0),
+                "ffmpeg_retry_count":  result.get("ffmpeg_retry_count", 0),
+                "critic_feedback":     result.get("critic_feedback", []),
+                "scene_directives":    result.get("scene_directives", []),
+                "ffmpeg_error":        result.get("ffmpeg_error"),
+                "production_status":   result.get("production_status", ""),
             }
             pipeline_status["last_result"] = entry
             pipeline_status["history"].insert(0, entry)
