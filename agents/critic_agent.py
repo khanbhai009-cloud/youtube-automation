@@ -25,6 +25,7 @@ Loop limit: 3 iterations max (controlled by orchestrator)
 import json
 import re
 from utils.llm_client import LLMClient
+from utils.validator import validate_llm_output
 
 llm = LLMClient()
 
@@ -107,17 +108,18 @@ Score this script. Be specific about what fails. Output ONLY raw JSON."""
     ]
 
     print(f"[CRITIC] Evaluating script (iteration {iteration + 1})...")
-    raw     = llm.complete(messages, max_tokens=800, temperature=0.4)
-    cleaned = re.sub(r"```json|```", "", raw).strip()
+    raw = llm.complete(messages, max_tokens=800, temperature=0.4)
 
-    try:
-        result = json.loads(cleaned)
-        result = _validate_critique(result)
-        _print_critique(result, title, iteration)
-        return result
-    except json.JSONDecodeError as e:
-        print(f"[CRITIC] JSON parse failed: {e} — using safe fallback")
+    # Validate and clean LLM output
+    parsed = validate_llm_output(raw, phase="critic")
+
+    if parsed.get("_used_failsafe"):
+        print("[CRITIC] ⚠️ LLM output invalid — using safe fallback")
         return _fallback_critique(script_data)
+
+    result = _validate_critique(parsed)
+    _print_critique(result, title, iteration)
+    return result
 
 
 def _validate_critique(result: dict) -> dict:

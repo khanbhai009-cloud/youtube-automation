@@ -41,6 +41,13 @@ import operator
 
 # ── Agent imports ──────────────────────────────────────────────────────────────
 
+# ── Global system rules injected into every LLM system prompt ─────────────────
+SYSTEM_RULES = """RULE: Never invent statistics, URLs, view counts, or video titles. If unsure → return UNCERTAIN status.
+RULE: If JSON output is required and you cannot produce valid JSON → return exactly: {"status": "FAIL_SAFE", "reason": "<why>"}
+RULE: Do not call the same tool with identical arguments more than twice.
+RULE: voiceover fields must be plain speakable text only — no hashtags, emojis, asterisks, URLs, or brackets.
+RULE: hook must be under 20 words and end with a question or shocking statistic."""
+
 from agents.director_agent    import run_director
 from agents.research_agent    import get_trending_topic
 from agents.script_agent      import generate_script, build_timeline, get_full_script_text
@@ -116,6 +123,16 @@ class AgentState(TypedDict):
     active_title:       str
     error:              Optional[str]
     logs:               Annotated[List[str], operator.add]
+    messages:           List[str]     # pipeline step messages (for message-limit guard)
+
+    # Validation + loop detection
+    tool_call_history:  list          # for loop_guard()
+    validation_flags:   list          # accumulates "_used_failsafe" / "_partial" events
+    llm_empty_streak:   int           # consecutive empty LLM responses
+
+    # Analytics / niche performance
+    analytics_summary:  dict          # niche performance scores from YouTube Analytics
+    niche_scores:       dict          # e.g. {"facts": 8.2, "psychology": 6.1}
 
 
 def _initial_state(niche: str, schedule_upload: bool) -> AgentState:
@@ -147,7 +164,44 @@ def _initial_state(niche: str, schedule_upload: bool) -> AgentState:
         active_title="",
         error=None,
         logs=[],
+        messages=[],
+        tool_call_history=[],
+        validation_flags=[],
+        llm_empty_streak=0,
+        analytics_summary={},
+        niche_scores={},
     )
+
+
+# ── Exit guard helpers (Step 3) ────────────────────────────────────────────────
+
+def _check_exit_guards(state: AgentState, phase_name: str) -> Optional[dict]:
+    """
+    Check global exit conditions before running an LLM-calling phase.
+    Returns a partial error state dict if a guard fires, else None.
+    """
+    if len(state.get("messages", [])) > 20:
+        print(f"[EXIT GUARD] Message limit hit before {phase_name}")
+        state["logs"].append(f"EXIT: message_limit hit before {phase_name}")
+        state["error"] = "message_limit"
+        return dict(state)
+
+    if state.get("llm_empty_streak", 0) >= 2:
+        print(f"[EXIT GUARD] LLM returning empty responses — aborting before {phase_name}")
+        state["logs"].append(f"EXIT: empty_llm streak before {phase_name}")
+        state["error"] = "empty_llm"
+        return dict(state)
+
+    return None
+
+
+def _record_phase_message(state: AgentState, phase_name: str, produced_output: bool):
+    """Append a phase completion message; track LLM empty streak."""
+    state["messages"].append(f"{phase_name}:{'ok' if produced_output else 'empty'}")
+    if not produced_output:
+        state["llm_empty_streak"] = state.get("llm_empty_streak", 0) + 1
+    else:
+        state["llm_empty_streak"] = 0
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -158,13 +212,20 @@ def phase_director(state: AgentState) -> AgentState:
     print("\n╔══════════════════════════════════════╗")
     print("║  PHASE 0: DIRECTOR AGENT            ║")
     print("╚══════════════════════════════════════╝")
+    guard = _check_exit_guards(state, "director")
+    if guard:
+        return guard
     try:
-        result        = run_director()
+        result        = run_director(niche_scores=state.get("niche_scores", {}))
         brief         = result["strategy_brief"]
-        state["strategy_brief"] = brief
-        state["analytics_raw"]  = result["analytics_raw"]
-        state["trends_raw"]     = result["trends_raw"]
-        state["niche"]          = brief.get("niche", state["niche"])
+        state["strategy_brief"]  = brief
+        state["analytics_raw"]   = result["analytics_raw"]
+        state["trends_raw"]      = result["trends_raw"]
+        state["niche"]           = brief.get("niche", state["niche"])
+        state["niche_scores"]    = result.get("niche_scores", state.get("niche_scores", {}))
+        state["analytics_summary"] = result.get("niche_scores", {})
+        if result.get("_director_used_failsafe"):
+            state["validation_flags"].append("director_used_failsafe")
         state["logs"].append(
             f"🎬 Director → [{brief['niche'].upper()}] {brief.get('topic','')}"
         )
@@ -173,6 +234,7 @@ def phase_director(state: AgentState) -> AgentState:
         traceback.print_exc()
         state["logs"].append(f"⚠️ Director failed ({e}), using defaults")
         print(f"[DIRECTOR] ⚠️ Failed: {e} — continuing with defaults")
+    _record_phase_message(state, "director", bool(state.get("strategy_brief")))
     return state
 
 
@@ -221,6 +283,9 @@ def phase_script(state: AgentState, rewrite_instructions: str = "") -> AgentStat
     print("\n╔══════════════════════════════════════╗")
     print("║  PHASE 2A: SCRIPT AGENT             ║")
     print("╚══════════════════════════════════════╝")
+    guard = _check_exit_guards(state, "script")
+    if guard:
+        return guard
     try:
         brief = state.get("strategy_brief", {})
         research_data = {
@@ -248,6 +313,7 @@ def phase_script(state: AgentState, rewrite_instructions: str = "") -> AgentStat
         traceback.print_exc()
         state["error"] = f"Script failed: {e}"
         state["logs"].append(f"❌ Script error: {e}")
+    _record_phase_message(state, "script", bool(state.get("script_data")))
     return state
 
 
@@ -282,6 +348,9 @@ def phase_critic_loop(state: AgentState) -> AgentState:
 
         state["critic_feedback"].append(critique)
 
+        if critique.get("_used_failsafe"):
+            state["validation_flags"].append(f"critic_iteration_{iteration}_used_failsafe")
+
         score = critique.get("score", 0)
         if score > state.get("best_critic_score", 0):
             state["best_critic_score"] = score
@@ -301,6 +370,15 @@ def phase_critic_loop(state: AgentState) -> AgentState:
             rewrite_instructions = critique.get("rewrite_instructions", "")
             print(f"[CRITIC LOOP] ❌ Score {score}/10 — sending back for rewrite")
             print(f"[CRITIC LOOP] Instructions: {rewrite_instructions[:100]}")
+
+            # Early exit: if same issue appears in ALL feedbacks so far, LLM is stuck
+            if len(state["critic_feedback"]) >= 2:
+                all_issues = [str(fb.get("rewrite_instructions", "")) for fb in state["critic_feedback"]]
+                if len(set(all_issues)) == 1 and all_issues[0]:
+                    print("[CRITIC LOOP] ⚠️ Same issue in all iterations — LLM is stuck, forcing exit")
+                    state["logs"].append("⚠️ Critic stuck on same issue — forcing early exit")
+                    state["script_data"] = state["best_script_data"] or state["script_data"]
+                    break
 
             if iteration == MAX_CRITIC_LOOPS - 1:
                 print(f"[CRITIC LOOP] Max iterations reached — using best version (score {state['best_critic_score']}/10)")
@@ -343,6 +421,9 @@ def phase_scene_director(state: AgentState, error_context: str = "") -> AgentSta
     print("\n╔══════════════════════════════════════╗")
     print("║  PHASE 3A: SCENE DIRECTOR           ║")
     print("╚══════════════════════════════════════╝")
+    guard = _check_exit_guards(state, "scene_director")
+    if guard:
+        return guard
     try:
         directives = plan_scene_directives(
             script_data=state["script_data"],
@@ -588,6 +669,7 @@ def phase_upload(state: AgentState) -> AgentState:
             tags=script_data.get("tags", []),
             schedule=state.get("schedule_upload", True),
             upload_hour_utc=brief.get("upload_hour_utc", 1),
+            state=state,
         )
 
         state["youtube_url"]   = result["url"]

@@ -1,6 +1,7 @@
 import json
 import re
 from utils.llm_client import LLMClient
+from utils.validator import validate_llm_output
 
 llm = LLMClient()
 
@@ -174,16 +175,21 @@ REMEMBER:
         {"role": "user",   "content": user_msg},
     ]
 
-    raw     = llm.complete(messages, max_tokens=3500, temperature=0.88)
-    cleaned = re.sub(r"```json|```", "", raw).strip()
+    raw = llm.complete(messages, max_tokens=3500, temperature=0.88)
+
+    # Validate and clean LLM output (strips markdown, handles failsafe signal)
+    parsed = validate_llm_output(raw, phase="script")
+
+    if parsed.get("_used_failsafe"):
+        print("[SCRIPT] ⚠️ LLM output invalid — retrying...")
+        return _retry_script(topic)
 
     try:
-        data = json.loads(cleaned)
-        data = _validate_and_fix(data, topic)
+        data = _validate_and_fix(parsed, topic)
         print(f"[SCRIPT] Generated: {data['title']}")
         return data
-    except json.JSONDecodeError as e:
-        print(f"[SCRIPT] JSON parse failed: {e} — retrying...")
+    except Exception as e:
+        print(f"[SCRIPT] validate_and_fix failed: {e} — retrying...")
         return _retry_script(topic)
 
 
@@ -200,11 +206,12 @@ def _retry_script(topic: str) -> dict:
             )
         }
     ]
-    raw     = llm.complete(messages, max_tokens=3500, temperature=0.7)
-    cleaned = re.sub(r"```json|```", "", raw).strip()
+    raw = llm.complete(messages, max_tokens=3500, temperature=0.7)
+    parsed = validate_llm_output(raw, phase="script")
+    if parsed.get("_used_failsafe"):
+        return _fallback_script(topic)
     try:
-        data = json.loads(cleaned)
-        return _validate_and_fix(data, topic)
+        return _validate_and_fix(parsed, topic)
     except Exception:
         return _fallback_script(topic)
 

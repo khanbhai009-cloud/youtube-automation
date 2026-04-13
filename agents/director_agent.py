@@ -3,7 +3,7 @@ Director Agent — The autonomous brain.
 
 Combines YouTube Analytics + real-time trends to make every strategic
 decision BEFORE the pipeline runs:
-  - Which niche & topic angle
+  - Which niche & topic angle (weighted by niche_scores from analytics)
   - Video format (list / story / deep-dive / comparison)
   - Thumbnail style & A/B variant
   - Upload time (based on channel's best-performing hours)
@@ -13,11 +13,13 @@ decision BEFORE the pipeline runs:
 """
 
 import json
+import random
 import re
 from datetime import datetime, timezone
 
 from utils.llm_client import LLMClient
-from agents.analytics_agent import fetch_channel_analytics
+from utils.validator import validate_llm_output
+from agents.analytics_agent import fetch_channel_analytics, compute_niche_scores
 from agents.research_agent import get_trending_topic
 
 llm = LLMClient()
@@ -95,17 +97,45 @@ def _summarize_trends(trends_by_niche: dict) -> str:
     return "\n".join(lines)
 
 
-def run_director() -> dict:
+def _pick_weighted_niche(niche_scores: dict) -> str:
+    """
+    Pick a niche weighted by performance scores.
+    Niches with score > 7 get 2x probability.
+    If niche_scores is empty, pick evenly from NICHES.
+    """
+    if not niche_scores:
+        return random.choice(NICHES)
+
+    weighted_pool = []
+    for niche in NICHES:
+        score = niche_scores.get(niche, 5.0)
+        weight = 2 if score > 7.0 else 1
+        weighted_pool.extend([niche] * weight)
+
+    return random.choice(weighted_pool)
+
+
+def run_director(niche_scores: dict = None) -> dict:
     """
     Main entry point. Returns a full StrategyBrief dict.
+
+    Args:
+        niche_scores: Optional dict of per-niche performance scores from analytics
+                      e.g. {"facts": 8.2, "psychology": 6.1}
     """
-    print("\n╔══════════════════════════════════╗")
+    print("\n╔══════════════════════════════════════╗")
     print("║   DIRECTOR AGENT — THINKING...  ║")
-    print("╚══════════════════════════════════╝")
+    print("╚══════════════════════════════════════╝")
+
+    niche_scores = niche_scores or {}
 
     # ── Step 1: Fetch analytics ───────────────────────────────────────────
     print("[DIRECTOR] Fetching channel analytics...")
     analytics = fetch_channel_analytics(days=28)
+
+    # ── Step 1b: Compute niche scores if not provided ──────────────────────
+    if not niche_scores:
+        niche_scores = compute_niche_scores(analytics)
 
     # ── Step 2: Scan trends across all niches in parallel ─────────────────
     print("[DIRECTOR] Scanning trends across all niches...")
@@ -117,6 +147,11 @@ def run_director() -> dict:
             print(f"[DIRECTOR] Trend fetch failed for {niche}: {e}")
             trends[niche] = {"topic": niche.title(), "keywords": [niche]}
 
+    # ── Step 2b: Log niche score weighting ────────────────────────────────
+    preferred_niche = _pick_weighted_niche(niche_scores)
+    score_info = f"score={niche_scores.get(preferred_niche, 'N/A')}" if niche_scores else "no scores"
+    print(f"[DIRECTOR] Preferred niche (weighted): {preferred_niche} ({score_info})")
+
     # ── Step 3: Build context for LLM ─────────────────────────────────────
     now_utc = datetime.now(timezone.utc)
     day_of_week = now_utc.strftime("%A")
@@ -125,12 +160,18 @@ def run_director() -> dict:
     analytics_summary = _summarize_analytics(analytics)
     trends_summary = _summarize_trends(trends)
 
+    niche_scores_block = ""
+    if niche_scores:
+        score_lines = [f"  {n}: {s:.1f}/10" for n, s in sorted(niche_scores.items(), key=lambda x: -x[1])]
+        niche_scores_block = "\n\n═══ NICHE PERFORMANCE SCORES (from analytics) ═══\n" + "\n".join(score_lines)
+        niche_scores_block += f"\nRecommended niche (highest score): {preferred_niche}"
+
     user_msg = f"""Current context:
 - Date/Time UTC: {now_utc.strftime('%Y-%m-%d %H:%M')} ({day_of_week})
 - Current hour UTC: {hour_utc}
 
 ═══ CHANNEL ANALYTICS (last 28 days) ═══
-{analytics_summary}
+{analytics_summary}{niche_scores_block}
 
 ═══ TRENDING TOPICS RIGHT NOW ═══
 {trends_summary}
@@ -150,27 +191,30 @@ Output ONLY raw JSON."""
     # ── Step 4: LLM makes the call ────────────────────────────────────────
     print("[DIRECTOR] LLM analyzing data and making strategic decisions...")
     raw = llm.complete(messages, max_tokens=1500, temperature=0.6)
-    cleaned = re.sub(r"```json|```", "", raw).strip()
 
-    try:
-        brief = json.loads(cleaned)
-        brief = _validate_brief(brief, trends, analytics)
-        _print_brief(brief)
-        return {
-            "strategy_brief": brief,
-            "analytics_raw": analytics,
-            "trends_raw": trends,
-        }
-    except json.JSONDecodeError as e:
-        print(f"[DIRECTOR] JSON parse failed: {e}. Using smart fallback...")
-        return _fallback_brief(trends, analytics)
+    # ── Step 4b: Validate LLM output ──────────────────────────────────────
+    parsed = validate_llm_output(raw, phase="director")
+
+    if parsed.get("_used_failsafe"):
+        print("[DIRECTOR] ⚠️ Used failsafe defaults for director output")
+
+    brief = _validate_brief(parsed, trends, analytics, preferred_niche)
+    _print_brief(brief)
+
+    return {
+        "strategy_brief":  brief,
+        "analytics_raw":   analytics,
+        "trends_raw":      trends,
+        "niche_scores":    niche_scores,
+        "_director_used_failsafe": bool(parsed.get("_used_failsafe")),
+    }
 
 
-def _validate_brief(brief: dict, trends: dict, analytics: dict) -> dict:
+def _validate_brief(brief: dict, trends: dict, analytics: dict, preferred_niche: str = "psychology") -> dict:
     """Ensure all required fields exist and values are valid."""
     valid_niches = ["psychology", "facts", "lists"]
     if brief.get("niche") not in valid_niches:
-        brief["niche"] = "psychology"
+        brief["niche"] = preferred_niche if preferred_niche in valid_niches else "psychology"
 
     # Use actual trending topic for the chosen niche if LLM's topic is vague
     niche = brief["niche"]
@@ -201,7 +245,7 @@ def _validate_brief(brief: dict, trends: dict, analytics: dict) -> dict:
 
 def _print_brief(brief: dict):
     print(f"""
-[DIRECTOR] ═══ STRATEGY BRIEF ═══
+[DIRECTOR] STRATEGY BRIEF
   Niche:          {brief['niche'].upper()}
   Topic:          {brief['topic']}
   Format:         {brief['video_format']}
@@ -209,10 +253,9 @@ def _print_brief(brief: dict):
   Thumbnail:      {brief['thumbnail_style']} / {brief['thumbnail_color_scheme']}
   Title formula:  {brief['title_formula']}
   Upload (UTC):   {brief['upload_hour_utc']:02d}:00
-  A/B Test:       {'✅ ' + brief['ab_test'].get('title_b','') if brief['ab_test'].get('enabled') else '❌ Off'}
+  A/B Test:       {'ON: ' + brief['ab_test'].get('title_b','') if brief['ab_test'].get('enabled') else 'Off'}
   Diagnosis:      {brief['channel_diagnosis']}
-  Reasoning:      {brief['reasoning']}
-══════════════════════════════════""")
+  Reasoning:      {brief['reasoning']}""")
 
 
 def _fallback_brief(trends: dict, analytics: dict) -> dict:
@@ -234,4 +277,4 @@ def _fallback_brief(trends: dict, analytics: dict) -> dict:
         "avoid_topics": [],
         "channel_diagnosis": "new",
     }
-    return {"strategy_brief": brief, "analytics_raw": analytics, "trends_raw": trends}
+    return {"strategy_brief": brief, "analytics_raw": analytics, "trends_raw": trends, "niche_scores": {}}
