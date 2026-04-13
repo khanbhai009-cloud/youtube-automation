@@ -108,7 +108,7 @@ Score this script. Be specific about what fails. Output ONLY raw JSON."""
     ]
 
     print(f"[CRITIC] Evaluating script (iteration {iteration + 1})...")
-    raw = llm.complete(messages, max_tokens=800, temperature=0.4)
+    raw = llm.complete(messages, max_tokens=800, temperature=0.4, task_type="logical")
 
     # Validate and clean LLM output
     parsed = validate_llm_output(raw, phase="critic")

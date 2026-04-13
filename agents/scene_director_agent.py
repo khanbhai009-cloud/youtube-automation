@@ -150,7 +150,7 @@ Output ONLY a raw JSON array starting with [ and ending with ]"""
     if error_context:
         print("[SCENE DIRECTOR] Self-healing mode — fixing FFmpeg error")
 
-    raw = llm.complete(messages, max_tokens=1500, temperature=0.5)
+    raw = llm.complete(messages, max_tokens=1500, temperature=0.5, task_type="logical")
 
     # Extract JSON array if surrounded by non-JSON text
     cleaned = re.sub(r"```json\s*|```\s*", "", raw).strip()

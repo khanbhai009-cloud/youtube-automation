@@ -190,7 +190,7 @@ Output ONLY raw JSON."""
 
     # ── Step 4: LLM makes the call ────────────────────────────────────────
     print("[DIRECTOR] LLM analyzing data and making strategic decisions...")
-    raw = llm.complete(messages, max_tokens=1500, temperature=0.6)
+    raw = llm.complete(messages, max_tokens=1500, temperature=0.6, task_type="logical")
 
     # ── Step 4b: Validate LLM output ──────────────────────────────────────
     parsed = validate_llm_output(raw, phase="director")

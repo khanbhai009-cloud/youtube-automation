@@ -175,7 +175,7 @@ REMEMBER:
         {"role": "user",   "content": user_msg},
     ]
 
-    raw = llm.complete(messages, max_tokens=3500, temperature=0.88)
+    raw = llm.complete(messages, max_tokens=3500, temperature=0.88, task_type="creative")
 
     # Validate and clean LLM output (strips markdown, handles failsafe signal)
     parsed = validate_llm_output(raw, phase="script")
@@ -206,7 +206,7 @@ def _retry_script(topic: str) -> dict:
             )
         }
     ]
-    raw = llm.complete(messages, max_tokens=3500, temperature=0.7)
+    raw = llm.complete(messages, max_tokens=3500, temperature=0.7, task_type="creative")
     parsed = validate_llm_output(raw, phase="script")
     if parsed.get("_used_failsafe"):
         return _fallback_script(topic)
