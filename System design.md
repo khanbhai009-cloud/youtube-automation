@@ -41,7 +41,6 @@
 ---
 
 ## SECTION 2 — SYSTEM FLOWCHART (Mermaid.js)
-
 ```mermaid
 flowchart TD
     A([🕐 Trigger: Scheduled Video Run]) --> B[main.py]
@@ -95,7 +94,7 @@ flowchart TD
     end
     
     UPL --> DONE([✅ Video Live on YouTube])
-
+'''
 ## SECTION 3 — PROJECT FILE STRUCTURE
 Jab workspace banaoge, toh folders aur files is structure mein hone chahiye:
 ```text
