@@ -1,10 +1,8 @@
  **YOUTUBE_SYSTEM_DESIGN_v2.md**, isko direct copy-paste maar lo:
-```markdown
-# YOUTUBE AI FACTORY - SYSTEM DESIGN v2.0
+markdown
+ YOUTUBE AI FACTORY - SYSTEM DESIGN v2.0
 ### Architecture: 3-Tier Mastermind + Remotion Engine
 **Status:** Upgrading from Monolithic Pipeline to Microservices
-
----
 
 ## SECTION 1 — ARCHITECTURE EVOLUTION (Old vs. New)
 
@@ -17,8 +15,6 @@
 - **Micro-Masterminds:** Ek single loop ki jagah 3 alag `node_cmo` scripts (Visionary, Orchestrator, Packager).
 - **Remotion Engine:** FFmpeg ki jagah React (`.tsx`) code use hoga fluid motion graphics, 2.5D parallax aur ease-in/out animations ke liye. FFmpeg ab sirf end me chote scenes ko jodne (stitch) ke kaam aayega.
 - **Parallel Processing:** Video rendering, Thumbnail creation, aur SEO ek sath parallel threads me run honge.
-
----
 
 ## SECTION 2 — SYSTEM FLOWCHART (Mermaid.js)
 
