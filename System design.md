@@ -20,52 +20,74 @@
  * **Skill Injection:** Remotion coder ke paas skill.md hai for pro-level After Effects animations.
  * **Targeted Regeneration:** Sirf wahi asset dubara banega jo fail hua hai, pura loop nahi ghoomega.
 ## SECTION 2 — COMPLETE VISUAL FLOWCHART (Mermaid.js)
+# YOUTUBE AI FACTORY - SYSTEM DESIGN v2.0
+### Architecture: 3-Tier Mastermind + Remotion Engine
+**Status:** Upgrading from Monolithic Pipeline to Microservices
+
+---
+
+## SECTION 1 — ARCHITECTURE EVOLUTION (Old vs. New)
+
+**Purane System ki Problems (The 6/10 Spaghetti):**
+- **Sequential Bottleneck:** Ek scene fail hone par pura pipeline ruk jata tha.
+- **FFmpeg Limitations:** Sirf basic filters aur static color grading milti thi.
+- **Race Conditions:** Ek hi prompt aane par assets overwrite ho jate the.
+
+**Naya v2.0 System (The 10/10 Mastermind):**
+- **Micro-Masterminds:** Ek single loop ki jagah 3 alag `node_cmo` scripts (Visionary, Orchestrator, Packager).
+- **Remotion Engine:** FFmpeg ki jagah React (`.tsx`) code use hoga fluid motion graphics, 2.5D parallax aur ease-in/out animations ke liye. FFmpeg ab sirf end me chote scenes ko jodne (stitch) ke kaam aayega.
+- **Parallel Processing:** Video rendering, Thumbnail creation, aur SEO ek sath parallel threads me run honge.
+
+---
+
+## SECTION 2 — SYSTEM FLOWCHART (Mermaid.js)
+
 ```mermaid
 flowchart TD
-    A([🕐 Trigger: Weekly Scheduled Run]) --> B[main.py]
+    A([🕐 Trigger: Scheduled Video Run]) --> B[main.py]
 
-    subgraph CMO_1["🧠 CMO 1: The Visionary (Research & Script)"]
+    subgraph CMO_1["🧠 CMO 1: The Visionary (node_cmo_1.py)"]
         direction TB
-        B --> C1[Trend Analytics & Channel Data]
-        C1 --> SA[Script Agent - Groq\nWrites engaging documentary script]
-        SA --> VD1{Verification\nThreshold: 8/10}
+        B --> C1[Trend Analytics & Channel Research]
+        C1 --> SA[Script Agent - Groq]
+        SA --> VD1{Pre-QC Threshold > 8/10}
         VD1 -- "Fail" --> SA
-        VD1 -- "Pass" --> OUT1[Final Script Approved]
+        VD1 -- "Pass" --> OUT1[Approved Master Script]
     end
 
     OUT1 --> CMO_2
 
-    subgraph CMO_2["🎬 CMO 2: The Orchestrator (Scene Breakdown)"]
+    subgraph CMO_2["🎬 CMO 2: The Orchestrator (node_cmo_2.py)"]
         direction TB
-        IN2[Divide Script into 5-10s Scenes] --> VA[Voice Agent + Whisper\nGenerates Audio & Timestamps]
-        IN2 --> IA[Image Agent + Variety Engine\nGenerates aesthetic assets]
+        IN2[Scene-by-Scene Breakdown] --> VA[Voice Agent + Whisper TTS]
+        IN2 --> IA[Image Agent + Variety Engine]
         
         VA --> CB[(Collection Box)]
         IA --> CB
         
-        CB --> VD2{Visual Director\nCR Agent}
+        CB --> VD2{Visual Director\nPre-Render Validation}
         VD2 -- "Bad Image" --> IA
         VD2 -- "Bad Audio" --> VA
-        VD2 -- "Approved" --> OUT2[Assets & Timestamps Ready]
+        VD2 -- "Approved" --> OUT2[Verified Assets & Timestamps]
     end
 
     OUT2 --> CMO_3
 
-    subgraph CMO_3["📦 CMO 3: The Packager (3-Way Split)"]
+    subgraph CMO_3["📦 CMO 3: The Packager (node_cmo_3.py)"]
         direction LR
-        IN3[Assemble Final JSON] --> SPLIT{Parallel Execution}
-        SPLIT -->|Video JSON| V_JSON[Remotion Coder Agent\nReads skill.md\nGenerates React .tsx]
-        SPLIT -->|Thumb JSON| T_JSON[Thumbnail Agent\nGenerates Viral Thumbnail]
-        SPLIT -->|SEO JSON| S_JSON[SEO Agent\nTitles, Tags, Description]
+        IN3[Parallel JSON Split] --> SPLIT{Parallel Threading}
+        SPLIT -->|Video JSON| V_JSON[Remotion Coder Agent\nReads skill.md for styling]
+        SPLIT -->|Thumb JSON| T_JSON[Thumbnail Agent]
+        SPLIT -->|SEO JSON| S_JSON[SEO Agent]
     end
 
-    subgraph ENGINE["⚙️ THE RENDER ENGINE (Hugging Face Docker)"]
+    subgraph RENDER["⚙️ THE CLOUD ENGINE (Docker / Hugging Face)"]
         direction TB
-        V_JSON --> REM[Remotion Engine\nnpx remotion render --concurrency=2]
-        REM -->|Scene MP4s| FFM[FFmpeg\nStitches scenes + master audio]
+        V_JSON --> REM[Remotion Engine\nGenerates UI/Motion via React]
+        REM -->|Scene MP4s| FFM[FFmpeg Fast Stitching\n+ BGM/SFX Mixing]
     end
 
-    subgraph UPLOAD["🚀 SCHEDULER & UPLOAD"]
+    subgraph UPLOAD["🚀 SCHEDULER & YOUTUBE API"]
         direction TB
         FFM --> UPL[YouTube API Upload]
         T_JSON --> UPL
@@ -74,7 +96,6 @@ flowchart TD
     
     UPL --> DONE([✅ Video Live on YouTube])
 
-```
 ## SECTION 3 — PROJECT FILE STRUCTURE
 Jab workspace banaoge, toh folders aur files is structure mein hone chahiye:
 ```text
