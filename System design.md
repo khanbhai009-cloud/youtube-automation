@@ -1,121 +1,133 @@
-# YouTube Automation Factory - Elite Systems Audit Report
 
-## 1. Code Audit: LangGraph Nodes aur Agent Orchestration
+# SYSTEM DESIGN — YouTube AI Factory v1.0
+### Remotion + 3-Tier Mastermind Architecture | **Updated:** April 2026
+## SECTION 1 — SYSTEM KA BIRDS EYE VIEW
+```text
+┌───────────────────────────────────────────────────────────────────────────────┐
+│                      YOUTUBE 3-TIER MASTERMIND PIPELINE                       │
+│                                                                               │
+│  [CMO 1]                 [CMO 2]                   [CMO 3]                    │
+│  The Visionary    →      The Orchestrator    →     The Packager               │
+│                                                                               │
+│  Channel Data            Script Breakdown          Asset Assembly             │
+│  Trend Analysis          Variety Engine (Images)   Remotion TSX Coder         │
+│  Groq Script Agent       Voice + Timestamps        Thumbnail & SEO            │
+└───────────────────────────────────────────────────────────────────────────────┘
 
-**Strengths:**
-- LangGraph ka proper use hai with shared AgentState
-- Threading lock se concurrent pipeline runs prevent hote hain
-- Critic loop max 3 iterations tak limited hai
-- FFmpeg self-healing with retry mechanism
-
-**Brittle Logic Issues:**
-- Scene rendering sequential hai (no parallelism) - agar ek scene fail ho jaye to pura pipeline slow ho jata hai
-- Image download failures ka proper error handling nahi - agar Google Imagen fail ho jaye to Pollinations fallback hai but race condition ho sakti hai agar multiple scenes same time download karein
-- Agent state mutations scattered hain - ek agent ka change doosre ko affect kar sakta hai bina validation ke
-- No circuit breaker for external API failures (Groq, Tavily, Google Imagen)
-
-**Race Conditions:**
-- Asset generation me potential race condition: multiple scenes agar same image prompt use karein to file overwrite ho sakta hai
-- BGM download aur audio mixing me timing issues ho sakte hain
-
-## 2. Quality Bottleneck: Video Rendering aur Assembly
-
-**Current Issues:**
-- Video sirf 1080p 24FPS pe render hota hai
-- Basic FFmpeg filters use hote hain - no advanced upscaling ya interpolation
-- Color grading static hai, no dynamic adjustments
-- No motion blur ya advanced cinematic effects
-
-**Upgrade Suggestions:**
-
-### FFmpeg Integration for 4K Upscaling:
-```bash
-ffmpeg -i input.mp4 -vf "scale=3840:2160:flags=lanczos" -c:v libx264 -crf 16 output_4k.mp4
 ```
+**Key Mechanics:**
+ * **Pre-Render QC:** Render hone se pehle Collection Box mein Visual Director sab check karta hai.
+ * **Skill Injection:** Remotion coder ke paas skill.md hai for pro-level After Effects animations.
+ * **Targeted Regeneration:** Sirf wahi asset dubara banega jo fail hua hai, pura loop nahi ghoomega.
+## SECTION 2 — COMPLETE VISUAL FLOWCHART (Mermaid.js)
+```mermaid
+flowchart TD
+    A([🕐 Trigger: Weekly Scheduled Run]) --> B[main.py]
 
-### 60FPS Frame Interpolation:
-```bash
-ffmpeg -i input.mp4 -r 60 -vf "framerate=60:interp_start=0:interp_end=255:scene=100" output_60fps.mp4
-```
+    subgraph CMO_1["🧠 CMO 1: The Visionary (Research & Script)"]
+        direction TB
+        B --> C1[Trend Analytics & Channel Data]
+        C1 --> SA[Script Agent - Groq\nWrites engaging documentary script]
+        SA --> VD1{Verification\nThreshold: 8/10}
+        VD1 -- "Fail" --> SA
+        VD1 -- "Pass" --> OUT1[Final Script Approved]
+    end
 
-### Custom FFmpeg Filters Chain:
-```bash
-ffmpeg -i input.mp4 -vf "
-scale=3840:2160,
-framerate=60:interp_start=0:interp_end=255:scene=100,
-eq=contrast=1.2:saturation=1.1:brightness=0.05,
-unsharp=5:5:0.8:3:3:0.4,
-vignette=PI/4
-" -c:v libx264 -preset slow -crf 18 output_enhanced.mp4
-```
+    OUT1 --> CMO_2
 
-### MoviePy Integration:
-```python
-from moviepy.editor import VideoFileClip, vfx
+    subgraph CMO_2["🎬 CMO 2: The Orchestrator (Scene Breakdown)"]
+        direction TB
+        IN2[Divide Script into 5-10s Scenes] --> VA[Voice Agent + Whisper\nGenerates Audio & Timestamps]
+        IN2 --> IA[Image Agent + Variety Engine\nGenerates aesthetic assets]
+        
+        VA --> CB[(Collection Box)]
+        IA --> CB
+        
+        CB --> VD2{Visual Director\nCR Agent}
+        VD2 -- "Bad Image" --> IA
+        VD2 -- "Bad Audio" --> VA
+        VD2 -- "Approved" --> OUT2[Assets & Timestamps Ready]
+    end
 
-clip = VideoFileClip("input.mp4")
-enhanced = (clip
-    .resize(height=2160)  # 4K upscaling
-    .speedx(2.5)         # Speed ramping
-    .fx(vfx.colorx, 1.1) # Color enhancement
-    .fx(vfx.gamma_corr, 0.8))  # Gamma correction
-enhanced.write_videofile("enhanced.mp4", fps=60)
-```
+    OUT2 --> CMO_3
 
-### OpenCV for Computer Vision Enhancements:
-```python
-import cv2
-import numpy as np
+    subgraph CMO_3["📦 CMO 3: The Packager (3-Way Split)"]
+        direction LR
+        IN3[Assemble Final JSON] --> SPLIT{Parallel Execution}
+        SPLIT -->|Video JSON| V_JSON[Remotion Coder Agent\nReads skill.md\nGenerates React .tsx]
+        SPLIT -->|Thumb JSON| T_JSON[Thumbnail Agent\nGenerates Viral Thumbnail]
+        SPLIT -->|SEO JSON| S_JSON[SEO Agent\nTitles, Tags, Description]
+    end
 
-def enhance_frame(frame):
-    # Sharpening
-    kernel = np.array([[-1,-1,-1], [-1,9,-1], [-1,-1,-1]])
-    sharpened = cv2.filter2D(frame, -1, kernel)
+    subgraph ENGINE["⚙️ THE RENDER ENGINE (Hugging Face Docker)"]
+        direction TB
+        V_JSON --> REM[Remotion Engine\nnpx remotion render --concurrency=2]
+        REM -->|Scene MP4s| FFM[FFmpeg\nStitches scenes + master audio]
+    end
+
+    subgraph UPLOAD["🚀 SCHEDULER & UPLOAD"]
+        direction TB
+        FFM --> UPL[YouTube API Upload]
+        T_JSON --> UPL
+        S_JSON --> UPL
+    end
     
-    # Denoising
-    denoised = cv2.fastNlMeansDenoisingColored(sharpened, None, 10, 10, 7, 21)
-    
-    # Contrast enhancement
-    lab = cv2.cvtColor(denoised, cv2.COLOR_BGR2LAB)
-    clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8,8))
-    lab[:,:,0] = clahe.apply(lab[:,:,0])
-    enhanced = cv2.cvtColor(lab, cv2.COLOR_LAB2BGR)
-    
-    return enhanced
+    UPL --> DONE([✅ Video Live on YouTube])
+
 ```
+## SECTION 3 — PROJECT FILE STRUCTURE
+Jab workspace banaoge, toh folders aur files is structure mein hone chahiye:
+```text
+youtube-ai-factory/
+│
+├── main.py                     # Entry point & Scheduler setup
+├── config.py                   # API Keys & Environment Variables 
+├── skill.md                    # THE SECRET SAUCE: Motion graphics rules for Remotion
+├── Dockerfile                  # Hugging Face deployment (Python + Node.js + FFmpeg)
+├── package.json                # Remotion dependencies
+│
+├── data/
+│   ├── channel_analytics.json  # Fetched channel data
+│   ├── style_tracker.json      # Visual variety rotation tracker
+│   └── logs/                   # System execution logs
+│
+├── mastermind/                 # The 3-Tier Brain
+│   ├── graph.py                # LangGraph orchestration (connecting all 3 CMOs)
+│   ├── state.py                # TypedDict for agent states
+│   ├── node_cmo_1.py           # The Visionary (Scripting)
+│   ├── node_cmo_2.py           # The Orchestrator (Scenes & Collection Box)
+│   └── node_cmo_3.py           # The Packager (JSON split & Metadata)
+│
+├── agents/                     # The Workers
+│   ├── script_agent.py         # Writes the actual text
+│   ├── voice_agent.py          # Whisper TTS + Timestamps
+│   ├── image_agent.py          # T2I pipeline with Variety Engine
+│   ├── visual_director.py      # CR Agent for Quality Control
+│   ├── remotion_coder.py       # LLM that writes .tsx code using skill.md
+│   ├── thumbnail_agent.py      # Generates CTR-heavy thumbnails
+│   └── seo_agent.py            # Titles, descriptions, and tags
+│
+├── tools/                      # Execution Scripts & APIs
+│   ├── llm.py                  # Groq/Cerebras fallback wrapper
+│   ├── remotion_bridge.py      # Python subprocess that runs 'npx remotion render'
+│   ├── ffmpeg_stitcher.py      # Stitches 10s scenes into final video
+│   ├── youtube_api.py          # Automated upload handling
+│   └── imgbb_uploader.py       # Permanent image hosting
+│
+└── src/                        # Remotion React Workspace (Dynamic)
+    ├── index.ts                # Remotion entry point
+    └── Video.tsx               # Base layout (Agents overwrite this dynamically)
 
-## 3. Audio Upgrade: Kokoro TTS aur Audio Integration
-
-**Current State:**
-- Kokoro TTS with fixed voice profile (am_adam:0.8,am_echo:0.2)
-- Basic audio mixing with 15% BGM volume
-- No advanced audio processing
-
-**Upgrade Suggestions:**
-
-### FFmpeg Audio Filters for Professional Sound:
-```bash
-# Equalization (voice enhancement)
-ffmpeg -i voice.wav -af "highpass=f=80,lowpass=f=8000,equalizer=f=1000:t=h:width=200:g=3" voice_eq.wav
-
-# Compression aur Normalization
-ffmpeg -i voice.wav -af "compand=0.3,1:6:-70,-60,-20,volume=0.8" voice_compressed.wav
-
-# De-essing (sibilance reduction)
-ffmpeg -i voice.wav -af "highpass=f=4000,compand=0.3,1:6:-70,-60,-20" voice_denoised.wav
-
-# Reverb for studio feel
-ffmpeg -i voice.wav -af "aecho=0.8:0.9:1000:0.3" voice_reverb.wav
 ```
-
-### Freesound API Integration for SFX:
-```python
-import requests
-import os
-
-def search_freesound(query, api_key):
-    url = f"https://freesound.org/apiv2/search/text/"
-    params = {
+## SECTION 4 — FALLBACK & LOOP MATRIX
+| Component | Target/Agent | Fallback Action / Loop Logic |
+|---|---|---|
+| **CMO 1 Verification** | Script Agent | 8/10 nahi mila toh regenerate. Max 3 loops, then Drop. |
+| **Visual Director (CR)** | Image / Voice Agent | Targeted Fix. Sirf kharab asset regenerate hoga. |
+| **Remotion Syntax** | Remotion Coder | Code me error aaya toh compiler log wapas LLM ko jayega fix ke liye. |
+| **Image Generation** | Cloudflare / FLUX | Fails → Pollinations.ai → Fails → Puter.js |
+| **LLM Calls** | Groq (Llama 70B) | Rate Limit/Fail → Cerebras (Llama 70B) |
+*YOUTUBE AI FACTORY v1.0 — Architecture designed for Mobile-First Execution & Cloud Rendering*
         'query': query,
         'token': api_key,
         'fields': 'id,name,previews',
